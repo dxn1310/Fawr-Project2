@@ -21,6 +21,8 @@ import Nontechnical from './Components/Services/NonTechnical/Nontechnical.js';
 import Background from './Components/Services/Background/Background.js';
 import Private from './Components/Services/PrivateSecurity/Private.js';
 
+import Sustainability from './Components/Sustainability/Sustainability';
+
 function App() {
   window.scroll({
     top: 0,
@@ -43,6 +45,8 @@ function App() {
         <Route path="/Non - Technical Service" element={<Nontechnical />} />
         <Route path="/Background Check Service" element={<Background />} />
         <Route path="/Private Security Guarding" element={<Private />} />
+
+        <Route path="/Sustainability" element={<Sustainability />} />
       </Routes>
       <Footer />
     </ChakraProvider>

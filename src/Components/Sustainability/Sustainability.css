@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.sustainability-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.45rem;
+    color: black;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+
+.sustainability-bgimg {
+    width: 100%;
+}
+
+.sustainability-inner {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10rem;
+    flex-direction: column;
+}
+
+.sustainability-title {
+    margin-top: 4%;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.sustainability-content {
+    margin-top: 4%;
+    width: 100%;
+}
+
+.sustainability-content-img {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 60%;
+}

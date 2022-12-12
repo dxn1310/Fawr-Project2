@@ -63,9 +63,12 @@ export default function Navbar() {
                         )
                         }
                     </Popover >
-                    <div>
-                        <label>Sustainability</label>
-                    </div>
+                    <Link to="Sustainability">
+                        <Button value="2" backgroundColor='transparent' width='8.3125rem' fontWeight='400' height='2.1875rem' fontSize='1.875rem' _hover={{ bg: 'transparent' }}>
+                            <Text fontSize="2rem" fontWeight="500">Sustainability</Text>
+                        </Button>
+                    </Link>
+
                     <div>
                         <label>Careers</label>
                     </div>
