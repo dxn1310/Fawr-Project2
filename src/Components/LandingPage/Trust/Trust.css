@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.trust-outer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+    background-image: url("./TrustImages/Trust_img1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.trust-top-outer {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trust-top-content {
+    color: rgba(43, 127, 255, 1);
+}
+
+.trust-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+
+.trust-bottom-outer {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.trust-bottom-content {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.trust-bottom {
+    height: 70%;
+    width: 80%;
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}

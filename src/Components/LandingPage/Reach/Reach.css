@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.reach-outer {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./ReachImages/Reach_img4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+
+}
+
+.reach-inner {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 7%;
+
+
+}
+
+.reach-box {
+    width: 70%;
+    height: 80%;
+    background-color: white;
+    box-shadow: 7px 7px 35px rgba(0, 0, 0, 0.31);
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reach-box-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.reach-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+
+
+.reach-checkbox-title {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 8%;
+    /* align-items: flex-start; */
+}
+
+.reach-checkbox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
