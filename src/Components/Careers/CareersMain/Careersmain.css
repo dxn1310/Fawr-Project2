@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.careersmain-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* height: 100vh;
+    background-image: url("./CareersMainImages/Careersmain_img1.png");
+    background-repeat: no-repeat;
+    background-size: contain; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10rem;
+}
+
+.careersmain-top {
+    width: 100%;
+    height: max-content;
+    padding: 0.75%;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.careersmain-top-inner {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    padding-right: 5%;
+}
+
+.careersmain-inner1 {
+    height: 85vh;
+    width: 100%;
+    background-image: url("./CareersMainImages/Careersmain_img1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.careersmain-inner2-outer {
+    /* margin-top: 2%; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.careersmain-inner2 {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 3%;
+
+}
+
+
+.careersmain-top-content {
+    color: rgba(43, 127, 255, 1);
+
+}
+
+.careersmain-inner2-title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 55%;
+
+}
+
+.careersmain-inner3-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.careersmain-inner3-title {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.careersmain-grid {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 5%;
+}
+
+.careersmain-inner3-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.careersmain-inner3-content {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.careersmain-grid-element {
+    width: 100%
+}
+
+.careersmain-img {
+    width: 100%;
+    height: 100%;
+}

@@ -23,6 +23,8 @@
 
 .firstpage-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 400%;
+    /* width: 100%;
+    height: 100%; */
+    font-size: 350%;
     font-weight: 500;
 }

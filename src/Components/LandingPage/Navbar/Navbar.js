@@ -69,9 +69,11 @@ export default function Navbar() {
                         </Button>
                     </Link>
 
-                    <div>
-                        <label>Careers</label>
-                    </div>
+                    <Link to="/Careers Main">
+                        <Button value="2" backgroundColor='transparent' width='8.3125rem' fontWeight='400' height='2.1875rem' fontSize='1.875rem' _hover={{ bg: 'transparent' }}>
+                            <Text fontSize="2rem" fontWeight="500">Careers</Text>
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </div>

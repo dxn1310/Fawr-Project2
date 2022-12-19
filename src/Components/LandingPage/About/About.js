@@ -11,7 +11,6 @@ export default function About() {
                     <label>ABOUT <label className='about-top-content'>FAWR</label></label>
                     <img src={About_img2} />
                 </div>
-
             </div>
             <div className='about-bottom-outer'>
                 <div className='about-bottom'>

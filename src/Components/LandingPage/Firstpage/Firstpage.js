@@ -7,8 +7,8 @@ export default function Firstpage() {
     return (
         <div className='firstpage-outer'>
             <div className='firstpage-inner'>
-                <div className='firstpage-content'>
-                    <label className='firstpage-text'>A Place  That Help<br />Growth of your work</label>
+                <div className='firstpage-text'>
+                    <label >A Place  That Help<br />Growth of your work</label>
                 </div>
                 <div>
                     <Button backgroundColor="rgba(43, 127, 255, 1)"
