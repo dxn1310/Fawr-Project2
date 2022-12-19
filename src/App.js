@@ -42,7 +42,6 @@ import Homesalon from './Components/Services/People/PeopleServices/HomeSalon/Hom
 import Male from './Components/Services/People/PeopleServices/HomeSalon/Male/Male';
 import Female from './Components/Services/People/PeopleServices/HomeSalon/Female/Female';
 
-
 // const showAccordion = () => {
 //   if (window.location.pathname === "/") {
 //     return <Cleaning />
