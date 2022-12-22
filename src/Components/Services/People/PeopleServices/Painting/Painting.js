@@ -117,7 +117,7 @@ export default function Painting() {
                 </div>
                 <div className='Painting-accordians'>
                     <div className='Painting-title'>Frequently Asked Question</div>
-                    <Accordion defaultIndex={[0]} allowMultiple marginTop="5%" width="100%" spacing={5}>
+                    <Accordion  allowMultiple marginTop="5%" width="100%" spacing={5}>
                         <AccordionItem backgroundColor="#2A7FFF"
                             color="white"
                             fontSize="100%"

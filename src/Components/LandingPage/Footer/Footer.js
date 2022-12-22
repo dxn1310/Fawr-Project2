@@ -6,7 +6,7 @@ export default function Footer() {
         <div className='footer-outer'>
             {/* <div className='footer-grid-item'> */}
             <div className='footer-fawr'>
-                <label className='footer-fawr-content'>FAWR</label>
+                <div className='footer-fawr-content'>FAWR</div>
             </div>
             <div className='footer-grid-item'>
                 <div><label>Solutions</label></div>

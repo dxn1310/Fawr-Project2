@@ -130,7 +130,7 @@ export default function Male() {
                     contentRatingPeople: "47k",
                     contentPrice: "299",
                     contentPoints: ["Colour patchy grey beards with a truly natural look.",
-                        " Best quality products to ensure a natural looking color."]
+                        "Best quality products to ensure a natural looking color."]
                 },
             ]
         },
@@ -143,7 +143,7 @@ export default function Male() {
                     contentRating: "4.5 Rating",
                     contentRatingPeople: "47k",
                     contentPrice: "299",
-                    // contentPoints: ["Colour/ henna application by expert to give your hair a netural look & shine."]
+                    contentPoints: ["Clean shave for men"]
                 },
 
                 {
@@ -212,7 +212,6 @@ export default function Male() {
     ]
     return (
         <div>
-            {/* hello */}
             <Template bgimg={Male_img1} gridImages={gridImages} options={options} />
         </div>
     )

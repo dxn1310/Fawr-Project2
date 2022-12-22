@@ -41,6 +41,10 @@ import Electronic from './Components/Services/People/PeopleServices/Electronic/E
 import Homesalon from './Components/Services/People/PeopleServices/HomeSalon/Homesalon';
 import Male from './Components/Services/People/PeopleServices/HomeSalon/Male/Male';
 import Female from './Components/Services/People/PeopleServices/HomeSalon/Female/Female';
+import Cart from './Components/Services/People/PeopleServices/Booking/Cart/Cart';
+import Carpenter from './Components/Services/People/PeopleServices/ElectricCarpenter/Carpenter/Carpenter';
+import Electirc from './Components/Services/People/PeopleServices/ElectricCarpenter/Electric/Electirc';
+import ECselection from './Components/Services/People/PeopleServices/ElectricCarpenter/ECselection/ECselection';
 
 // const showAccordion = () => {
 //   if (window.location.pathname === "/") {
@@ -49,20 +53,35 @@ import Female from './Components/Services/People/PeopleServices/HomeSalon/Female
 // }
 
 function App() {
-  window.scroll({
-    top: 0,
-    left: 0,
-    behavior: 'smooth'
-  });
+  // window.scroll({
+  //   top: 0,
+  //   left: 0,
+  //   behavior: 'smooth'
+  // });
 
   const [option, setOption] = useState("none");
   console.log(option)
+
+  const [Bill, setBill] = useState(
+    [
+      {
+        title: "hello",
+        // rating: "2626",
+        // ratingPeople: "100",
+        // price: "69",
+        // points: ["bhj", "bhbhj"],
+      },
+      {
+        title: "fjwefner",
+      }
+    ]
+  )
   return (
     <ChakraProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
-        {/* <Route path="/" element={<Electronic />} /> */}
+        <Route path="/" element={<Cart Bill={Bill} />} />
         <Route path="/Digital Technology Transformation" element={<Digital />} />
         <Route path="/Compiances Solution" element={<Compiance />} />
         <Route path="/Asset Management" element={<Asset />} />
@@ -90,12 +109,18 @@ function App() {
         <Route path="/People Services/Anti Disclaimer Policy" element={<Adisclamer />} />
         <Route path="/People Services/Interior Designing" element={<Interior />} />
         <Route path="/People Services/Painting" element={<Painting />} />
-        <Route path="/People Services/Electronic Appliances Repair" element={<Electronic />} />
+        <Route path="/People Services/Electronic Appliances Repair" element={<Electronic Bill={Bill} setBill={setBill} />} />
         <Route path="/People Services/Home Salon" element={<Homesalon />} />
         <Route path="/People Services/Home Salon/Male" element={<Male />} />
-        <Route path="/People Services/Home Salon/Female" element={<Female />} />
+        <Route path="/People Services/Home Salon/Female" element={<Female Bill={Bill} setBill={setBill} />} />
+        {/* <Route path="/People Services/Bill" element={<Bill/>} /> */}
+        <Route path="/People Services/Cart" element={<Cart Bill={Bill} />} />
+        <Route path="/People Services/Electronics and Carpenter Service/Carpenter" element={<Carpenter />} />
+        <Route path="/People Services/Electronics and Carpenter Service/Electronic" element={<Electirc />} />
+        <Route path="/People Services/Electronics and Carpenter Service" element={<ECselection />} />
+
       </Routes>
-      <Footer />
+      <Footer /> 
     </ChakraProvider>
   );
 }

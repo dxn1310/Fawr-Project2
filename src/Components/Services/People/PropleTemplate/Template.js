@@ -1,24 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Template.css"
 import {
     Stack, Button, Input
 } from '@chakra-ui/react'
 
-export default function Template(props) {
-    // const electronicOptions = props.options;
+import { NavLink as Link } from 'react-router-dom'
+
+export default function Template({ gridImages, bgimg, options, Bill, setBill }) {
+    // const electronicOptions = options;
+    const [t, setT] = useState()
+    const addedOption =
+    {
+        title: t,
+    }
+
+    const handleAddService = (x) => {
+        setT(x)
+        console.log("Service Added")
+        setBill([...Bill, addedOption])
+        console.log(t)
+    }
+    console.log(Bill)
     return (
         <div className='template-outer'>
-            <img className='template-bgimg' src={props.bgimg} />
+            <img className='template-bgimg' src={bgimg} />
             <div className='template-inner'>
                 <div className='template-grid-1'>
                     {
-                        props.gridImages.map(element => <img src={element} />)
+                        gridImages.map(element => <img src={element} />)
                     }
                 </div>
                 <div className='template-content'>
                     <div className='template-content-left'>
                         {
-                            props.options.map((option, index) => {
+                            options.map((option, index) => {
                                 return <div className='template-content-left-option'>
                                     <div className='template-content-left-option-title'>
                                         {option.title}
@@ -54,6 +69,7 @@ export default function Template(props) {
                                                                 boxShadow=" 2px 2px 4px 1px rgba(0, 0, 0, 0.32)"
                                                                 borderRadius="0.5rem"
                                                                 color="#407BFF"
+                                                                onClick={(e) => {  handleAddService(opt.contentTitle); }}
                                                             >Add +</Button>
                                                         </div>
                                                     </div>
@@ -81,10 +97,11 @@ export default function Template(props) {
                                 _placeholder={{ color: "grey", fontSize: "100%", padding: '1%' }}
                                 borderColor="black"
                                 borderWidth="0.1rem" />
+
                             <Button color="white"
                                 backgroundColor="#2A7FFF"
                                 // padding="1%"
-                                width="fit-content">Apply</Button>
+                                width="fit-content"> <Link to="/People Services/Cart ">Apply</Link></Button>
                         </Stack>
                     </div>
                 </div >

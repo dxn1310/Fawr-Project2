@@ -1,0 +1,9 @@
+.landing-outer {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-inner {
+    margin-top: 7%;
+    margin-bottom: 3%;
+}

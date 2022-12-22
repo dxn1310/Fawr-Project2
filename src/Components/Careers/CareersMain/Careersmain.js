@@ -20,7 +20,7 @@ import { NavLink as Link } from 'react-router-dom'
 export default function Careersmain() {
     return (
         <div className='careersmain-outer'>
-            <div className='careersmain-top'>
+            {/* <div className='careersmain-top'>
                 <div className='careersmain-top-inner'>
                     <Stack direction='row' spacing={4} >
                         <Link to="/Careers Main/Log In">
@@ -35,7 +35,7 @@ export default function Careersmain() {
                         </Link>
                     </Stack>
                 </div>
-            </div>
+            </div> */}
             <div className='careersmain-inner1'>
                 <Stack direction='row' spacing={4} width="25%" marginTop="30%" marginLeft="10%">
                     <Button width="50%" borderRadius="0.5rem" fontSize="65%" height="fit-content" padding="3%" backgroundColor='#2B7FFF' color="white" borderWidth="0.1rem">

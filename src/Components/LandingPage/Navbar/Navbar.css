@@ -5,12 +5,12 @@
     flex-direction: column;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
 .navbar-top {
-    height: 4rem;
+    height: fit-content;
     width: 100%;
     background-color: rgba(14, 13, 13, 0.79);
     color: rgba(255, 255, 255, 1);
@@ -23,6 +23,10 @@
     display: flex;
     width: 70%;
     justify-content: space-between;
+    font-size: 3rem;
+    font-weight: 500;
+    align-items: center;
+    /* padding: 2%; */
 }
 
 .navbar-top-content-right {
@@ -37,17 +41,209 @@
 }
 
 .navbar-bottom {
-    height: 4rem;
     width: 100%;
     background-color: #DDEBFF;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: space-between;
+
+
 }
+
+.navbar-bottom:hover {
+    background-color: white;
+}
+
 
 .navbar-bottom-content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 65%;
+    width: 100%;
+}
+
+
+.navbar-btn-text {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.navbar-bottom-content-item {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-bottom-left {
+    width: 40%;
+    padding-left: 3%;
+}
+
+.navbar-bottom-left-text {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #2B7FFF;
+}
+
+.navbar-bottom-right {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media only screen and (max-width: 4000px) {
+    .navbar-top-content {
+        font-size: 3rem;
+    }
+
+
+    .navbar-btn-text {
+        font-size: 3rem;
+    }
+
+    .navbar-bottom-left-text {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 3500px) {
+    .navbar-top-content {
+        font-size: 2.75rem;
+    }
+
+    .navbar-bottom-left-text {
+        font-size: 2.75rem;
+    }
+
+    .navbar-btn-text {
+        font-size: 2.75rem;
+    }
+}
+
+@media only screen and (max-width: 3200px) {
+    .navbar-top-content {
+        font-size: 2.5rem;
+    }
+
+    .navbar-bottom-left-text {
+        font-size: 2.5rem;
+    }
+
+    .navbar-btn-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 2800px) {
+    .navbar-top-content {
+        font-size: 2.25rem;
+    }
+
+    .navbar-bottom-left-text {
+        font-size: 2.25rem;
+    }
+
+    .navbar-bottom {
+        font-size: 2.25rem;
+
+    }
+}
+
+@media only screen and (max-width: 2400px) {
+    .navbar-top-content {
+        font-size: 2rem;
+    }
+
+    .navbar-bottom-left-text {
+        font-size: 2rem;
+    }
+
+    .navbar-btn-text {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 2200px) {
+    .navbar-top-content {
+        font-size: 1.75rem;
+    }
+
+    .navbar-bottom-left-text {
+        font-size: 1.75rem;
+    }
+
+    .navbar-btn-text {
+        font-size: 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    .navbar-top-content {
+        font-size: 1.5rem;
+    }
+
+    .navbar-bottom-left-text {
+        font-size: 1.5rem;
+    }
+
+    .navbar-btn-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .navbar-top-content {
+        font-size: 1.25rem;
+    }
+
+    .navbar-bottom-left-text {
+        font-size: 1.25rem;
+    }
+
+    .navbar-btn-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .navbar-top-content {
+        font-size: 1.25rem;
+    }
+
+    .navbar-bottom-left-text {
+        font-size: 1.25rem;
+    }
+
+    .navbar-btn-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar-top-content {
+        font-size: 1rem;
+    }
+
+    .navbar-bottom-left-text {
+        font-size: 1rem;
+    }
+
+    .navbar-btn-text {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar-top-content {
+        font-size: 0.75rem;
+    }
+
+    .navbar-bottom-left-text {
+        font-size: 0.75rem;
+    }
+
+    .navbar-btn-text {
+        font-size: 0.75rem;
+    }
 }

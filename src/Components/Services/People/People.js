@@ -68,7 +68,7 @@ export default function People({ option, setOption }) {
         },
         {
             gridImg: People_img7,
-            // gridLink: "/People Services/Cleaning & Pest Control",
+            gridLink: "/People Services/Electronics and Carpenter Service",
             gridTitle: "Electronics & Carpenter Service",
             gridContent: "Customised Plan & qoute for all your needs : Painting, Waterproffing, Repair etc."
         },
@@ -82,11 +82,11 @@ export default function People({ option, setOption }) {
 
     return (
         <div className='people-outer'>
-            <div className='people-top'>
+            {/* <div className='people-top'>
                 <Link to="/People Services/Work As Expert">
                     <Text fontSize="100%" color="#2B7FFF">Register As Professional</Text>
                 </Link>
-            </div>
+            </div> */}
 
             <div>
                 <Servicestemplate1 underlinedTitle={"People Services"}

@@ -9,7 +9,9 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 25rem;
+    height: fit-content;
+    padding: 1%;
+    padding-bottom: 5%;
 
 }
 
@@ -19,13 +21,13 @@
 }
 
 .footer-fawr-content {
-    font-size: 3.75rem;
+    font-size: 10rem;
     font-weight: 600;
     color: rgba(231, 169, 12, 1);
 }
 
 .footer-fawr {
-    padding-bottom: 15%;
+    padding-bottom: 5%;
     padding-right: 5%;
     display: flex;
     align-items: flex-end;
@@ -41,7 +43,7 @@
 }
 
 .footer-li {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 400;
     list-style: none;
     margin-top: 1%;
@@ -49,4 +51,47 @@
 
 .footer-ul {
     margin-top: 1%;
+}
+
+
+
+@media only screen and (max-width: 4000px) {
+    .footer-fawr-content {
+        font-size: 8rem;
+    }
+
+    .footer-li {
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 3000px) {
+    .footer-fawr-content {
+        font-size: 6rem;
+    }
+
+    .footer-li {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 2000px) {
+    .footer-fawr-content {
+        font-size: 4rem;
+    }
+
+    .footer-li {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .footer-fawr-content {
+        font-size: 3rem;
+    }
+
+    .footer-li {
+        font-size: 0.75rem;
+    }
 }

@@ -1,18 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 .about-outer {
-    height: 75vh;
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-weight: 500;
     color: black;
-    background-image: url("./AboutImages/About_img1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding-top: 3%;
+
+
+}
+
+.about-bgimg {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.about-x {
+    width: 100%;
+    position: relative;
+    margin-top: -33%;
+    display: flex;
+
+    flex-direction: column;
 }
 
 .about-top-outer {
@@ -25,13 +40,23 @@
 
 .about-top-content {
     color: rgba(43, 127, 255, 1);
+    font-size: 10rem;
+    font-weight: 500;
+}
+
+.about-img {
+    width: 10%;
 }
 
 .about-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+    /* justify-content: space-between; */
     align-items: center;
-    width: 30%;
+    font-size: 10rem;
+    font-weight: 500;
+    /* width: 0%; */
 }
 
 .about-bottom-outer {
@@ -44,7 +69,7 @@
 
 .about-bottom-content {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 4rem;
 }
 
 .about-bottom {
@@ -56,3 +81,177 @@
     width: 80%;
     margin-top: 1%;
 }
+
+.about-btn-text {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width: 4000px) {
+    .about-top {
+        font-size: 6rem;
+    }
+
+    .about-top-content {
+        font-size: 6rem;
+
+    }
+
+    .about-btn-text {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 3500px) {
+
+    .about-bottom-content {
+        font-size: 3.5rem;
+    }
+
+    .about-img {
+        width: 6%;
+    }
+}
+
+@media only screen and (max-width: 3200px) {
+
+    .about-bottom-content {
+        font-size: 3.25rem;
+    }
+}
+
+@media only screen and (max-width: 2900px) {
+
+    .about-bottom-content {
+        font-size: 2.75rem;
+    }
+}
+
+@media only screen and (max-width: 2700px) {
+    .about-top {
+        font-size: 4rem;
+    }
+
+    .about-top-content {
+        font-size: 4rem;
+
+    }
+
+    .about-bottom-content {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 2400px) {
+    .about-bottom-content {
+        font-size: 2rem;
+    }
+
+    .about-btn-text {
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 2200px) {
+
+    .about-top {
+        font-size: 3rem;
+    }
+
+    .about-top-content {
+        font-size: 3rem;
+
+    }
+}
+
+@media only screen and (max-width: 2000px) {}
+
+@media only screen and (max-width: 1800px) {
+    .about-bottom-content {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .about-bottom-content {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .about-top {
+        font-size: 2rem;
+    }
+
+    .about-top-content {
+        font-size: 2rem;
+
+    }
+
+    .about-bottom-content {
+        font-size: 1.25rem;
+    }
+
+    .about-btn-text {
+        font-size: 1.5rem;
+    }
+
+    .about-img {
+        width: 5%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .about-top {
+        font-size: 1.75rem;
+    }
+
+    .about-top-content {
+        font-size: 1.75rem;
+
+    }
+
+    .about-bottom-content {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-top {
+        font-size: 1.5rem;
+    }
+
+    .about-top-content {
+        font-size: 1.5rem;
+
+    }
+
+    .about-btn-text {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .about-top {
+        font-size: 1.25rem;
+    }
+
+    .about-top-content {
+        font-size: 1.25rem;
+
+    }
+
+    .about-bottom-content {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .about-bottom-content {
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {}

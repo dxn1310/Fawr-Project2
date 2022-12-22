@@ -11,8 +11,10 @@ export default function Ourservice({ onClose }) {
     return (
         <div className='ourservice-outer'>
             <Text fontSize="2rem" fontWeight="600">Our Services</Text>
+
+
             <div className='ourservice-row'>
-                <Stack direction="column" width="25%">
+                <Stack direction="column" textAlign="center" width="80%">
                     <Link to="/Digital Technology Transformation">
                         <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
                             Digital Technology Transformation
@@ -24,7 +26,7 @@ export default function Ourservice({ onClose }) {
                     <Text>Artifical Intelligence</Text>
                 </Stack>
 
-                <Stack direction="column" width="25%">
+                <Stack direction="column" textAlign="center" width="80%">
                     <Link to="/Compiances Solution">
                         <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
                             Compiances Solution
@@ -35,7 +37,7 @@ export default function Ourservice({ onClose }) {
                     <Text>Predictive control & risk score</Text>
                     <Text>Cost saving & high quality</Text>
                 </Stack>
-                <Stack direction="column" width="25%">
+                <Stack direction="column" textAlign="center" width="80%">
                     <Link to="/Asset Management">
                         <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
                             Asset Management
@@ -47,7 +49,7 @@ export default function Ourservice({ onClose }) {
                     <Text>Breakdown  request  & maintenance</Text>
                 </Stack>
 
-                <Stack direction="column" width="25%">
+                <Stack direction="column" textAlign="center" width="80%">
                     <Link to="/Corporate Fraud & Forensic Investigation">
                         <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
                             Corporate Fraud & Forensic Investigation
@@ -58,10 +60,10 @@ export default function Ourservice({ onClose }) {
                     <Text>Fraud Risk Management</Text>
                     <Text>Whistleblower Hotline</Text>
                 </Stack>
-            </div>
+                {/* </div>
 
-            <div className='ourservice-row'>
-                <Stack direction="column" width="20%">
+            <div className='ourservice-row'> */}
+                <Stack direction="column" textAlign="center" width="80%">
                     <Link to="/Tax Solution">
                         <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
                             Tax Solution
@@ -73,7 +75,7 @@ export default function Ourservice({ onClose }) {
                     <Text>Tax  Consultants</Text>
                 </Stack>
 
-                <Stack direction="column" width="20%">
+                <Stack direction="column" textAlign="center" width="80%">
                     <Link to="/Facility Management">
                         <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
                             Facility Management
@@ -83,7 +85,7 @@ export default function Ourservice({ onClose }) {
                     <Text>Product installation & servicing solution</Text>
                 </Stack>
 
-                <Stack direction="column" width="20%">
+                <Stack direction="column" textAlign="center" width="80%">
                     <Link to="/People Services">
                         <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
                             People Services
@@ -95,7 +97,7 @@ export default function Ourservice({ onClose }) {
                     <Text>Cleaning & Pest Control</Text>
                 </Stack>
 
-                <Stack direction="column" width="20%">
+                <Stack direction="column" textAlign="center" width="80%">
                     <Link to="/Anti - Counterfeiting Solution">
                         <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
                             Anti - Counterfeiting Solution
@@ -107,7 +109,7 @@ export default function Ourservice({ onClose }) {
                     <Text>Post Raid Activity</Text>
                 </Stack>
 
-                <Stack direction="column" width="20%">
+                <Stack direction="column" textAlign="center" width="80%">
                     <Link to="/Non - Technical Service">
                         <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
                             Non - Technical Service
@@ -118,10 +120,10 @@ export default function Ourservice({ onClose }) {
                     <Text>Aviation</Text>
                     <Text>Payroll</Text>
                 </Stack>
-            </div>
+                {/* </div>
 
-            <div className='ourservice-row1'>
-                <Stack direction="column" width="50%">
+            <div className='ourservice-row1'> */}
+                <Stack direction="column" textAlign="center" width="80%">
                     <Link to="/Background Check Service">
                         <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
                             Background Check Service
@@ -133,7 +135,7 @@ export default function Ourservice({ onClose }) {
                     <Text>Drug Test</Text>
                 </Stack>
 
-                <Stack direction="column" width="50%">
+                <Stack direction="column" textAlign="center" width="80%">
                     <Link to="/Private Security Guarding">
                         <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
                             Private Security Guarding

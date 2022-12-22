@@ -7,8 +7,8 @@ import {
     Popover,
     Portal,
     PopoverTrigger,
-    PopoverContent,
-    PopoverArrow, useDisclosure, Button, Box, Text, PopoverCloseButton
+    PopoverContent, Center,
+    PopoverArrow, useDisclosure, Button, Box, PopoverCloseButton
 } from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons'
 
@@ -33,47 +33,81 @@ export default function Navbar() {
                 </div>
             </div>
             <div className='navbar-bottom'>
-                <div className='navbar-bottom-content'>
-                    <Link to="/">
-                        <label><FiHome size={45} cursor="pointer" /></label>
+                <div className='navbar-bottom-left'>
+                    <Link to="/People Services/Work As Expert">
+                        <div className='navbar-bottom-left-text'>Register As Professional</div>
                     </Link>
+                   
+                </div>
+                <div className='navbar-bottom-right'>
+                    <div className='navbar-bottom-content'>
+                        <Link to="/">
+                            <div >
+                                <FiHome cursor="pointer" />
+                            </div>
 
-                    <Popover trigger="hover" closeOnBlur={false} openDelay="500ms" arrowSize="15" closeDelay="500ms" width="100%" backgroundColor="white">
-                        {({ isOpen, onClose }) => (
-                            <>
-                                <PopoverTrigger>
-                                    <Button value="2" backgroundColor='transparent' width='8.3125rem' fontWeight='400' height='2.1875rem' fontSize='1.875rem' _hover={{ bg: 'transparent' }}>
-                                        <Text fontSize="2rem" fontWeight="500">Our Service</Text>
-                                    </Button>
-                                </PopoverTrigger>
-                                <Portal width="100%">
-                                    <PopoverContent style={{ transition: '0.2s', width: "fit-content", height: 'fit-content' }}>
+                        </Link>
+                        <div className='navbar-bottom-content-item'>
+                            <Popover trigger="hover" closeOnBlur={false} openDelay="500ms" PopoverArrow="none" closeDelay="500ms" width="100%" backgroundColor="white">
+                                {({ isOpen, onClose }) => (
+                                    <>
+                                        <PopoverTrigger>
+                                            <Button value="2" backgroundColor='transparent' _hover={{ bg: 'transparent' }}>
+                                                <div className="navbar-btn-text" >Our Service</div >
+                                            </Button>
+                                        </PopoverTrigger>
 
-                                        <PopoverArrow />
-                                        <PopoverCloseButton size={20} padding="2%" />
-                                        <Box p="2rem" color='black' bg='white' width="100%">
-                                            {
-                                                <Ourservice onClose={onClose} />
-                                                // <Corporate_dropdown  />
-                                            }
-                                        </Box>
-                                    </PopoverContent>
-                                </Portal>
-                            </>
-                        )
-                        }
-                    </Popover >
-                    <Link to="Sustainability">
-                        <Button value="2" backgroundColor='transparent' width='8.3125rem' fontWeight='400' height='2.1875rem' fontSize='1.875rem' _hover={{ bg: 'transparent' }}>
-                            <Text fontSize="2rem" fontWeight="500">Sustainability</Text>
-                        </Button>
-                    </Link>
+                                        <Center>
+                                            <PopoverContent style={{ transition: '0.2s', width: "100%", height: 'fit-content', borderTopColor: "white", }}>
 
-                    <Link to="/Careers Main">
-                        <Button value="2" backgroundColor='transparent' width='8.3125rem' fontWeight='400' height='2.1875rem' fontSize='1.875rem' _hover={{ bg: 'transparent' }}>
-                            <Text fontSize="2rem" fontWeight="500">Careers</Text>
-                        </Button>
-                    </Link>
+
+                                                <PopoverCloseButton padding="5%" />
+                                                <Box p="2rem" color='black' bg='white' width="100%">
+                                                    {
+                                                        <Ourservice onClose={onClose} />
+
+                                                    }
+                                                </Box>
+                                            </PopoverContent>
+                                        </Center>
+
+                                    </>
+                                )
+                                }
+                            </Popover >
+                        </div>
+                        <div className='navbar-bottom-content-item'>
+                            <Link to="Sustainability">
+                                <Button value="2" backgroundColor='transparent' _hover={{ bg: 'transparent' }}>
+                                    <div className="navbar-btn-text" >Sustainability</div>
+                                </Button>
+                            </Link>
+                        </div>
+
+                        <div className='navbar-bottom-content-item'>
+                            <Link to="/Careers Main">
+                                <Button value="2" backgroundColor='transparent' _hover={{ bg: 'transparent' }}>
+                                    <div className="navbar-btn-text" >Careers</div>
+                                </Button>
+                            </Link>
+                        </div>
+
+                        <div className='navbar-bottom-content-item'>
+                            <Link to="/Careers Main/Log In">
+                                <Button  borderColor='#2B7FFF' color="#2B7FFF" borderWidth="0.1rem">
+                                    Log-In
+                                </Button>
+                            </Link>
+                        </div>
+
+                        <div className='navbar-bottom-content-item'>
+                            <Link to="/Careers Main/Sign Up">
+                                <Button  backgroundColor='#2B7FFF' color="white">
+                                    Sign-Up
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
