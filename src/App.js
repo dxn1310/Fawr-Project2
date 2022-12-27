@@ -52,6 +52,17 @@ import ECselection from './Components/Services/People/PeopleServices/ElectricCar
 //   }
 // }
 
+import Status from './Components/Services/People/PeopleServices/Booking/Status/Status';
+import Address from './Components/Services/People/PeopleServices/Booking/Address/Address';
+import Slot from './Components/Services/People/PeopleServices/Booking/Slot/Slot';
+import Payment from './Components/Services/People/PeopleServices/Booking/Payment/Payment';
+import Thank from './Components/Services/People/PeopleServices/Booking/Thank/Thank';
+import Otp from './Components/Services/People/PeopleServices/Booking/OTP/Otp';
+// import Cart from './Components/Se/rvices/People/PeopleServices/Booking/Cart/Cart';
+
+
+import Textanimation from "./Components/ExtraFolder/TextAnimation/Textanimation.js"
+
 function App() {
   // window.scroll({
   //   top: 0,
@@ -66,20 +77,28 @@ function App() {
     [
       {
         title: "hello",
-        // rating: "2626",
-        // ratingPeople: "100",
-        // price: "69",
-        // points: ["bhj", "bhbhj"],
+        rating: "2626",
+        ratingPeople: "100",
+        price: "69",
+        points: ["bhj", "bhbhj"],
       },
-      {
-        title: "fjwefner",
-      }
+      // {
+      //   title: "fjwefner",
+      // }
     ]
   )
   return (
     <ChakraProvider>
-      <Navbar />
-      <Routes>
+      <Textanimation />
+      {/* <Navbar /> */}
+      {/* <Status /> */}
+      {/* <Address /> */}
+      {/* <Slot /> */}
+      {/* <Payment /> */}
+      {/* <Thank /> */}
+      {/* <Otp /> */}
+      {/* <Cart Bill={Bill} setBill={setBill} /> */}
+      {/* <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/" element={<Cart Bill={Bill} />} />
         <Route path="/Digital Technology Transformation" element={<Digital />} />
@@ -104,23 +123,31 @@ function App() {
         <Route path="/Careers Main/Log In" element={<Login />} />
         <Route path="/Careers Main/Log In/Admin Log In" element={<Adminlogin />} />
 
-        <Route path="/People Services/Cleaning & Pest Control" element={<Cleaning />} />
+        <Route path="/People Services/Cleaning & Pest Control" element={<Cleaning Bill={Bill} setBill={setBill} />} />
         <Route path="/People Services/Work As Expert" element={<Expert />} />
         <Route path="/People Services/Anti Disclaimer Policy" element={<Adisclamer />} />
-        <Route path="/People Services/Interior Designing" element={<Interior />} />
-        <Route path="/People Services/Painting" element={<Painting />} />
+        <Route path="/People Services/Interior Designing" element={<Interior Bill={Bill} setBill={setBill} />} />
+        <Route path="/People Services/Painting" element={<Painting Bill={Bill} setBill={setBill} />} />
         <Route path="/People Services/Electronic Appliances Repair" element={<Electronic Bill={Bill} setBill={setBill} />} />
         <Route path="/People Services/Home Salon" element={<Homesalon />} />
-        <Route path="/People Services/Home Salon/Male" element={<Male />} />
+        <Route path="/People Services/Home Salon/Male" element={<Male Bill={Bill} setBill={setBill} />} />
         <Route path="/People Services/Home Salon/Female" element={<Female Bill={Bill} setBill={setBill} />} />
-        {/* <Route path="/People Services/Bill" element={<Bill/>} /> */}
-        <Route path="/People Services/Cart" element={<Cart Bill={Bill} />} />
+        <Route path="/People Services/Bill" element={<Bill />} />
+
         <Route path="/People Services/Electronics and Carpenter Service/Carpenter" element={<Carpenter />} />
         <Route path="/People Services/Electronics and Carpenter Service/Electronic" element={<Electirc />} />
         <Route path="/People Services/Electronics and Carpenter Service" element={<ECselection />} />
 
+
+        <Route path="/People Services/Booking/OTP" element={<Otp />} />
+        <Route path="/People Services/Booking/Address" element={<Address />} />
+        <Route path="/People Services/Booking/Cart" element={<Cart Bill={Bill} />} />
+        <Route path="/People Services/Booking/Book Slot" element={<Slot />} />
+        <Route path="/People Services/Booking/Payment" element={<Payment />} />
+        <Route path="/People Services/Booking/Order Placed" element={<Thank />} />
+
       </Routes>
-      <Footer /> 
+      <Footer /> */}
     </ChakraProvider>
   );
 }

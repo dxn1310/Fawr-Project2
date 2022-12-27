@@ -7,18 +7,34 @@ import {
 import { NavLink as Link } from 'react-router-dom'
 
 export default function Template({ gridImages, bgimg, options, Bill, setBill }) {
-    // const electronicOptions = options;
-    const [t, setT] = useState()
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+
+    const [optionTitle, setOptionTitle] = useState()
+    const [optionRate, setOptionRate] = useState()
+    const [optionRatePeople, setOptionRatePeople] = useState()
+    const [optionPrice, setOptionPrice] = useState()
+    // const [optionTitle, setOptionTitle] = useState()
     const addedOption =
     {
-        title: t,
+        title: optionTitle,
+        rating: optionRate,
+        ratingPeople: optionRatePeople,
+        price: optionPrice
+        // rate : 
     }
 
-    const handleAddService = (x) => {
-        setT(x)
+    const handleAddService = (a, b, c, d) => {
+        setOptionTitle(a)
+        setOptionRate(b)
+        setOptionRatePeople(c)
+        setOptionPrice(d)
         console.log("Service Added")
         setBill([...Bill, addedOption])
-        console.log(t)
+        // console.log(t)
     }
     console.log(Bill)
     return (
@@ -69,7 +85,7 @@ export default function Template({ gridImages, bgimg, options, Bill, setBill }) 
                                                                 boxShadow=" 2px 2px 4px 1px rgba(0, 0, 0, 0.32)"
                                                                 borderRadius="0.5rem"
                                                                 color="#407BFF"
-                                                                onClick={(e) => {  handleAddService(opt.contentTitle); }}
+                                                                onClick={(e) => { handleAddService(opt.contentTitle, opt.contentRating, opt.contentRatingPeople, opt.contentPrice); }}
                                                             >Add +</Button>
                                                         </div>
                                                     </div>
@@ -100,8 +116,7 @@ export default function Template({ gridImages, bgimg, options, Bill, setBill }) 
 
                             <Button color="white"
                                 backgroundColor="#2A7FFF"
-                                // padding="1%"
-                                width="fit-content"> <Link to="/People Services/Cart ">Apply</Link></Button>
+                                width="fit-content"> <Link to="/People Services/Booking/OTP">Apply</Link></Button>
                         </Stack>
                     </div>
                 </div >

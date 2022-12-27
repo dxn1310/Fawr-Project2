@@ -9,6 +9,11 @@ import {
 import { NavLink as Link } from 'react-router-dom'
 
 export default function Homesalon() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='homesalon-outer'>
             <div className='homesalon-inner'>

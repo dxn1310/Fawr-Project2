@@ -9,7 +9,7 @@ import Male_img5 from "./MaleImages/Male_img5.png"
 import Male_img6 from "./MaleImages/Male_img6.png"
 // import Male_img7 from "./MaleImages/Male_img7.png"
 
-export default function Male() {
+export default function Male({ Bill, setBill }) {
     const gridImages = [Male_img2, Male_img3, Male_img4, Male_img5, Male_img6]
     const options = [
         {
@@ -212,7 +212,7 @@ export default function Male() {
     ]
     return (
         <div>
-            <Template bgimg={Male_img1} gridImages={gridImages} options={options} />
+            <Template bgimg={Male_img1} gridImages={gridImages} options={options} Bill={Bill} setBill={setBill} />
         </div>
     )
 }

@@ -1,0 +1,136 @@
+.cart-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 5%;
+}
+
+.cart-inner-left {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+
+.cart-inner-right {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+
+.cart-grid-right-elements-left {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.cart-grid-right-elements-right {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.cart-grid-right-elements {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-inner-left-title {
+    font-size: 3rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: left;
+    width: 80%;
+}
+
+.cart-inner-middle {
+
+    /* height: ; */
+    background-color: black;
+    width: 0.01rem;
+}
+
+.cart-inner-left-option {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.cart-inner-left-option-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cart-option-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.cart-option-left-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cart-option-rate {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.cart-option-rate-people {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #838383;
+}
+
+.cart-option-price {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.cart-option-ul {
+    margin-left: 8%;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.cart-option-li {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.cart-option-right-price {
+    font-size: 1.75rem;
+    font-weight: 500;
+    /* color: rgba(0, 0, 0, 0.6); */
+}
+
+.cart-option-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.cart-option-btn-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+.cart-btn-text {
+    font-size: 1.25rem;
+    font-weight: 400;
+}

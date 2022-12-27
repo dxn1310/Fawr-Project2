@@ -1,0 +1,52 @@
+.slot-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: fit-content; */
+
+}
+
+.slot-inner {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+}
+
+.slot-grid-day {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.slot-grid-time {
+    display: grid;
+    width: 80%;
+    margin-top: 2%;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 6%;
+    /* height: fit-content; */
+    margin-bottom: 8%;
+}
+
+.slot-grid-time-element {
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.slot-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7%;
+}

@@ -9,8 +9,11 @@ export default function Servicestemplate1({ title, img1, img2, img3, img4, under
 
     const [to, setTo] = useState("none");
 
-    // const [option, setOption] = useState(0);
-    // console.log(option);
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='servicestemplate1-outer'>
             <div className='servicestemplate1-heading'>

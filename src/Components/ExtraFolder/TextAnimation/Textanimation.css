@@ -1,0 +1,14 @@
+.textanimation-outer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5%;
+    font-size: 5rem;
+    /* font-weight: 500; */
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: #BC312E;
+
+}

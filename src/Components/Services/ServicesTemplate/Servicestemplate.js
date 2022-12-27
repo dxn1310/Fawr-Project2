@@ -4,6 +4,13 @@ import Reachus from '../ReachUs/Reachus';
 
 export default function Servicestemplate(props) {
     const services = props.gridData;
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+
     return (
         <div className='servicestemplate-outer'>
             <div className='servicestemplate-heading'>
@@ -14,7 +21,7 @@ export default function Servicestemplate(props) {
                     </div>
                 </div>
                 <div className='servicestemplate-heading-right'>
-                    <img src={props.img1} />
+                    <img className="servicetemplate-bgimg" src={props.img1} />
                 </div>
             </div>
 
@@ -58,10 +65,6 @@ export default function Servicestemplate(props) {
 
 
                             }
-
-
-
-
                         </div>
                     </div>
                 </div>

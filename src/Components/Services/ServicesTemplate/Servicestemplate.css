@@ -3,15 +3,22 @@
 .servicestemplate-outer {
     display: flex;
     flex-direction: column;
-    font-size: 3rem;
+    font-size: 2.75rem;
     color: black;
     font-weight: 500;
     font-family: 'Poppins';
-    /* box-sizing: content-box; */
 }
 
 .servicestemplate-heading {
     display: flex;
+    height: fit-content;
+    width: 100%;
+    /* padding-top: 1%; */
+}
+
+.servicetemplate-bgimg {
+    width: 80%;
+    /* height: 100%; */
 }
 
 .servicestemplate-heading-left {
@@ -20,8 +27,15 @@
     align-items: flex-end;
 }
 
+.servicestemplate-heading-right {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
 .servicestemplate-heading-left-content {
-    height: 50%;
+    height: 40%;
+    /* padding: 1%; */
     width: 100%;
     color: white;
     background-color: #2B7FFF;
@@ -50,7 +64,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 4em;
+    /* margin-bottom: 4em; */
 }
 
 
@@ -59,17 +73,18 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 4em;
+    margin-top: 5%;
 }
 
 .servicestemplate-body-data {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 400;
     margin-top: 2%;
 }
 
 .servicestemplate-body-title {
     margin-top: 5%;
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -79,6 +94,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    height: fit-content;
+    margin-bottom: 10%;
+}
+
+.servicestemplate-grid-item :hover {
+    transform: scale(1.01);
+    transition: 5ms;
+    position: relative;
 }
 
 .servicestemplate-grid {
@@ -87,6 +110,8 @@
     grid-template-columns: 50% 50%;
     margin-top: 3%;
     row-gap: 5%;
+    /* overflow:hidden; */
+    height: fit-content;
 }
 
 .servicestemplate-grid-item {
@@ -114,7 +139,7 @@
 
 .servicestemplate-grid-item-content-text1 {
     height: 20%;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 500;
     display: flex;
     align-items: center;
