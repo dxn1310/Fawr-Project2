@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.x-outer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.x-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.x-inner-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(14, 13, 13, 0.79);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.x-inner-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.x-inner-bottom {
+    background-color: #DDEBFF;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.x-inner-bottom:hover {
+    background-color: white;
+    transition: 2ms;
+}
+
+.x-inner-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.x-inner-bottom-content-left {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.x-inner-bottom-content-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #E7A90C;
+    cursor: pointer;
+}
+
+.x-inner-bottom-content-right {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.x-inner-bottom-content-right-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+
+.x-drawer-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #E7A90C;
+    cursor: pointer;
+}
+
+.x-drawer-items {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1%;
+    font-size: 1.5rem;
+    font-weight: 400;
+}

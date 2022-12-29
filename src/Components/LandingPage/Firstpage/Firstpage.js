@@ -21,10 +21,14 @@ export default function Firstpage() {
                     </div>
                     <div>
                         <Button backgroundColor="rgba(43, 127, 255, 1)"
-                            borderRadius="1.25rem" color="white"
+                            borderRadius="0.5rem" color="white"
                             fontWeight="400"
-                            padding="5%"
-                            width="35%">
+                            padding="1%"
+                            // paddingTop="1%"
+                            height="fit-content"
+                            // paddingBottom="1%"
+                        // width="25%">
+                        >
                             <div className='firstpage-btn-text'>
                                 Get Started
                             </div>

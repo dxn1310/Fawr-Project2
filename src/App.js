@@ -62,6 +62,9 @@ import Otp from './Components/Services/People/PeopleServices/Booking/OTP/Otp';
 
 
 import Textanimation from "./Components/ExtraFolder/TextAnimation/Textanimation.js"
+import Ourservices from './Components/ExtraFolder/Ourservies/Ourservices';
+import Newfooter from './Components/LandingPage/Footer/NewFooter/Newfooter';
+import Newnavbar from './Components/LandingPage/Navbar/NewNavbar/Newnavbar';
 
 function App() {
   // window.scroll({
@@ -89,8 +92,10 @@ function App() {
   )
   return (
     <ChakraProvider>
-      <Textanimation />
+      {/* <Textanimation />
+      <Ourservices /> */}
       {/* <Navbar /> */}
+      <Newnavbar />
       {/* <Status /> */}
       {/* <Address /> */}
       {/* <Slot /> */}
@@ -98,7 +103,7 @@ function App() {
       {/* <Thank /> */}
       {/* <Otp /> */}
       {/* <Cart Bill={Bill} setBill={setBill} /> */}
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/" element={<Cart Bill={Bill} />} />
         <Route path="/Digital Technology Transformation" element={<Digital />} />
@@ -147,7 +152,8 @@ function App() {
         <Route path="/People Services/Booking/Order Placed" element={<Thank />} />
 
       </Routes>
-      <Footer /> */}
+      <Newfooter />
+      {/* <Footer /> */}
     </ChakraProvider>
   );
 }

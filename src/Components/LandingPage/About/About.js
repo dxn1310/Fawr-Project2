@@ -24,11 +24,10 @@ export default function About() {
                         </label>
 
                         <Button backgroundColor="#407BFF"
-                            borderRadius="1rem"
+                            borderRadius="0.5rem"
                             color="white"
-                            width="20%"
-                            marginTop="1%"
-                            padding="2%">
+                            height="fit-content"
+                            marginTop="1%">
                             <div className='about-btn-text'>
                                 Read More
                             </div>

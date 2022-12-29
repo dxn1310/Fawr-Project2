@@ -15,7 +15,7 @@ export default function Search() {
                         </div>
                         <InputGroup width="75%"
                             boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px;"
-                            borderRadius="1rem"
+                            borderRadius="0.5rem"
                             padding="1%"
                             display="flex"
                             justifyContent="center"
@@ -34,9 +34,10 @@ export default function Search() {
                                 />
 
                                 <Button backgroundColor="#407BFF"
-                                    borderRadius="1rem"
+                                    borderRadius="0.5rem"
                                     color="white"
                                     // padding="2%"
+                                    // height="fit-content"
                                     paddingLeft="5%"
                                     paddingRight="5%"
                                     paddingTop="2%"

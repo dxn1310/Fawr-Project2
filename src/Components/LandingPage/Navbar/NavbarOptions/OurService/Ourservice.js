@@ -2,7 +2,7 @@ import React from 'react'
 import "./Ourservice.css"
 
 import {
-    Stack, Text
+    Stack,
 } from '@chakra-ui/react';
 
 import { NavLink as Link } from 'react-router-dom';
@@ -10,143 +10,172 @@ import { NavLink as Link } from 'react-router-dom';
 export default function Ourservice({ onClose }) {
     return (
         <div className='ourservice-outer'>
-            <Text fontSize="2rem" fontWeight="600">Our Services</Text>
+            <div className="ourservice-title">Our Services</div>
+
+            <Stack direction="column" spacing={5}>
+                <div className='ourservice-row'>
+                    <Stack direction="column" width="100%">
+                        <Link to="/Digital Technology Transformation">
+                            <div className="ourservice-grid-title" onClick={onClose}>
+                                Digital Technology Transformation
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Cyber Security</div>
+                        <div className='ourservices-grid-content'>Cloud Storage Solutions</div>
+                        <div className='ourservices-grid-content'>Content Management</div>
+                        <div className='ourservices-grid-content'>Artifical Intelligence</div>
+                    </Stack>
+
+                    <Stack direction="column" width="100%">
+                        <Link to="/Compiances Solution">
+                            <div className="ourservice-grid-title" onClick={onClose}>
+                                Compiances Solution
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Legal Centre of excellence</div>
+                        <div className='ourservices-grid-content'>Evidence tracking & real-time updation.</div>
+                        <div className='ourservices-grid-content'>Predictive control & risk score</div>
+                        <div className='ourservices-grid-content'>Cost saving & high quality</div>
+                    </Stack>
+
+                    <Stack direction="column" width="100%">
+                        <Link to="/Compiances Solution">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Compiances Solution
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Legal Centre of excellence</div>
+                        <div className='ourservices-grid-content'>Evidence tracking & real-time updation.</div>
+                        <div className='ourservices-grid-content'>Predictive control & risk score</div>
+                        <div className='ourservices-grid-content'>Cost saving & high quality</div>
+                    </Stack>
+
+                    <Stack direction="column" width="100%">
+                        <Link to="/Asset Management">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Asset Management
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Real- Time Incident Tracking</div>
+                        <div className='ourservices-grid-content'>Peformance Audits</div>
+                        <div className='ourservices-grid-content'>Regular AMC</div>
+                        <div className='ourservices-grid-content'>Breakdown  request  & maintenance</div>
+                    </Stack>
+
+                    <Stack direction="column" width="100%">
+                        <Link to="/Corporate Fraud & Forensic Investigation">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Corporate Fraud & Forensic Investigation
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Forensic Diagnostic</div>
+                        <div className='ourservices-grid-content'>Market Intelligence</div>
+                        <div className='ourservices-grid-content'>Fraud Risk Management</div>
+                        <div className='ourservices-grid-content'>Whistleblower Hotline</div>
+                    </Stack>
+
+                    <Stack direction="column" width="100%">
+                        <Link to="/Tax Solution">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Tax Solution
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Tax Policy & controversy</div>
+                        <div className='ourservices-grid-content'>Clear Finace Cloud</div>
+                        <div className='ourservices-grid-content'>ITR Filling</div>
+                        <div className='ourservices-grid-content'>Tax  Consultants</div>
+                    </Stack>
+                </div>
 
 
-            <div className='ourservice-row'>
-                <Stack direction="column" textAlign="center" width="80%">
-                    <Link to="/Digital Technology Transformation">
-                        <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
-                            Digital Technology Transformation
-                        </Text>
-                    </Link>
-                    <Text>Cyber Security</Text>
-                    <Text>Cloud Storage Solutions</Text>
-                    <Text>Content Management</Text>
-                    <Text>Artifical Intelligence</Text>
-                </Stack>
+                <div className='ourservice-row'>
+                    <Stack direction="column" width="100%">
+                        <Link to="/Tax Solution">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Tax Solution
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Tax Policy & controversy</div>
+                        <div className='ourservices-grid-content'>Clear Finace Cloud</div>
+                        <div className='ourservices-grid-content'>ITR Filling</div>
+                        <div className='ourservices-grid-content'>Tax  Consultants</div>
+                    </Stack>
 
-                <Stack direction="column" textAlign="center" width="80%">
-                    <Link to="/Compiances Solution">
-                        <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
-                            Compiances Solution
-                        </Text>
-                    </Link>
-                    <Text>Legal Centre of excellence</Text>
-                    <Text>Evidence tracking & real-time updation.</Text>
-                    <Text>Predictive control & risk score</Text>
-                    <Text>Cost saving & high quality</Text>
-                </Stack>
-                <Stack direction="column" textAlign="center" width="80%">
-                    <Link to="/Asset Management">
-                        <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
-                            Asset Management
-                        </Text>
-                    </Link>
-                    <Text>Real- Time Incident Tracking</Text>
-                    <Text>Peformance Audits</Text>
-                    <Text>Regular AMC</Text>
-                    <Text>Breakdown  request  & maintenance</Text>
-                </Stack>
+                    <Stack direction="column" width="100%">
+                        <Link to="/Facility Management">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Facility Management
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Integrated facility Management</div>
+                        <div className='ourservices-grid-content'>Product installation & servicing solution</div>
+                    </Stack>
 
-                <Stack direction="column" textAlign="center" width="80%">
-                    <Link to="/Corporate Fraud & Forensic Investigation">
-                        <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
-                            Corporate Fraud & Forensic Investigation
-                        </Text>
-                    </Link>
-                    <Text>Forensic Diagnostic</Text>
-                    <Text>Market Intelligence</Text>
-                    <Text>Fraud Risk Management</Text>
-                    <Text>Whistleblower Hotline</Text>
-                </Stack>
-                {/* </div>
+                    <Stack direction="column" width="100%">
+                        <Link to="/People Services">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                People Services
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Home salon</div>
+                        <div className='ourservices-grid-content'>Interior Designing</div>
+                        <div className='ourservices-grid-content'>Electronic appliance Repair</div>
+                        <div className='ourservices-grid-content'>Cleaning & Pest Control</div>
+                    </Stack>
 
-            <div className='ourservice-row'> */}
-                <Stack direction="column" textAlign="center" width="80%">
-                    <Link to="/Tax Solution">
-                        <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
-                            Tax Solution
-                        </Text>
-                    </Link>
-                    <Text>Tax Policy & controversy</Text>
-                    <Text>Clear Finace Cloud</Text>
-                    <Text>ITR Filling</Text>
-                    <Text>Tax  Consultants</Text>
-                </Stack>
+                    <Stack direction="column" width="100%">
+                        <Link to="/Anti - Counterfeiting Solution">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Anti - Counterfeiting Solution
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Litigation Support </div>
+                        <div className='ourservices-grid-content'>Tactical Publicity campaigns</div>
+                        <div className='ourservices-grid-content'>Jurisdictional Raid Action</div>
+                        <div className='ourservices-grid-content'>Post Raid Activity</div>
+                    </Stack>
 
-                <Stack direction="column" textAlign="center" width="80%">
-                    <Link to="/Facility Management">
-                        <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
-                            Facility Management
-                        </Text>
-                    </Link>
-                    <Text>Integrated facility Management</Text>
-                    <Text>Product installation & servicing solution</Text>
-                </Stack>
+                    <Stack direction="column" width="100%">
+                        <Link to="/Non - Technical Service">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Non - Technical Service
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Health Care </div>
+                        <div className='ourservices-grid-content'>Food Service</div>
+                        <div className='ourservices-grid-content'>Aviation</div>
+                        <div className='ourservices-grid-content'>Payroll</div>
+                    </Stack>
 
-                <Stack direction="column" textAlign="center" width="80%">
-                    <Link to="/People Services">
-                        <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
-                            People Services
-                        </Text>
-                    </Link>
-                    <Text>Home salon</Text>
-                    <Text>Interior Designing</Text>
-                    <Text>Electronic appliance Repair</Text>
-                    <Text>Cleaning & Pest Control</Text>
-                </Stack>
-
-                <Stack direction="column" textAlign="center" width="80%">
-                    <Link to="/Anti - Counterfeiting Solution">
-                        <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
-                            Anti - Counterfeiting Solution
-                        </Text>
-                    </Link>
-                    <Text>Litigation Support </Text>
-                    <Text>Tactical Publicity campaigns</Text>
-                    <Text>Jurisdictional Raid Action</Text>
-                    <Text>Post Raid Activity</Text>
-                </Stack>
-
-                <Stack direction="column" textAlign="center" width="80%">
-                    <Link to="/Non - Technical Service">
-                        <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
-                            Non - Technical Service
-                        </Text>
-                    </Link>
-                    <Text>Health Care </Text>
-                    <Text>Food Service</Text>
-                    <Text>Aviation</Text>
-                    <Text>Payroll</Text>
-                </Stack>
-                {/* </div>
-
-            <div className='ourservice-row1'> */}
-                <Stack direction="column" textAlign="center" width="80%">
-                    <Link to="/Background Check Service">
-                        <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
-                            Background Check Service
-                        </Text>
-                    </Link>
-                    <Text>Data-Base Verification</Text>
-                    <Text>Criminal Record Verification</Text>
-                    <Text>Education Certificate Verificaton</Text>
-                    <Text>Drug Test</Text>
-                </Stack>
-
-                <Stack direction="column" textAlign="center" width="80%">
-                    <Link to="/Private Security Guarding">
-                        <Text fontSize="1rem" fontWeight="500" color="rgba(43, 127, 255, 1)" onClick={onClose}>
-                            Private Security Guarding
-                        </Text>
-                    </Link>
-                    <Text>Security Risk Analysis</Text>
-                    <Text>Beat Patrols / Quicks Reaction Team</Text>
-                    <Text>Security for event management</Text>
-                    <Text>Regular Security Advisories</Text>
-                </Stack>
-            </div>
+                    <Stack direction="column" width="100%">
+                        <Link to="/Background Check Service">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Background Check Service
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Data-Base Verification</div>
+                        <div className='ourservices-grid-content'>Criminal Record Verification</div>
+                        <div className='ourservices-grid-content'>Education Certificate Verificaton</div>
+                        <div className='ourservices-grid-content'>Drug Test</div>
+                    </Stack>
+                </div>
+                <div>
+                <Stack direction="column" width="100%">
+                        <Link to="/Private Security Guarding">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Private Security Guarding
+                            </div>
+                        </Link>
+                        <div className='ourservices-grid-content'>Security Risk Analysis</div>
+                        <div className='ourservices-grid-content'>Beat Patrols / Quicks Reaction Team</div>
+                        <div className='ourservices-grid-content'>Security for event management</div>
+                        <div className='ourservices-grid-content'>Regular Security Advisories</div>
+                    </Stack>
+                </div>
+            </Stack>
+            {/* <div className='ourservice-row'
+                
+    </div>*/}
         </div>
     )
 }
