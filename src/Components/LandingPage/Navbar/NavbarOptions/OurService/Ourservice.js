@@ -20,35 +20,28 @@ export default function Ourservice({ onClose }) {
                                 Digital Technology Transformation
                             </div>
                         </Link>
-                        <div className='ourservices-grid-content'>Cyber Security</div>
-                        <div className='ourservices-grid-content'>Cloud Storage Solutions</div>
-                        <div className='ourservices-grid-content'>Content Management</div>
-                        <div className='ourservices-grid-content'>Artifical Intelligence</div>
+                        <div style={{ paddingLeft: "10%" }}>
+                            <div className='ourservices-grid-content'>Cyber Security</div>
+                            <div className='ourservices-grid-content'>Cloud Storage Solutions</div>
+                            <div className='ourservices-grid-content'>Content Management</div>
+                            <div className='ourservices-grid-content'>Artifical Intelligence</div>
+                        </div>
                     </Stack>
 
                     <Stack direction="column" width="100%">
                         <Link to="/Compiances Solution">
                             <div className="ourservice-grid-title" onClick={onClose}>
-                                Compiances Solution
+                                Compliances Solution
                             </div>
                         </Link>
-                        <div className='ourservices-grid-content'>Legal Centre of excellence</div>
-                        <div className='ourservices-grid-content'>Evidence tracking & real-time updation.</div>
-                        <div className='ourservices-grid-content'>Predictive control & risk score</div>
-                        <div className='ourservices-grid-content'>Cost saving & high quality</div>
+                        <div style={{ paddingLeft: "10%" }}>
+                            <div className='ourservices-grid-content'>Legal Centre of excellence</div>
+                            <div className='ourservices-grid-content'>Evidence tracking & real-time updation.</div>
+                            <div className='ourservices-grid-content'>Predictive control & risk score</div>
+                            <div className='ourservices-grid-content'>Cost saving & high quality</div>
+                        </div>
                     </Stack>
 
-                    <Stack direction="column" width="100%">
-                        <Link to="/Compiances Solution">
-                            <div className='ourservice-grid-title' onClick={onClose}>
-                                Compiances Solution
-                            </div>
-                        </Link>
-                        <div className='ourservices-grid-content'>Legal Centre of excellence</div>
-                        <div className='ourservices-grid-content'>Evidence tracking & real-time updation.</div>
-                        <div className='ourservices-grid-content'>Predictive control & risk score</div>
-                        <div className='ourservices-grid-content'>Cost saving & high quality</div>
-                    </Stack>
 
                     <Stack direction="column" width="100%">
                         <Link to="/Asset Management">
@@ -56,10 +49,12 @@ export default function Ourservice({ onClose }) {
                                 Asset Management
                             </div>
                         </Link>
-                        <div className='ourservices-grid-content'>Real- Time Incident Tracking</div>
-                        <div className='ourservices-grid-content'>Peformance Audits</div>
-                        <div className='ourservices-grid-content'>Regular AMC</div>
-                        <div className='ourservices-grid-content'>Breakdown  request  & maintenance</div>
+                        <div style={{ paddingLeft: "10%" }}>
+                            <div className='ourservices-grid-content'>Real- Time Incident Tracking</div>
+                            <div className='ourservices-grid-content'>Peformance Audits</div>
+                            <div className='ourservices-grid-content'>Regular AMC</div>
+                            <div className='ourservices-grid-content'>Breakdown  request  & maintenance</div>
+                        </div>
                     </Stack>
 
                     <Stack direction="column" width="100%">
@@ -68,13 +63,16 @@ export default function Ourservice({ onClose }) {
                                 Corporate Fraud & Forensic Investigation
                             </div>
                         </Link>
-                        <div className='ourservices-grid-content'>Forensic Diagnostic</div>
-                        <div className='ourservices-grid-content'>Market Intelligence</div>
-                        <div className='ourservices-grid-content'>Fraud Risk Management</div>
-                        <div className='ourservices-grid-content'>Whistleblower Hotline</div>
+                        <div style={{ paddingLeft: "10%" }}>
+                            <div className='ourservices-grid-content'>Forensic Diagnostic</div>
+                            <div className='ourservices-grid-content'>Market Intelligence</div>
+                            <div className='ourservices-grid-content'>Fraud Risk Management</div>
+                            <div className='ourservices-grid-content'>Whistleblower Hotline</div>
+                        </div>
                     </Stack>
 
-                    <Stack direction="column" width="100%">
+
+                    {/* <Stack direction="column" width="100%">
                         <Link to="/Tax Solution">
                             <div className='ourservice-grid-title' onClick={onClose}>
                                 Tax Solution
@@ -84,22 +82,11 @@ export default function Ourservice({ onClose }) {
                         <div className='ourservices-grid-content'>Clear Finace Cloud</div>
                         <div className='ourservices-grid-content'>ITR Filling</div>
                         <div className='ourservices-grid-content'>Tax  Consultants</div>
-                    </Stack>
+                    </Stack> */}
                 </div>
 
 
                 <div className='ourservice-row'>
-                    <Stack direction="column" width="100%">
-                        <Link to="/Tax Solution">
-                            <div className='ourservice-grid-title' onClick={onClose}>
-                                Tax Solution
-                            </div>
-                        </Link>
-                        <div className='ourservices-grid-content'>Tax Policy & controversy</div>
-                        <div className='ourservices-grid-content'>Clear Finace Cloud</div>
-                        <div className='ourservices-grid-content'>ITR Filling</div>
-                        <div className='ourservices-grid-content'>Tax  Consultants</div>
-                    </Stack>
 
                     <Stack direction="column" width="100%">
                         <Link to="/Facility Management">
@@ -107,9 +94,12 @@ export default function Ourservice({ onClose }) {
                                 Facility Management
                             </div>
                         </Link>
-                        <div className='ourservices-grid-content'>Integrated facility Management</div>
-                        <div className='ourservices-grid-content'>Product installation & servicing solution</div>
+                        <div style={{ paddingLeft: "10%" }}>
+                            <div className='ourservices-grid-content'>Integrated facility Management</div>
+                            <div className='ourservices-grid-content'>Product installation & servicing solution</div>
+                        </div>
                     </Stack>
+
 
                     <Stack direction="column" width="100%">
                         <Link to="/People Services">
@@ -117,10 +107,12 @@ export default function Ourservice({ onClose }) {
                                 People Services
                             </div>
                         </Link>
-                        <div className='ourservices-grid-content'>Home salon</div>
-                        <div className='ourservices-grid-content'>Interior Designing</div>
-                        <div className='ourservices-grid-content'>Electronic appliance Repair</div>
-                        <div className='ourservices-grid-content'>Cleaning & Pest Control</div>
+                        <div style={{ paddingLeft: "10%" }}>
+                            <div className='ourservices-grid-content'>Home salon</div>
+                            <div className='ourservices-grid-content'>Interior Designing</div>
+                            <div className='ourservices-grid-content'>Electronic appliance Repair</div>
+                            <div className='ourservices-grid-content'>Cleaning & Pest Control</div>
+                        </div>
                     </Stack>
 
                     <Stack direction="column" width="100%">
@@ -129,10 +121,12 @@ export default function Ourservice({ onClose }) {
                                 Anti - Counterfeiting Solution
                             </div>
                         </Link>
-                        <div className='ourservices-grid-content'>Litigation Support </div>
-                        <div className='ourservices-grid-content'>Tactical Publicity campaigns</div>
-                        <div className='ourservices-grid-content'>Jurisdictional Raid Action</div>
-                        <div className='ourservices-grid-content'>Post Raid Activity</div>
+                        <div style={{ paddingLeft: "10%" }}>
+                            <div className='ourservices-grid-content'>Litigation Support </div>
+                            <div className='ourservices-grid-content'>Tactical Publicity campaigns</div>
+                            <div className='ourservices-grid-content'>Jurisdictional Raid Action</div>
+                            <div className='ourservices-grid-content'>Post Raid Activity</div>
+                        </div>
                     </Stack>
 
                     <Stack direction="column" width="100%">
@@ -141,26 +135,18 @@ export default function Ourservice({ onClose }) {
                                 Non - Technical Service
                             </div>
                         </Link>
-                        <div className='ourservices-grid-content'>Health Care </div>
-                        <div className='ourservices-grid-content'>Food Service</div>
-                        <div className='ourservices-grid-content'>Aviation</div>
-                        <div className='ourservices-grid-content'>Payroll</div>
+                        <div style={{ paddingLeft: "10%" }}>
+                            <div className='ourservices-grid-content'>Health Care </div>
+                            <div className='ourservices-grid-content'>Food Service</div>
+                            <div className='ourservices-grid-content'>Aviation</div>
+                            <div className='ourservices-grid-content'>Payroll</div>
+                        </div>
                     </Stack>
 
-                    <Stack direction="column" width="100%">
-                        <Link to="/Background Check Service">
-                            <div className='ourservice-grid-title' onClick={onClose}>
-                                Background Check Service
-                            </div>
-                        </Link>
-                        <div className='ourservices-grid-content'>Data-Base Verification</div>
-                        <div className='ourservices-grid-content'>Criminal Record Verification</div>
-                        <div className='ourservices-grid-content'>Education Certificate Verificaton</div>
-                        <div className='ourservices-grid-content'>Drug Test</div>
-                    </Stack>
+
                 </div>
-                <div>
-                <Stack direction="column" width="100%">
+                <div style={{ width: "50%", display: "flex", justifyContent: "space-between" }}>
+                    {/* <Stack direction="column" width="100%" display="flex" justifyContent="center">
                         <Link to="/Private Security Guarding">
                             <div className='ourservice-grid-title' onClick={onClose}>
                                 Private Security Guarding
@@ -170,13 +156,41 @@ export default function Ourservice({ onClose }) {
                         <div className='ourservices-grid-content'>Beat Patrols / Quicks Reaction Team</div>
                         <div className='ourservices-grid-content'>Security for event management</div>
                         <div className='ourservices-grid-content'>Regular Security Advisories</div>
+                    </Stack> */}
+
+                    <Stack direction="column" width="100%">
+                        <Link to="/Background Check Service">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Background Check Service
+                            </div>
+                        </Link>
+                        <div style={{ paddingLeft: "10%" }}>
+                            <div className='ourservices-grid-content'>Data-Base Verification</div>
+                            <div className='ourservices-grid-content'>Criminal Record Verification</div>
+                            <div className='ourservices-grid-content'>Education Certificate Verificaton</div>
+                            <div className='ourservices-grid-content'>Drug Test</div>
+                        </div>
+                    </Stack>
+
+                    <Stack direction="column" width="100%" display="flex" justifyContent="center">
+                        <Link to="/Private Security Guarding">
+                            <div className='ourservice-grid-title' onClick={onClose}>
+                                Private Security Guarding
+                            </div>
+                        </Link>
+                        <div style={{ paddingLeft: "10%" }}>
+                            <div className='ourservices-grid-content'>Security Risk Analysis</div>
+                            <div className='ourservices-grid-content'>Beat Patrols / Quicks Reaction Team</div>
+                            <div className='ourservices-grid-content'>Security for event management</div>
+                            <div className='ourservices-grid-content'>Regular Security Advisories</div>
+                        </div>
                     </Stack>
                 </div>
-            </Stack>
+            </Stack >
             {/* <div className='ourservice-row'
                 
     </div>*/}
-        </div>
+        </div >
     )
 }
 

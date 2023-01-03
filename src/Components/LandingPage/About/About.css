@@ -99,14 +99,14 @@
     }
 
     .about-btn-text {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
 @media only screen and (max-width: 3500px) {
 
     .about-bottom-content {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .about-img {
@@ -149,7 +149,7 @@
     }
 
     .about-btn-text {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -164,6 +164,9 @@
         font-size: 3rem;
 
     }
+    .about-bottom-content {
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (max-width: 2000px) {}
@@ -171,6 +174,9 @@
 @media only screen and (max-width: 1800px) {
     .about-bottom-content {
         font-size: 1.75rem;
+    }
+    .about-btn-text {
+        font-size: 1.25rem;
     }
 }
 
@@ -194,11 +200,11 @@
     }
 
     .about-bottom-content {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .about-btn-text {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .about-img {
@@ -217,7 +223,7 @@
     }
 
     .about-bottom-content {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 }
 
@@ -232,7 +238,11 @@
     }
 
     .about-btn-text {
-        font-size: 1.25rem;
+        font-size: 0.8rem;
+    }
+
+    .about-bottom-content {
+        font-size: 0.8rem;
     }
 }
 
@@ -247,13 +257,13 @@
     }
 
     .about-bottom-content {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 }
 
 @media only screen and (max-width: 850px) {
     .about-bottom-content {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 }
 

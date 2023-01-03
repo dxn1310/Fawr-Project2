@@ -25,10 +25,12 @@ import Reach from '../Reach/Reach.js';
 
 import { Stack } from '@chakra-ui/react'
 
+import Slideshow from '../Slideshow/Slideshow';
 export default function Landing() {
     return (
         <div className='landing-outer'>
-            <Firstpage />
+            {/* <Firstpage /> */}
+            <Slideshow />
             <div className='landing-inner'>
                 <Search />
             </div>
@@ -41,7 +43,7 @@ export default function Landing() {
             <div className='landing-inner'>
                 <Trust />
             </div>
-            <Reach />
+            {/* <Reach /> */}
         </div>
     )
 }

@@ -12,7 +12,7 @@
 }
 
 .navlang-title {
-    font-size: 1.5rem;
+    font-size: 5rem;
     font-weight: 600;
 }
 
@@ -27,10 +27,158 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 30%;
+    width: 100%;
+}
+
+.navlang-language:hover {
+    color: red;
 }
 
 .navlang-inner-title {
-    font-size: 1.25rem;
+    font-size: 5rem;
     font-weight: 500;
+}
+
+.navlang-language {
+    font-size: 2rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 4000px) {
+    .navlang-title {
+        font-size: 3.5rem;
+    }
+
+
+    .navlang-inner-title {
+        font-size: 2.5rem;
+    }
+
+    .navlang-language {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 3600px) {
+    .navlang-title {
+        font-size: 3.2rem;
+    }
+
+
+    .navlang-inner-title {
+        font-size: 2.2rem;
+    }
+
+    .navlang-language {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 3200px) {
+    .navlang-title {
+        font-size: 2.75rem;
+    }
+
+
+    .navlang-inner-title {
+        font-size: 2rem;
+    }
+
+    .navlang-language {
+        font-size: 1.25rem;
+    }
+}
+
+
+@media only screen and (max-width: 2700px) {
+    .navlang-title {
+        font-size: 2.25rem;
+    }
+
+
+    .navlang-inner-title {
+        font-size: 1.5rem;
+    }
+
+    .navlang-language {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 2200px) {
+    .navlang-title {
+        font-size: 1.75rem;
+    }
+
+
+    .navlang-inner-title {
+        font-size: 1rem;
+    }
+
+    .navlang-language {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+    .navlang-title {
+        font-size: 1.55rem;
+    }
+
+
+    .navlang-inner-title {
+        font-size: 1rem;
+    }
+
+    .navlang-language {
+        font-size: 0.65rem;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .navlang-title {
+        font-size: 1.25rem;
+    }
+
+
+    .navlang-inner-title {
+        font-size: 0.95rem;
+    }
+
+    .navlang-language {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .navlang-title {
+        font-size: 0.9rem;
+    }
+
+
+    .navlang-inner-title {
+        font-size: 0.8rem;
+    }
+
+    .navlang-language {
+        font-size: 0.55rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .navlang-title {
+        font-size: 0.8rem;
+    }
+
+
+    .navlang-inner-title {
+        font-size: 0.6rem;
+    }
+
+    .navlang-language {
+        font-size: 0.35rem;
+    }
 }

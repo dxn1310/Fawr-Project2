@@ -54,7 +54,7 @@ export default function Compiance() {
 
     return (
         <div>
-            <Servicestemplate underlinedTitle={"Compiances Solution"}
+            <Servicestemplate underlinedTitle={"Compliances Solution"}
                 // title={"Transformation"}
                 img1={Compiance_img1}
                 content={"We realize that technology is the bedrock of innovation and what drives tomorrow. So, we harness the power of technology to drive productivity and optimal efficiency into your business processes.Through our range of technology solutions that include BPO services, CLM, After Sales services, and Digital Transformation services, we strive to deliver excellence across various facets of the enterprise."}

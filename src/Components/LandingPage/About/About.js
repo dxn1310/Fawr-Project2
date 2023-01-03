@@ -26,7 +26,9 @@ export default function About() {
                         <Button backgroundColor="#407BFF"
                             borderRadius="0.5rem"
                             color="white"
-                            height="fit-content"
+                            // padding="1%"
+                            paddingLeft="2%"
+                            paddingRight="2%"
                             marginTop="1%">
                             <div className='about-btn-text'>
                                 Read More

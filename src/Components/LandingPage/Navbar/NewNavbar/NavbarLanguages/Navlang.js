@@ -18,7 +18,7 @@ import Flag9 from "./NavlangImages/Flag9.png"
 import Flag10 from "./NavlangImages/Flag10.png"
 
 
-export default function Navlang({ lang, langImg, langName, setLang, setLangImg, setLangName }) {
+export default function Navlang({ lang, langImg, langName, setLang, setLangImg, setLangName, onClose }) {
     return (
         <div className='navlang-outer'>
             <div className='navlang-title'>
@@ -31,31 +31,57 @@ export default function Navlang({ lang, langImg, langName, setLang, setLangImg, 
                         Global
                     </div>
                     <Stack direction="column" spacing={5} marginTop="5%">
-                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg("world"); setLang("English"); setLangName("Global") }} cursor="pointer">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg("world"); setLang("English"); setLangName("Global"); onClose() }} cursor="pointer">
                             <TfiWorld />
-                            <div className='navlang-language'>Global <label style={{ color: "rgba(0, 0, 0, 0.6)" }}>(English)</label></div>
+                            <div className='navlang-language'>Global <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(English)</label></div>
                         </Stack>
                     </Stack>
                 </div>
 
                 <div style={{ width: "0.1rem", backgroundColor: "black", marginLeft: "3%", marginRight: "5%" }} />
 
+
+
+                <div className='navlang-inner-item'>
+                    <div className='navlang-inner-title'>
+                        Indian
+                    </div>
+                    <Stack direction="column" spacing={5} marginTop="5%">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag1); setLang("Hindi"); setLangName("India"); onClose() }} cursor="pointer">
+                            <img src={Flag1} />
+                            <div className='navlang-language' >Brazil <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(Português)</label></div>
+                        </Stack>
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag2); setLang("Española"); setLangName("India"); onClose() }} cursor="pointer">
+                            <img src={Flag2} />
+                            <div className='navlang-language'>Argentina <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(Española)</label></div>
+                        </Stack>
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag3); setLang("Española"); setLangName("Colombia"); onClose() }} cursor="pointer">
+                            <img src={Flag3} />
+                            <div className='navlang-language'>Colombia <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(Española)</label></div>
+                        </Stack>
+                    </Stack>
+                </div>
+
+                <div style={{ width: "0.1rem", backgroundColor: "black", marginLeft: "3%", marginRight: "5%" }} />
+
+
+
                 <div className='navlang-inner-item'>
                     <div className='navlang-inner-title'>
                         North & South America
                     </div>
                     <Stack direction="column" spacing={5} marginTop="5%">
-                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag1); setLang("Português"); setLangName("Brazil") }} cursor="pointer">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag1); setLang("Português"); setLangName("Brazil"); onClose() }} cursor="pointer">
                             <img src={Flag1} />
-                            <div className='navlang-language'>Brazil <label style={{ color: "rgba(0, 0, 0, 0.6)" }}>(Português)</label></div>
+                            <div className='navlang-language' >Brazil <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(Português)</label></div>
                         </Stack>
-                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag2); setLang("Española"); setLangName("Argentina") }} cursor="pointer">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag2); setLang("Española"); setLangName("Argentina"); onClose() }} cursor="pointer">
                             <img src={Flag2} />
-                            <div className='navlang-language'>Argentina <label style={{ color: "rgba(0, 0, 0, 0.6)" }}>(Española)</label></div>
+                            <div className='navlang-language'>Argentina <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(Española)</label></div>
                         </Stack>
-                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag3); setLang("Española"); setLangName("Colombia") }} cursor="pointer">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag3); setLang("Española"); setLangName("Colombia"); onClose() }} cursor="pointer">
                             <img src={Flag3} />
-                            <div className='navlang-language'>Colombia <label style={{ color: "rgba(0, 0, 0, 0.6)" }}>(Española)</label></div>
+                            <div className='navlang-language'>Colombia <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(Española)</label></div>
                         </Stack>
                     </Stack>
                 </div>
@@ -67,21 +93,21 @@ export default function Navlang({ lang, langImg, langName, setLang, setLangImg, 
                         Europe, MiddleEast & Africa
                     </div>
                     <Stack direction="column" spacing={5} marginTop="5%" >
-                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag4); setLang("Français"); setLangName("France") }} cursor="pointer">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag4); setLang("Français"); setLangName("France"); onClose() }} cursor="pointer">
                             <img src={Flag4} />
-                            <div className='navlang-language'>France <label style={{ color: "rgba(0, 0, 0, 0.6)" }}>(Français)</label></div>
+                            <div className='navlang-language'>France <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(Français)</label></div>
                         </Stack>
-                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag5); setLang("Italiano"); setLangName("Italy") }} cursor="pointer">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag5); setLang("Italiano"); setLangName("Italy"); onClose() }} cursor="pointer">
                             <img src={Flag5} />
-                            <div className='navlang-language'>Italy <label style={{ color: "rgba(0, 0, 0, 0.6)" }}>(Italiano) </label></div>
+                            <div className='navlang-language'>Italy <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(Italiano) </label></div>
                         </Stack>
-                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag6); setLang("Española"); setLangName("Spain") }} cursor="pointer">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag6); setLang("Española"); setLangName("Spain"); onClose() }} cursor="pointer">
                             <img src={Flag6} />
-                            <div className='navlang-language'>Spain <label style={{ color: "rgba(0, 0, 0, 0.6)" }}>(Española)</label></div>
+                            <div className='navlang-language'>Spain <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(Española)</label></div>
                         </Stack>
-                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag7); setLang("русский"); setLangName("Russia") }} cursor="pointer">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag7); setLang("русский"); setLangName("Russia"); onClose() }} cursor="pointer">
                             <img src={Flag7} />
-                            <div className='navlang-language'>Russia <label style={{ color: "rgba(0, 0, 0, 0.6)" }}>(русский)</label></div>
+                            <div className='navlang-language'>Russia <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(русский)</label></div>
                         </Stack>
                     </Stack>
                 </div>
@@ -93,22 +119,22 @@ export default function Navlang({ lang, langImg, langName, setLang, setLangImg, 
                         Asia & Austrila
                     </div>
                     <Stack direction="column" spacing={5} marginTop="5%">
-                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag8); setLang("中国人"); setLangName("China") }} cursor="pointer">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag8); setLang("中国人"); setLangName("China"); onClose() }} cursor="pointer">
                             <img src={Flag8} />
-                            <div className='navlang-language'>China <label style={{ color: "rgba(0, 0, 0, 0.6)" }}>(中国人)</label></div>
+                            <div className='navlang-language'>China <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", _hover: { color: "red" }, cursor: "pointer" }}  >(中国人)</label></div>
                         </Stack>
-                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag9); setLang("한국인"); setLangName("Korea") }} cursor="pointer">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag9); setLang("한국인"); setLangName("Korea"); onClose() }} cursor="pointer">
                             <img src={Flag9} />
-                            <div className='navlang-language'>Korea <label style={{ color: "rgba(0, 0, 0, 0.6)" }}>(한국인)</label></div>
+                            <div className='navlang-language'>Korea <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(한국인)</label></div>
                         </Stack>
-                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag10); setLang("日本"); setLangName("Japan") }} cursor="pointer">
+                        <Stack direction="row" spacing={2} display="flex" alignItems="center" onClick={(e) => { setLangImg(Flag10); setLang("日本"); setLangName("Japan"); onClose() }} cursor="pointer">
                             <img src={Flag10} />
-                            <div className='navlang-language'>Japan <label style={{ color: "rgba(0, 0, 0, 0.6)" }}>(日本)</label></div>
+                            <div className='navlang-language'>Japan <label className="navlang-language" style={{ color: "rgba(0, 0, 0, 0.6)", cursor: "pointer" }}>(日本)</label></div>
                         </Stack>
                     </Stack>
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 }

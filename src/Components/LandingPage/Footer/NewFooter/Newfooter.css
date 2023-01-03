@@ -39,8 +39,9 @@
     width: 70%;
     display: flex;
     height: 100%;
-    align-items: center;
-    flex-direction: column;
+    justify-content: right;
+    /* align-items: ; */
+    /* flex-direction: column; */
 }
 
 .newfooter-fawr-content {
@@ -53,7 +54,7 @@
 .newfooter-solution-items {
     font-size: 4rem;
     font-weight: 400;
-    width: 33%;
+    /* width: 33%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,21 +73,26 @@
     font-weight: 500;
 }
 
+.newfooter-bootom-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
 @media only screen and (max-width: 4000px) {
     .newfooter-fawr-content {
-        font-size: 8rem;
+        font-size: 10rem;
     }
 
     .newfooter-bottom-content {
-        font-size: 3.5rem;
+        font-size: 2.75rem;
     }
 
     .newfooter-solution-items {
-        font-size: 3.5rem;
+        font-size: 2.75rem;
     }
 
     .newfooter-ourservice {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 }
 
@@ -96,11 +102,11 @@
     }
 
     .newfooter-bottom-content {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .newfooter-solution-items {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .newfooter-ourservice {
@@ -141,6 +147,7 @@
     .newfooter-solution-items {
         font-size: 2rem;
     }
+
     .newfooter-ourservice {
         font-size: 3rem;
     }
@@ -159,6 +166,7 @@
     .newfooter-solution-items {
         font-size: 1.5rem;
     }
+
     .newfooter-ourservice {
         font-size: 2.5rem;
     }
@@ -178,6 +186,7 @@
     .newfooter-solution-items {
         font-size: 1rem;
     }
+
     .newfooter-ourservice {
         font-size: 2rem;
     }
@@ -197,6 +206,7 @@
     .newfooter-solution-items {
         font-size: 0.75rem;
     }
+
     .newfooter-ourservice {
         font-size: 1.5rem;
     }
