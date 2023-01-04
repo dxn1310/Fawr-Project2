@@ -66,7 +66,7 @@
 }
 
 .x-inner-bottom-content-left {
-    width: 15%;
+    width: 22%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,7 +98,7 @@
 
 
 .x-drawer-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #E7A90C;
     cursor: pointer;
@@ -107,10 +107,15 @@
 .x-drawer-items {
     display: flex;
     justify-content: left;
-    align-items: center;
+    /* align-items: center; */
     padding-left: 1%;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.x-drawer-items:hover {
+    color: red;
 }
 
 .x-inner-bottom-menu-text {
@@ -160,6 +165,7 @@
     .x-inner-bottom-content-right-text {
         font-size: 2.75rem;
     }
+
     .x-inner-bottom-menu-text {
         font-size: 2.25rem;
     }
@@ -183,6 +189,7 @@
     .x-inner-bottom-content-right-text {
         font-size: 2.5rem;
     }
+
     .x-inner-bottom-menu-text {
         font-size: 2rem;
     }
@@ -193,6 +200,7 @@
     .x-inner-top-content {
         font-size: 2.2rem;
     }
+
     .x-language {
         font-size: 2.2rem;
     }
@@ -204,6 +212,7 @@
     .x-inner-bottom-content-right-text {
         font-size: 2.2rem;
     }
+
     .x-inner-bottom-menu-text {
         font-size: 1.75rem;
     }
@@ -213,6 +222,7 @@
     .x-inner-top-content {
         font-size: 1.35rem;
     }
+
     .x-language {
         font-size: 1.35rem;
     }
@@ -248,6 +258,7 @@
     .x-inner-bottom-content-right-text {
         font-size: 1.25rem;
     }
+
     .x-inner-bottom-menu-text {
         font-size: 1.25rem;
     }
@@ -261,13 +272,15 @@
     .x-language {
         font-size: 1.1rem;
     }
+
     .x-inner-bottom-content-title {
-        font-size: 2.1rem;
+        font-size: 1.8rem;
     }
 
     .x-inner-bottom-content-right-text {
         font-size: 1.1rem;
     }
+
     .x-inner-bottom-menu-text {
         font-size: 1rem;
     }
@@ -282,13 +295,15 @@
     .x-language {
         font-size: 1rem;
     }
+
     .x-inner-bottom-content-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .x-inner-bottom-content-right-text {
         font-size: 1rem;
     }
+
     .x-inner-bottom-menu-text {
         font-size: 0.75rem;
     }
@@ -300,17 +315,19 @@
     .x-inner-top-content {
         font-size: 0.75rem;
     }
+
     .x-language {
         font-size: 0.75rem;
     }
 
     .x-inner-bottom-content-title {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
 
     .x-inner-bottom-content-right-text {
         font-size: 0.75rem;
     }
+
     .x-inner-bottom-menu-text {
         font-size: 0.5rem;
     }
@@ -320,18 +337,20 @@
     .x-inner-top-content {
         font-size: 0.60rem;
     }
+
     .x-language {
         font-size: 0.6rem;
     }
 
 
     .x-inner-bottom-content-title {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .x-inner-bottom-content-right-text {
         font-size: 0.60rem;
     }
+
     .x-inner-bottom-menu-text {
         font-size: 0.25rem;
     }

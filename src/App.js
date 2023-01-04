@@ -66,6 +66,10 @@ import Ourservices from './Components/ExtraFolder/Ourservies/Ourservices';
 import Newfooter from './Components/LandingPage/Footer/NewFooter/Newfooter';
 import Newnavbar from './Components/LandingPage/Navbar/NewNavbar/Newnavbar';
 
+import Slide2 from './Components/LandingPage/Slideshow/Slides/Slide2/Slide2.js';
+import Slide4 from './Components/LandingPage/Slideshow/Slides/Slide4/Silde4';
+import Slide5 from './Components/LandingPage/Slideshow/Slides/Slide5/Slide5';
+
 function App() {
   // window.scroll({
   //   top: 0,
@@ -96,6 +100,7 @@ function App() {
       <Ourservices /> */}
       {/* <Navbar /> */}
       <Newnavbar />
+      {/* <Slide5 /> */}
       {/* <Status /> */}
       {/* <Address /> */}
       {/* <Slot /> */}

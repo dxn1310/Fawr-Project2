@@ -1,61 +1,56 @@
-// import React from 'react'
-
-// export default function Slide1() {
-//     return (
-//         <div>Slide1</div>
-//     )
-// }
-
-
 import React from 'react';
-// import "./Firstpage.css"
-import { Button } from '@chakra-ui/react';
-// import Firstpage_img2 from "./FirstpageImages/Firstpage_img2.png";
-// import First_img1 from "./FirstpageImages/First_img1.png"
-// import First_img2 from "./FirstpageImages/First_img2.png"
-// import First_img3 from "./FirstpageImages/First_img3.png"
-// import First_img4 from "./FirstpageImages/First_img4.png"
-// import First_img5 from "./FirstpageImages/First_img5.png"
-// import First_img6 from "./FirstpageImages/First_img6.png"
-// import First_img7 from "./FirstpageImages/First_img7.png"
+import "./Slide1.css"
+import { Button, Stack } from '@chakra-ui/react';
+import Slide1_img1 from "../../../../Services/Asset/AssetImages/Asset_img1.png"
+import Slide1_img2 from "../SlideImages/Slide1_img2.png"
+import Slide1_img3 from "../SlideImages/Slide1_img3.png"
+import Slide1_img4 from "../SlideImages/Slide1_img4.png"
+import Slide1_img5 from "../SlideImages/Slide1_img5.png"
+import Slide1_img6 from "../SlideImages/Slide1_img6.png"
 
-export default function Firstpage() {
+import Slide_dot1 from "../SlideImages/Slide_dot1.png"
+import Slide_dot2 from "../SlideImages/Slide_dot2.png"
+
+import { NavLink as Link } from 'react-router-dom';
+
+
+
+export default function slide1() {
     return (
-        <div className='firstpage-outer'>
-            {/* <img className="y" src={First_img1} /> */}
-            <div className='x'>
-                <div className='firstpage-inner'>
-                    <div className='firstpage-text'>
-                        Asset Management
+        <div className='slide1-outer'>
+            <div className='slide-inner'>
+                <div className='slide1-top'>
+                    <div className='slide1-top-left'>
+                        <img className="slide1-img2" src={Slide1_img2} />
+                        <img className="slide1-img3" src={Slide1_img3} />
+                        <img className="slide1-img4" src={Slide1_img4} />
                     </div>
-                    <div>
+                    <div className='slide1-top-right'>
+                        <img className="slide1-img5" src={Slide1_img5} />
+                        <img className="slide1-img6" src={Slide1_img6} />
+                    </div>
+                </div>
+                <img className='slide1-dot2' src={Slide_dot2} />
+            </div>
+            <div className='slide1-bottom'>
+                <Stack direction="column" spacing={5} width="40%" display="flex" justifyConent="left">
+                    <div className='slide1-title'>Asset Management</div>
+                    <Link to="/Asset Management">
                         <Button backgroundColor="rgba(43, 127, 255, 1)"
                             borderRadius="0.5rem" color="white"
                             fontWeight="400"
-                            padding="1%"
-                            paddingLeft="2%"
-                            paddingRight="2%"
-                        // paddingTop="1%"
-                        // height="fit-content"
-                        // paddingBottom="1%"
-                        // width="25%">
+                            width="fit-content"
+                            padding="2%"
                         >
                             <div className='firstpage-btn-text'>
-                                Get Started
+                                Know More
                             </div>
                         </Button>
-                    </div>
-                </div>
-                {/* <div className='firstpage-imgs'>
-                    <img className="firstpage-img2" src={First_img7} />
-                    <img className="firstpage-img1" src={First_img6} />
-                    <img className="firstpage-img3" src={First_img5} />
-                    <img className="firstpage-img4" src={First_img3} />
-                   
-                    <img className="firstpage-img5" src={First_img2} />
-                </div> */}
-            </div>
+                    </Link>
+                </Stack>
 
-        </div>
+                <img className="slide1-img1" src={Slide1_img1} />
+            </div>
+        </div >
     )
 }

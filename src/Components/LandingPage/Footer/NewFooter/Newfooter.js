@@ -7,8 +7,11 @@ import { GrLinkedinOption } from 'react-icons/gr';
 import { BsTwitter } from 'react-icons/bs';
 import { RiFacebookFill } from 'react-icons/ri';
 import { BsInstagram } from 'react-icons/bs';
-// import { GrLinkedinOption } from 'react-icons/gr';
-// import { GrLinkedinOption } from 'react-icons/gr';
+
+import Googleplay from "./NewfooterImages/Googleplay.png"
+import Applestore from "./NewfooterImages/Applestore.png"
+
+import { Navlink as Link } from 'react-router-dom'
 
 
 export default function Newfooter() {
@@ -16,40 +19,10 @@ export default function Newfooter() {
         <div className='newfooter-outer'>
             <div className='newfooter-top'>
                 <div className='newfooter-top-left'>
-
-                    <div className='newfooter-fawr-content'>FAWR</div>
+                    <div className='newfooter-fawr-content'>AGAMENNON</div>
                 </div>
-                {/* <div className='newfooter-top-right'>
-                    <div className="newfooter-ourservice" style={{ width: "100%", display: "flex", justifyContent: "center" }}>Solutions</div>
-                    <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
-                        <Stack direction="column" marginTop="1%" width="100%" spacing={8}>
-                            <Stack direction="row" width="100%">
-                                <div className='newfooter-solution-items'>Global Technology solution</div>
-                                <div className='newfooter-solution-items'>Compliances solution</div>
-                                <div className='newfooter-solution-items'>Non technical service</div>
-                            </Stack>
-
-                            <Stack direction="row" width="100%">
-                                <div className='newfooter-solution-items'>Facility management</div>
-                                <div className='newfooter-solution-items'>Asset management</div>
-                                <div className='newfooter-solution-items'>Tax Solution</div>
-                            </Stack>
-
-                            <Stack direction="row" width="100%">
-                                <div className='newfooter-solution-items'>Private security guaranting</div>
-                                <div className='newfooter-solution-items'>Corporate fraud and forensic investigation</div>
-                                <div className='newfooter-solution-items'>Background check service</div>
-                            </Stack>
-
-                            <Stack direction="row" width="100%">
-                                <div className='newfooter-solution-items' style={{ width: "100%", display: "flex", justifyContent: "center" }}>People service</div>
-                            </Stack>
-                        </Stack>
-                    </div>
-                </div> */}
-
                 <div className='newfooter-top-right'>
-                    <div>
+                    {/* <div>
                         <div className="newfooter-ourservice" style={{ width: "100%", display: "flex", justifyContent: "center", marginBottom: "2%" }}>Solutions</div>
                         <div className='newfooter-solution-items'>Global Technology solution</div>
                         <div className='newfooter-solution-items'>Compliances solution</div>
@@ -67,7 +40,23 @@ export default function Newfooter() {
                         <div className='newfooter-solution-items'>Background check service</div>
 
                         <div className='newfooter-solution-items'>People service</div>
-                    </div>
+                    </div> */}
+
+                    <Stack direction="row" display="flex" alignItems="center" justifyContent="right" marginTop="5%" position="relative" top="50%">
+                        {/* <Link to="">
+                            <div> */}
+                        <img className="newfooter-img" src={Googleplay} style={{ width: "15%", height: "8%", cursor: "pointer" }} />
+                        {/* </div>
+                        </Link>
+                        <Link to="">
+                            <div> */}
+                        <img className="newfooter-img" src={Applestore} style={{ width: "13%", height: "6%", cursor: "pointer" }} />
+                        {/* </div>
+                        </Link> */}
+                    </Stack>
+
+
+
 
 
                 </div>
@@ -86,11 +75,12 @@ export default function Newfooter() {
                     </Stack>
 
                     <Stack direction="row" spacing={5} marginTop="1%" marginRight="2%">
-                        <GrLinkedinOption cursor="pointer" />
-                        <BsTwitter cursor="pointer" />
-                        <RiFacebookFill cursor="pointer" />
-                        <BsInstagram cursor="pointer" />
+                        <GrLinkedinOption cursor="pointer" iconSize="15%" />
+                        <BsTwitter cursor="pointer" iconSize="15%" />
+                        <RiFacebookFill cursor="pointer" iconSize="15%" />
+                        <BsInstagram cursor="pointer" iconSize="15%" />
                     </Stack>
+
                 </div>
 
                 {/* <div>freerferf</div> */}

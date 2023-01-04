@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.slide5-outer {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    background-color: #DDEBFF;
+    padding-bottom: 5%;
+}
+
+.slide5-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-top: -4%;
+}
+
+.slide5-top {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    /* margin-top: 2%; */
+}
+
+.slide5-img1 {
+    position: relative;
+    width: 25%;
+    /* margin-right: 10%; */
+}
+
+.slide5-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    background-color: #407BFF;
+    height: fit-content;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.slide5-img2 {
+    position: relative;
+    left: 35%;
+
+
+
+}
+
+.slide5-img3 {
+    position: relative;
+    left: 45%;
+
+}
+
+.slide5-img4 {
+    position: relative;
+    left: 55%;
+
+}
+
+.slide5-img5 {
+    position: relative;
+    left: 70%;
+    /* width: 50%; */
+
+}
+
+.slide5-img6 {
+    position: relative;
+    left: 65%;
+
+}
+
+.slide5-img7 {
+    position: relative;
+    left: 80%;
+    /* width: 75%; */
+}
+
+.slide5-dot2 {
+    width: 8%;
+    height: 5%;
+}
+
+.slide-inner {
+    display: flex;
+    justify-content: space-between;
+}

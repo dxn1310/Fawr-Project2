@@ -34,6 +34,10 @@
     color: red;
 }
 
+.lang-item-stack :hover {
+    color: red;
+}
+
 .navlang-inner-title {
     font-size: 5rem;
     font-weight: 500;
@@ -180,5 +184,21 @@
 
     .navlang-language {
         font-size: 0.35rem;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .navlang-title {
+        font-size: 0.6rem;
+    }
+
+
+    .navlang-inner-title {
+        font-size: 0.4rem;
+    }
+
+    .navlang-language {
+        font-size: 0.25rem;
     }
 }

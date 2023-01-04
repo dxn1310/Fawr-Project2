@@ -43,6 +43,8 @@ import Navlang from './NavbarLanguages/Navlang'
 import { TfiWorld } from "react-icons/tfi";
 import { AiOutlineMenu } from 'react-icons/ai';
 import { MdKeyboardArrowDown } from 'react-icons/md';
+import { AiFillCaretRight } from 'react-icons/ai';
+
 
 
 export default function Newnavbar() {
@@ -54,6 +56,7 @@ export default function Newnavbar() {
     const [langImg, setLangImg] = useState("world")
     const [langName, setLangName] = useState("Global")
     const [lang, setLang] = useState("English")
+
 
     return (
         <div className='x-outer'>
@@ -106,33 +109,72 @@ export default function Newnavbar() {
                                     placement='left'
                                     onClose={onClose}
                                     finalFocusRef={btnRef}
+                                    size="xs"
+
                                 >
                                     <DrawerOverlay />
                                     <DrawerContent>
-                                        <DrawerCloseButton size={5} padding="5%" />
-                                        <DrawerHeader marginTop="10%" display="flex" justifyContent="center"><div className="x-drawer-title">FAWR</div></DrawerHeader>
-
+                                        <DrawerCloseButton focusBorderColor="white" _hover={{ backgroundColor: "white" }} size={5} padding="5%" />
+                                        <DrawerHeader marginTop="10%" display="flex" justifyContent="left"><div className="x-drawer-title">AGAMENNON</div></DrawerHeader>
                                         <DrawerBody>
-                                            <Stack direction="column" spacing={5} display="flex" justifyContent="center" width="100%">
-
-                                                <Stack direction="row" display="flex" alignItems="center">
+                                            <Stack direction="column" spacing={5} display="flex" width="100%" justifyContent="center" paddingLeft="5%">
+                                                <div style={{ display: "flex", alignItems: "center", width: "70%" }}>
                                                     <div className='x-drawer-items'>Industries</div>
-                                                    <ArrowForwardIcon w={5} h={5} color="black" display="flex" alignItems="center" />
-                                                </Stack>
-                                                <Stack direction="row" display="flex" alignItems="center">
-                                                    <div className='x-drawer-items'>Solutions</div>
-                                                    <ArrowForwardIcon w={5} h={5} color="black" display="flex" alignItems="center" />
-                                                </Stack>
-                                                <Stack direction="row" display="flex" alignItems="center">
-                                                    <div className='x-drawer-items'>Our Services</div>
-                                                    <ArrowForwardIcon w={5} h={5} color="black" display="flex" alignItems="center" />
-                                                </Stack>
-                                                <Stack direction="row" display="flex" alignItems="center">
-                                                    <div className='x-drawer-items'>Careers</div>
-                                                    <ArrowForwardIcon w={5} h={5} color="black" display="flex" alignItems="center" />
-                                                </Stack>
+                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
+                                                </div>
 
-                                                <div style={{ width: "100%", height: "0.1%", backgroundColor: "black" }} />
+                                                <div style={{ display: "flex", alignItems: "center", width: "70%" }}>
+                                                    <div className='x-drawer-items'>Solutions</div>
+                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
+                                                </div>
+
+                                                <div style={{ display: "flex", alignItems: "center", width: "70%" }}>
+                                                    <div className='x-drawer-items'>Our Services</div>
+                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
+                                                </div>
+
+                                                <div style={{ display: "flex", alignItems: "center", width: "70%" }}>
+                                                    <div className='x-drawer-items'>Careers</div>
+                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
+                                                </div>
+                                            </Stack>
+
+                                            <div style={{ width: "100%", height: "0.05rem", backgroundColor: "grey", marginTop: "10%" }} />
+
+                                            <Stack direction="column" spacing={5} display="flex" width="100%" justifyContent="center" paddingLeft="5%" marginTop="5%">
+                                                <div style={{ display: "flex", alignItems: "center", width: "70%", justifyContent: "space-between" }}>
+                                                    <div className='x-drawer-items'>Where to find us</div>
+                                                    <AiFillCaretRight />
+                                                </div>
+
+                                                <div style={{ display: "flex", alignItems: "center", width: "70%" }}>
+                                                    <div className='x-drawer-items'>Partners</div>
+                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
+                                                </div>
+
+                                                <div style={{ display: "flex", alignItems: "center", width: "70%" }}>
+                                                    <div className='x-drawer-items'>Offers</div>
+                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
+                                                </div>
+
+                                                <div style={{ display: "flex", alignItems: "center", width: "70%" }}>
+                                                    <div className='x-drawer-items'>Policies</div>
+                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
+                                                </div>
+
+                                                <div style={{ display: "flex", alignItems: "center", width: "70%" }}>
+                                                    <div className='x-drawer-items'>Contact</div>
+                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
+                                                </div>
+
+                                                {/* <div style={{ display: "flex", alignItems: "center", width: "70%" }}>
+                                                    <div className='x-drawer-items'>Global(English)</div>
+                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
+                                                </div> */}
+
+                                                <div style={{ width: "100%", height: "0.05rem", backgroundColor: "grey", marginTop: "10%" }} />
+
+
                                             </Stack>
                                         </DrawerBody>
 
@@ -140,46 +182,9 @@ export default function Newnavbar() {
                                 </Drawer>
 
 
-                                {/* <Drawer
-                                    isOpen={isOpen2}
-                                    placement='left'
-                                    onClose={onClose}
-                                    finalFocusRef={btnRef}
-                                >
-                                    <DrawerOverlay />
-                                    <DrawerContent>
-                                        <DrawerCloseButton size={5} padding="5%" />
-                                        <DrawerHeader marginTop="10%" display="flex" justifyContent="center"><div className="x-drawer-title">FAWR</div></DrawerHeader>
-
-                                        <DrawerBody>
-                                            <Stack direction="column" spacing={5} display="flex" justifyContent="center" width="100%">
-
-                                                <Stack direction="row" display="flex" alignItems="center">
-                                                    <div className='x-drawer-items'>Industries</div>
-                                                    <ArrowForwardIcon w={5} h={5} color="black" display="flex" alignItems="center" />
-                                                </Stack>
-                                                <Stack direction="row" display="flex" alignItems="center">
-                                                    <div className='x-drawer-items'>Solutions</div>
-                                                    <ArrowForwardIcon w={5} h={5} color="black" display="flex" alignItems="center" />
-                                                </Stack>
-                                                <Stack direction="row" display="flex" alignItems="center">
-                                                    <div className='x-drawer-items'>Our Services</div>
-                                                    <ArrowForwardIcon w={5} h={5} color="black" display="flex" alignItems="center" />
-                                                </Stack>
-                                                <Stack direction="row" display="flex" alignItems="center">
-                                                    <div className='x-drawer-items'>Careers</div>
-                                                    <ArrowForwardIcon w={5} h={5} color="black" display="flex" alignItems="center" />
-                                                </Stack>
-
-                                                <div style={{ width: "100%", height: "0.1%", backgroundColor: "black" }} />
-                                            </Stack>
-                                        </DrawerBody>
-
-                                    </DrawerContent>
-                                </Drawer> */}
                             </div>
                             <Link to="/">
-                                <div className='x-inner-bottom-content-title'>FAWR</div>
+                                <div className='x-inner-bottom-content-title'>AGAMENNON</div>
                             </Link>
                         </div>
                         <div className="x-inner-bottom-content-right">
@@ -202,8 +207,6 @@ export default function Newnavbar() {
                                     <Link to="/People Services/Electronics and Carpenter Service">  <div className='x-inner-bottom-menu-text'>Electronics & Carpenter Service</div></Link>
 
                                 </PopoverContent>
-                                {/* </div> */}
-
                             </Popover>
 
 

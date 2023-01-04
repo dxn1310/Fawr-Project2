@@ -46,13 +46,22 @@ export default function Search() {
             services: [
                 {
                     name: "People Services",
+                    link: "/People Services/Booking/OTP",
                     types: ["Home Salon", "Painting", "Interior Design"],
                 },
 
                 {
+
                     name: "Compliance Services",
+                    link: "/People Services/Booking/OTP",
                     types: ["Predictive control & risk score", "Cost saving & high quality"],
-                }
+                },
+                {
+                    name: "Asset Management",
+                    link: "/People Services/Booking/OTP",
+                    types: ["Real- Time Incident Tracking", "Peformance Audits", "Maintenace checklist & MIS", "Regular AMC"],
+                },
+
 
             ]
         },
@@ -62,6 +71,7 @@ export default function Search() {
             services: [
                 {
                     name: "Facility Management",
+                    link: "/People Services/Booking/OTP",
                     types: ["Integrated facility Management"],
                 },
             ]
@@ -72,11 +82,13 @@ export default function Search() {
             services: [
                 {
                     name: "Facility Management",
+                    link: "/People Services/Booking/OTP",
                     types: ["Integrated facility Management"],
                 },
                 {
                     name: "Non- Technical Service",
-                    types: ["Health Care","Food Service","Aviation","Payroll"],
+                    link: "/People Services/Booking/OTP",
+                    types: ["Health Care", "Food Service", "Aviation", "Payroll"],
                 },
             ]
         },
@@ -86,6 +98,7 @@ export default function Search() {
             services: [
                 {
                     name: "Facility Management",
+                    link: "/People Services/Booking/OTP",
                     types: ["Integrated facility Management"],
                 },
             ]
@@ -167,9 +180,29 @@ export default function Search() {
                         </InputGroup>
 
                         <div className='search-options'>
-                            <div className='search-option-text'>
-                                
-                            </div>
+                            <Link to="">
+                                <div className='search-option-text'>
+                                    People Services
+                                </div>
+                            </Link>
+
+                            <Link to="">
+                                <div className='search-option-text'>
+                                    Compliances Solution
+                                </div>
+                            </Link>
+
+                            <Link to="">
+                                <div className='search-option-text'>
+                                    Facility Management
+                                </div>
+                            </Link>
+
+                            <Link to="">
+                                <div className='search-option-text'>
+                                    Digital Technology Transformation
+                                </div>
+                            </Link>
                         </div>
                         {
                             <div className='search-available-outer'>
@@ -190,7 +223,7 @@ export default function Search() {
                                 <div className='search-services-available'>
                                     <div className='serach-available-services-inner'>
                                         {
-                                            availableServices[selectedLocation].services[selectedService].types.map(type => <div>{type}</div>)
+                                            availableServices[selectedLocation].services[selectedService].types.map(type => <div className="search-service-type">{type}</div>)
                                         }
                                     </div>
                                 </div>

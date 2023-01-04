@@ -3,6 +3,7 @@ import "./Slideshow.css"
 
 import Firstpage from '../../LandingPage/Firstpage/Firstpage'
 import Slide1 from './Slides/Slide1/Slide1'
+// import Slide2 from './Slides/Slide2/Slide2'
 import Slide2 from './Slides/Slide2/Slide2'
 import Slide3 from './Slides/Slide3/Slide3'
 import Slide4 from './Slides/Slide4/Silde4'
