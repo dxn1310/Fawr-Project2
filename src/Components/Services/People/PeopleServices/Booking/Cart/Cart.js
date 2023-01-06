@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Cart.css"
 import Cart_img1 from "./CartImages/Cart_img1.png"
 import Status from '../Status/Status'
@@ -8,7 +8,7 @@ import {
 import { DeleteIcon, StarIcon, CheckIcon } from '@chakra-ui/icons'
 import { NavLink as Link } from 'react-router-dom'
 
-export default function Cart({ Bill }) {
+export default function Cart({ Bill, total, setBill, setTotal }) {
     const statusData = ["2", "1", "0", "0", "0"]
     const lineData = ["1", "0", "0", "0"]
 
@@ -17,6 +17,9 @@ export default function Cart({ Bill }) {
         left: 0,
         behavior: 'smooth'
     });
+
+    const [coupon, setCoupon] = useState(125)
+    console.log(total)
 
     return (
         <div className='cart-outer'>
@@ -32,15 +35,15 @@ export default function Cart({ Bill }) {
                                 <div className='cart-inner-left-option-inner'>
                                     <div className='cart-option-left'>
 
-                                        <Stack direction="row" spacing={8} display="flex" alignItems="center">
+                                        <Stack direction="row" spacing={3} display="flex" alignItems="center">
                                             <div className='cart-option-left-title'>
                                                 {option.title}
                                             </div>
-                                            <DeleteIcon color="red" boxSize={7} />
+                                            <DeleteIcon color="red" boxSize={5} />
+                                            {/* onClick={(e) => {{setTotal(total - parseInt(option.price)) }; setBill(pop(option))}} */}
                                         </Stack>
                                         <div className='cart-option-rating'>
                                             <Stack direction="row" spacing={1} display="flex" alignItems="center">
-                                                {/* <img  src={Cart_img1} /> */}
                                                 <StarIcon color="grey" />
                                                 <div className='cart-option-rate'>
                                                     {option.rating}
@@ -52,19 +55,13 @@ export default function Cart({ Bill }) {
                                         </div>
                                         <div className='cart-option-price'>
                                             Start at ₹{option.price}
+                                            {/* {setTotal(total + option.price)} */}
                                         </div>
-
-                                        {/* <ul className='cart-option-ul'>
-                                            {
-                                                option.points.map(point => <li className='cart-option-li'>{point}</li>)
-                                            }
-                                        </ul> */}
-
 
                                     </div>
                                     <div className='cart-option-right'>
                                         <div className='cart-option-right-price'>
-                                            ₹ 495
+                                            ₹ {option.price}
                                         </div>
                                         <Button borderColor="white"
                                             backgroundColor="white"
@@ -114,7 +111,7 @@ export default function Cart({ Bill }) {
                             </div>
 
                             <div className='cart-grid-right-elements-left'>
-                                ₹674
+                                ₹{total}
                             </div>
                         </div>
 
@@ -124,7 +121,7 @@ export default function Cart({ Bill }) {
                             </div>
 
                             <div className='cart-grid-right-elements-left'>
-                                -₹125
+                                -₹{coupon}
                             </div>
                         </div>
 
@@ -134,7 +131,7 @@ export default function Cart({ Bill }) {
                             </div>
 
                             <div className='cart-grid-right-elements-left'>
-                                ₹49
+                                ₹{total * 0.30}
                             </div>
                         </div>
 
@@ -144,7 +141,7 @@ export default function Cart({ Bill }) {
                             </div>
 
                             <div className='cart-grid-right-elements-left'>
-                                ₹598
+                                ₹{total - coupon - (total * 0.30)}
                             </div>
                         </div>
                         <div className='cart-right-discount' style={{ backgroundColor: "#C0D4FF", color: "#004FFF", width: "100%", padding: "2%", display: "flex", justifyContent: "center" }}>

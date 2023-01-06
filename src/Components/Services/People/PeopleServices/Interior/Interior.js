@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Interior.css"
 import Interior_img1 from "./InteriorImages/Interior_img1.png"
 import Interior_img2 from "./InteriorImages/Interior_img2.png"
@@ -9,7 +9,26 @@ import Interior_img6 from "./InteriorImages/Interior_img6.png"
 
 import { Select, Stack, Button, FormControl, FormLabel, Input } from '@chakra-ui/react'
 
+import { NavLink as Link } from 'react-router-dom'
+
 export default function Interior() {
+    const [name, setName] = useState("")
+    const [phone, setPhone] = useState("")
+    const [email, setEmail] = useState("")
+    const [address, setAddress] = useState("")
+
+    console.log(name)
+    console.log(phone)
+    console.log(email)
+    console.log(address)
+
+    const handleClick = () => {
+        setName("");
+        setPhone("");
+        setEmail("");
+        setAddress("");
+    }
+
     return (
         <div className='interior-outer'>
             <img className='interior-bgimg' src={Interior_img1} />
@@ -65,7 +84,14 @@ export default function Interior() {
                                 <FormLabel>Full Name</FormLabel>
                                 <Input borderColor="white"
                                     borderBottomColor="black"
-                                    borderRadius="0" />
+                                    borderRadius="0"
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
+                                    onChange={(e) => setName(e.target.value)}
+                                    value={name}
+                                />
                             </FormControl>
 
                             <FormControl>
@@ -73,7 +99,13 @@ export default function Interior() {
                                 <Input type="number"
                                     borderColor="white"
                                     borderBottomColor="black"
-                                    borderRadius="0" />
+                                    borderRadius="0"
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
+                                    onChange={(e) => setPhone(e.target.value)}
+                                    value={phone} />
                             </FormControl>
 
 
@@ -82,7 +114,13 @@ export default function Interior() {
                                 <Input type="email"
                                     borderColor="white"
                                     borderBottomColor="black"
-                                    borderRadius="0" />
+                                    borderRadius="0"
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    value={email} />
                             </FormControl>
 
 
@@ -91,15 +129,23 @@ export default function Interior() {
                                 <Input
                                     borderColor="white"
                                     borderBottomColor="black"
-                                    borderRadius="0" />
+                                    borderRadius="0"
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
+                                    onChange={(e) => setAddress(e.target.value)}
+                                    value={address} />
                             </FormControl>
-
-                            <Button color="white"
-                                backgroundColor="#2B7FFF"
-                                fontSize="70%"
-                                width="50%"
-                                fontWeight="400"
-                                marginTop="10%">Book Consultation</Button>
+                            <Link to="">
+                                <Button color="white"
+                                    backgroundColor="#2B7FFF"
+                                    fontSize="70%"
+                                    width="50%"
+                                    fontWeight="400"
+                                    marginTop="10%"
+                                    onClick={handleClick}>Book Consultation</Button>
+                            </Link>
                         </Stack>
                     </div>
                 </div>

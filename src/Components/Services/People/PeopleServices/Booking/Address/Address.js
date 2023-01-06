@@ -40,8 +40,10 @@ export default function Address() {
                                 borderRadius="0"
                                 placeholder="Enter Name"
                                 focusBorderColor="black"
-                            // focusBorderBottomColor="black"
-                            // _hover={{ borderColor: "white", borderBottomColor: "black" }}
+                                focusBorderColor="#FFFFFF"
+                                focusBorderBottomColor="#000000"
+                                _hover={{ borderColor: "none" }}
+                                _focus={{ borderBottomColor: "black" }}
                             />
                         </FormControl>
 
@@ -55,8 +57,10 @@ export default function Address() {
                                 placeholder="Enter Email"
                                 focusBorderColor="black"
                                 typye="email"
-                            // focusBorderBottomColor="black"
-                            // _hover={{ borderColor: "white", borderBottomColor: "black" }}
+                                focusBorderColor="#FFFFFF"
+                                focusBorderBottomColor="#000000"
+                                _hover={{ borderColor: "none" }}
+                                _focus={{ borderBottomColor: "black" }}
                             />
                         </FormControl>
 
@@ -69,8 +73,10 @@ export default function Address() {
                                     borderRadius="0"
                                     placeholder="Enter State"
                                     focusBorderColor="black"
-                                // focusBorderBottomColor="black"
-                                // _hover={{ borderColor: "white", borderBottomColor: "black" }}
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
                                 />
                             </FormControl>
 
@@ -83,8 +89,10 @@ export default function Address() {
                                     placeholder="Enter Pincode"
                                     focusBorderColor="black"
                                     type="number"
-                                // focusBorderBottomColor="black"
-                                // _hover={{ borderColor: "white", borderBottomColor: "black" }}
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
                                 />
                             </FormControl>
                         </Stack>
@@ -97,8 +105,10 @@ export default function Address() {
                                 borderRadius="0"
                                 placeholder="Enter Address"
                                 focusBorderColor="black"
-                            // focusBorderBottomColor="black"
-                            // _hover={{ borderColor: "white", borderBottomColor: "black" }}
+                                focusBorderColor="#FFFFFF"
+                                focusBorderBottomColor="#000000"
+                                _hover={{ borderColor: "none" }}
+                                _focus={{ borderBottomColor: "black" }}
                             />
                         </FormControl>
 
@@ -113,8 +123,10 @@ export default function Address() {
                                     borderRadius="0"
                                     placeholder="Enter Street"
                                     focusBorderColor="black"
-                                // focusBorderBottomColor="black"
-                                // _hover={{ borderColor: "white", borderBottomColor: "black" }}
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
                                 />
                             </FormControl>
 
@@ -126,9 +138,10 @@ export default function Address() {
                                     borderRadius="0"
                                     placeholder="Enter Landmark"
                                     focusBorderColor="black"
-                                // type="number"
-                                // focusBorderBottomColor="black"
-                                // _hover={{ borderColor: "white", borderBottomColor: "black" }}
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
                                 />
                             </FormControl>
                         </Stack>
@@ -144,8 +157,10 @@ export default function Address() {
                                     placeholder="Enter Phone No"
                                     focusBorderColor="black"
                                     type="number"
-                                // focusBorderBottomColor="black"
-                                // _hover={{ borderColor: "white", borderBottomColor: "black" }}
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
                                 />
                             </FormControl>
 
@@ -158,8 +173,9 @@ export default function Address() {
                                     placeholder="Enter Alternative No"
                                     focusBorderColor="black"
                                     type="number"
-                                // focusBorderBottomColor="black"
-                                // _hover={{ borderColor: "white", borderBottomColor: "black" }}
+                                                                        focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
                                 />
                             </FormControl>
                         </Stack>
@@ -187,10 +203,10 @@ export default function Address() {
                                 borderBottomColor="black"
                                 borderRadius="0"
                                 placeholder="Enter your map location"
-                                focusBorderColor="black"
-                            // type="number"
-                            // focusBorderBottomColor="black"
-                            // _hover={{ borderColor: "white", borderBottomColor: "black" }}
+                                           focusBorderColor="#FFFFFF"
+                                focusBorderBottomColor="#000000"
+                                _hover={{ borderColor: "none" }}
+                                _focus={{ borderBottomColor: "black" }}
                             />
                         </FormControl>
                         <img src={Address_img1} />

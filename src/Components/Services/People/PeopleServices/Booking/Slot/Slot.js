@@ -72,7 +72,7 @@ export default function Slot() {
                 <div className='slot-grid-day'>
                     {
                         weekInfo.map((week, index) => {
-                            return <Stack direction="column" spacing={3} backgroundColor={daySelected === 0 ? "#E5E5E5" : "yellow"} width="10%" borderRadius="1rem" padding="1%" onClick={(e) => setDaySelected(1)}>
+                            return <Stack direction="column" spacing={3} backgroundColor={daySelected === 0 ? "#E5E5E5" : "#E5E5E5"} width="10%" borderRadius="1rem" padding="1%" onClick={(e) => setDaySelected(1)}>
                                 <div className="slot-text" style={{
                                     fontSize: "1.5rem", fontWeight: "500", width: "100%", display: "flex", justifyContent: "center"
                                 }}>

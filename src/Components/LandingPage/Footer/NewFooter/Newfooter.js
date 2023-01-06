@@ -19,7 +19,7 @@ export default function Newfooter() {
         <div className='newfooter-outer'>
             <div className='newfooter-top'>
                 <div className='newfooter-top-left'>
-                    <div className='newfooter-fawr-content'>AGAMENNON</div>
+                    <div className='newfooter-fawr-content'>AGAMEMNON</div>
                 </div>
                 <div className='newfooter-top-right'>
                     {/* <div>

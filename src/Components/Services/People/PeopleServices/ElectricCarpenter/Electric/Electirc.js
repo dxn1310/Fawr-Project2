@@ -9,7 +9,7 @@ import Electric_img5 from "./ElectricImages/Electric_img5.png"
 import Electric_img6 from "./ElectricImages/Electric_img6.png"
 // import Electric_img7 from "./ElectricImages/Electric_img7.png"
 
-export default function Electric() {
+export default function Electric({ Bill, setBill, total, setTotal }) {
     const gridImages = [Electric_img2, Electric_img3, Electric_img4, Electric_img5, Electric_img6]
     const options = [
         {
@@ -240,7 +240,7 @@ export default function Electric() {
     ]
     return (
         <div>
-            <Template bgimg={Electric_img1} gridImages={gridImages} options={options} />
+            <Template bgimg={Electric_img1} gridImages={gridImages} options={options} Bill={Bill} setBill={setBill} total={total} setTotal={setTotal}/>
         </div>
     )
 }

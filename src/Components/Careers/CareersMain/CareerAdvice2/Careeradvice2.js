@@ -2,6 +2,11 @@ import React from 'react'
 import "../CareerAdvice1/Careeradvice1.css"
 
 export default function Careeradvice2() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='careeradvice-outer'>
             <div className='careeradvice-inner'>

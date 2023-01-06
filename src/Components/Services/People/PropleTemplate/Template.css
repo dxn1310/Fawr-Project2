@@ -9,7 +9,6 @@
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: 500;
-    /* margin-bottom: 10rem; */
 }
 
 .template-bgimg {
@@ -48,14 +47,14 @@
     flex-direction: column;
     align-items: flex-start;
     border-right: 0.1rem solid rgba(91, 91, 91, 0.4);
+
+
 }
 
 .template-content-left-option-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
-
-    /* border-bottom: 0.1rem solid black; */
 }
 
 .template-content-left-option-content-left {
@@ -64,19 +63,17 @@
 
 .option-outer {
     margin-top: 5%;
-    /* margin-bottom: 10%; */
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    /* justify-content: space-between; */
     border-bottom: 0.1rem solid rgba(91, 91, 91, 0.4);
     padding-bottom: 10%;
-    width: 90%;
+    width: 100%;
 }
 
 .option-title {
     font-size: 70%;
+    width: 80%;
 }
 
 .option-rating {
@@ -86,45 +83,52 @@
 
 .option-price {
     font-size: 60%;
-    /* color: rgb(117, 115, 115); */
-}
-
-.option-ul {
-    /* margin-left: 8%; */
 }
 
 .option-li {
     margin-left: 5%;
-    font-size: 50%;
+    font-size: 1rem;
     color: rgb(56, 55, 55);
-    /* width: 80%; */
+    width: 80%;
 }
 
 .template-content-left-option-title {
-    /* width: 80%; */
     margin-bottom: 5%;
     margin-top: 5%;
-    /* font-size: 70%; */
 }
 
 .template-content-left-option {
     margin-bottom: 10%;
+    width: 100%;
 }
 
 .template-content-right {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 5%;
-    /* align-items: center; */
-    /* width: 100%; */
+    width: 30%;
 }
 
 .option-outer-left {
     display: flex;
     justify-content: left;
+    width: 80%;
 }
 
 .option-outer-right {
     display: flex;
-    justify-content: right;
+    justify-content: left;
+    width: 20%;
+}
+
+.template-viewclass {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    font-size: 1.25rem;
+    color: #2A7FFF;
+    text-decoration: underline solid #2A7FFF;
+    margin-top: 10%;
+    height: 100%;
 }

@@ -9,7 +9,6 @@
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: 500;
-    /* margin-bottom: 10rem; */
 }
 
 .interior-bgimg {
@@ -33,7 +32,6 @@
 
 .interior-grid {
     width: 100%;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
@@ -77,5 +75,4 @@
 
 .interior-form-right {
     width: 50%;
-    /* padding: 2%; */
 }

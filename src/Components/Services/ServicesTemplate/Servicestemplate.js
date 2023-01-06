@@ -41,18 +41,14 @@ export default function Servicestemplate(props) {
 
                     <div className='servicestemplate-grid-outer'>
                         <div className='servicestemplate-grid'>
-
-
                             {
                                 services.map((service, index) => {
                                     return <div className='servicestemplate-grid-item'>
-                                        <div className='servicestemplate-grid-img'><img src={service.gridImg} /></div>
+                                        <div className='servicestemplate-grid-img'><img className="servicetemplate-service-img" src={service.gridImg} /></div>
                                         <div className='servicestemplate-grid-item-content'>
                                             <div className='servicestemplate-grid-item-content-text1'>
-                                                <label>
                                                     {service.gridTitle}
-                                                </label>
-                                            </div>
+                                                </div>
                                             <div className='servicestemplate-grid-item-content-text2'>
                                                 <label>
                                                     {service.gridContent}
@@ -62,8 +58,6 @@ export default function Servicestemplate(props) {
                                     </div>
 
                                 })
-
-
                             }
                         </div>
                     </div>

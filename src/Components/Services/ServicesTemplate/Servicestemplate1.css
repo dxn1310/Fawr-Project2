@@ -7,7 +7,6 @@
     color: black;
     font-weight: 500;
     font-family: 'Poppins';
-    /* box-sizing: content-box; */
 }
 
 .servicestemplate1-heading {
@@ -21,7 +20,8 @@
 }
 
 .servicestemplate1-heading-left-content {
-    height: 50%;
+    /* height: 50%; */
+    padding: 2%;
     width: 100%;
     color: white;
     background-color: #2B7FFF;
@@ -105,6 +105,10 @@
     justify-content: right;
 }
 
+.servicetemplate1-services-img {
+    width: 80%;
+}
+
 .servicestemplate1-grid-item-content {
     display: flex;
     flex-direction: column;
@@ -114,18 +118,18 @@
 }
 
 .servicestemplate1-grid-item-content-text1 {
-    height: 20%;
-    font-size: 1.75rem;
+    height: 25%;
+    font-size: 1.5rem;
     font-weight: 500;
     display: flex;
     align-items: center;
 }
 
 .servicestemplate1-grid-item-content-text2 {
-    height: 80%;
+    height: 75%;
     font-size: 0.9rem;
     font-weight: 400;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .servicestemplate1-row {
@@ -157,8 +161,6 @@
     align-items: center;
     width: 100%;
     height: 13rem;
-    /* border-bottom: 5px solid rgba(64, 64, 64, 0.2); */
-    /* border-top: 5px solid rgba(64, 64, 64, 0.2); */
 }
 
 .servicestemplate-text-color1 {

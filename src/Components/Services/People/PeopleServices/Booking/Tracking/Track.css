@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+
+
+.Track-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+.Track-inner {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Track-img {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 10rem;
+}
+
+.Track-title {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.Track-title-outer {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: left;
+}
+
+.Track-content-outer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.Track-content {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.Track-return-home {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Track-click {
+    color: rgba(25, 46, 237, 1);
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.Track-return-home-outer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.Track-click1 {
+    color: rgba(25, 46, 237, 1);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.Track-inputarea {
+    margin-top: 3rem;
+}
+
+.Track-circles-outer {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Track-circle-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5rem;
+}
+
+.Track-circle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(74, 202, 12, 1);
+    border-radius: 100%;
+}
+
+.Track-circle-text-outer {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.Track-circle-text {
+    font-size: 1.75rem;
+    font-weight: 400;
+
+}
+
+.Track-circle-line {
+    display: flex;
+    align-items: center;
+    /* width: 10rem; */
+}
+
+.Track-hr {
+    width: 8rem;
+    height: 2px;
+    background-color: #ff0000;
+    border: none;
+}
+
+.Track-circle-line {
+    width: 20rem;
+    height: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.42);
+    margin-top: 2.5rem;
+}
+
+.Track-dot-outer {
+    display: flex;
+
+}
+
+.Track-circle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(74, 202, 12, 1);
+    border-radius: 100%;
+}
+
+.Track-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+}
+
+.Track-dot-outer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.Track-circle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 100%;
+    border: 0.25rem solid rgba(0, 0, 0, 0.42);
+}

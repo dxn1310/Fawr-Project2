@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Painting.css"
 import Painting_img1 from "./PaintingImages/Painting_img1.png"
 import Painting_img2 from "./PaintingImages/Painting_img2.png"
@@ -22,7 +22,25 @@ import {
     AccordionIcon,
 } from '@chakra-ui/react'
 
+import { NavLink as Link } from 'react-router-dom'
+
 export default function Painting() {
+    const [name, setName] = useState("")
+    const [phone, setPhone] = useState("")
+    const [email, setEmail] = useState("")
+    const [address, setAddress] = useState("")
+
+    console.log(name)
+    console.log(phone)
+    console.log(email)
+    console.log(address)
+
+    const handleClick = () => {
+        setName("");
+        setPhone("");
+        setEmail("");
+        setAddress("");
+    }
     return (
         <div className='Painting-outer'>
             <img className='Painting-bgimg' src={Painting_img1} />
@@ -30,25 +48,25 @@ export default function Painting() {
                 <div className='Painting-title'>How We Works</div>
                 <div className="Painting-grid-1">
                     <div className='Painting-grid-1-element'>
-                        <img src={Painting_img2} />
+                        <img className="painting-imgs" src={Painting_img2} />
                         <div className='Painting-grid-1-title'>
                             Book Consultation
                         </div>
                     </div>
                     <div className='Painting-grid-1-element'>
-                        <img src={Painting_img3} />
+                        <img className="painting-imgs" src={Painting_img3} />
                         <div className='Painting-grid-1-title'>
                             On-site consultation & estimate
                         </div>
                     </div>
                     <div className='Painting-grid-1-element'>
-                        <img src={Painting_img4} />
+                        <img className="painting-imgs" src={Painting_img4} />
                         <div className='Painting-grid-1-title'>
                             Safe Painting
                         </div>
                     </div>
                     <div className='Painting-grid-1-element'>
-                        <img src={Painting_img5} />
+                        <img className="painting-imgs" src={Painting_img5} />
                         <div className='Painting-grid-1-title'>
                             Site Handover
                         </div>
@@ -117,7 +135,7 @@ export default function Painting() {
                 </div>
                 <div className='Painting-accordians'>
                     <div className='Painting-title'>Frequently Asked Question</div>
-                    <Accordion  allowMultiple marginTop="5%" width="100%" spacing={5}>
+                    <Accordion allowMultiple marginTop="5%" width="100%" spacing={5}>
                         <AccordionItem backgroundColor="#2A7FFF"
                             color="white"
                             fontSize="100%"
@@ -279,7 +297,14 @@ export default function Painting() {
                                 <FormLabel>Full Name</FormLabel>
                                 <Input borderColor="white"
                                     borderBottomColor="black"
-                                    borderRadius="0" />
+                                    borderRadius="0"
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
+                                    onChange={(e) => setName(e.target.value)}
+                                    value={name}
+                                />
                             </FormControl>
 
                             <FormControl>
@@ -287,7 +312,13 @@ export default function Painting() {
                                 <Input type="number"
                                     borderColor="white"
                                     borderBottomColor="black"
-                                    borderRadius="0" />
+                                    borderRadius="0"
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
+                                    onChange={(e) => setPhone(e.target.value)}
+                                    value={phone} />
                             </FormControl>
 
 
@@ -296,7 +327,13 @@ export default function Painting() {
                                 <Input type="email"
                                     borderColor="white"
                                     borderBottomColor="black"
-                                    borderRadius="0" />
+                                    borderRadius="0"
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    value={email} />
                             </FormControl>
 
 
@@ -305,15 +342,23 @@ export default function Painting() {
                                 <Input
                                     borderColor="white"
                                     borderBottomColor="black"
-                                    borderRadius="0" />
+                                    borderRadius="0"
+                                    focusBorderColor="#FFFFFF"
+                                    focusBorderBottomColor="#000000"
+                                    _hover={{ borderColor: "none" }}
+                                    _focus={{ borderBottomColor: "black" }}
+                                    onChange={(e) => setAddress(e.target.value)}
+                                    value={address} />
                             </FormControl>
-
-                            <Button color="white"
-                                backgroundColor="#2B7FFF"
-                                fontSize="70%"
-                                width="50%"
-                                fontWeight="400"
-                                marginTop="10%">Book Consultation</Button>
+                            <Link to="">
+                                <Button color="white"
+                                    backgroundColor="#2B7FFF"
+                                    fontSize="70%"
+                                    width="50%"
+                                    fontWeight="400"
+                                    marginTop="10%"
+                                    onClick={handleClick}>Book Consultation</Button>
+                            </Link>
                         </Stack>
                     </div>
                 </div>

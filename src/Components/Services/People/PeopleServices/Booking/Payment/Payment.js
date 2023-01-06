@@ -11,7 +11,7 @@ import { NavLink as Link } from 'react-router-dom'
 
 import { Button, Checkbox, Input, Stack } from '@chakra-ui/react'
 
-export default function Payment() {
+export default function Payment({total}) {
     const statusData = ["2", "2", "2", "1", "0"]
     const lineData = ["1", "1", "1", "0"]
 
@@ -103,7 +103,7 @@ export default function Payment() {
                                 </div>
 
                                 <div className='payment-grid-right-elements-left'>
-                                    ₹674
+                                    ₹{total}
                                 </div>
                             </div>
 
@@ -123,7 +123,7 @@ export default function Payment() {
                                 </div>
 
                                 <div className='payment-grid-right-elements-left'>
-                                    ₹49
+                                    ₹{total * 0.30}
                                 </div>
                             </div>
 
@@ -133,7 +133,7 @@ export default function Payment() {
                                 </div>
 
                                 <div className='payment-grid-right-elements-left'>
-                                    ₹598
+                                    ₹{total - 125 - (total * 0.30)}
                                 </div>
                             </div>
                             <div className='payment-right-discount' style={{ backgroundColor: "#C0D4FF", color: "#004FFF", width: "100%", padding: "2%", display: "flex", justifyContent: "center" }}>

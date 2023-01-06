@@ -9,7 +9,7 @@ import Carpenter_img5 from "./CarpenterImages/Carpenter_img5.png"
 import Carpenter_img6 from "./CarpenterImages/Carpenter_img6.png"
 // import Carpenter_img7 from "./CarpenterImages/Carpenter_img7.png"
 
-export default function Carpenter() {
+export default function Carpenter({ Bill, setBill, total, setTotal }) {
     const gridImages = [Carpenter_img2, Carpenter_img3, Carpenter_img4, Carpenter_img5, Carpenter_img6]
     const options = [
         {
@@ -265,7 +265,7 @@ export default function Carpenter() {
     ]
     return (
         <div>
-            <Template bgimg={Carpenter_img1} gridImages={gridImages} options={options} />
+            <Template bgimg={Carpenter_img1} gridImages={gridImages} options={options} Bill={Bill} setBill={setBill} total={total} setTotal={setTotal}/>
         </div>
     )
 }

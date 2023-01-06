@@ -50,12 +50,10 @@ export default function Servicestemplate1({ title, img1, img2, img3, img4, under
                                 services.map((service, index) => {
                                     return <Link to={service.gridLink}><div className='servicestemplate1-grid-item' onClick={(e) => setOption(service.gridTitle)}>
 
-                                        <div className='servicestemplate1-grid-img'><img src={service.gridImg} /></div>
+                                        <div className='servicestemplate1-grid-img'><img className='servicetemplate1-services-img' src={service.gridImg} /></div>
                                         <div className='servicestemplate1-grid-item-content'>
                                             <div className='servicestemplate1-grid-item-content-text1'>
-                                                <label>
-                                                    {service.gridTitle}
-                                                </label>
+                                                {service.gridTitle}
                                             </div>
                                             <div className='servicestemplate1-grid-item-content-text2'>
                                                 <label>
@@ -67,21 +65,7 @@ export default function Servicestemplate1({ title, img1, img2, img3, img4, under
                                     </div></Link>
 
                                 })
-
-
-                                // <Link to="{option == 'Cleaning & Pest Control' ? "/People Services/Cleaning & Pest Control" : "/"} ></Link>
-
-
                             }
-
-
-                            {/*  */}
-
-
-
-
-
-
                         </div>
                     </div>
                 </div>

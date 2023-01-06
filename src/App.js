@@ -67,8 +67,11 @@ import Newfooter from './Components/LandingPage/Footer/NewFooter/Newfooter';
 import Newnavbar from './Components/LandingPage/Navbar/NewNavbar/Newnavbar';
 
 import Slide2 from './Components/LandingPage/Slideshow/Slides/Slide2/Slide2.js';
+import Slide1 from './Components/LandingPage/Slideshow/Slides/Slide1/Slide1';
 import Slide4 from './Components/LandingPage/Slideshow/Slides/Slide4/Silde4';
 import Slide5 from './Components/LandingPage/Slideshow/Slides/Slide5/Slide5';
+import Track from './Components/Services/People/PeopleServices/Booking/Tracking/Track';
+import Slide3 from './Components/LandingPage/Slideshow/Slides/Slide3/Slide3';
 
 function App() {
   // window.scroll({
@@ -79,28 +82,31 @@ function App() {
 
   const [option, setOption] = useState("none");
   console.log(option)
-
+  const [total, setTotal] = useState(0)
   const [Bill, setBill] = useState(
     [
-      {
-        title: "hello",
-        rating: "2626",
-        ratingPeople: "100",
-        price: "69",
-        points: ["bhj", "bhbhj"],
-      },
+      // {
+      //   title: "hello",
+      //   rating: "2626",
+      //   ratingPeople: "100",
+      //   price: "69",
+      //   points: ["bhj", "bhbhj"],
+      // },
       // {
       //   title: "fjwefner",
       // }
     ]
   )
+
+  console.log(Bill)
+
   return (
     <ChakraProvider>
       {/* <Textanimation />
       <Ourservices /> */}
       {/* <Navbar /> */}
       <Newnavbar />
-      {/* <Slide5 /> */}
+      {/* <Slide4 /> */}
       {/* <Status /> */}
       {/* <Address /> */}
       {/* <Slot /> */}
@@ -138,23 +144,25 @@ function App() {
         <Route path="/People Services/Anti Disclaimer Policy" element={<Adisclamer />} />
         <Route path="/People Services/Interior Designing" element={<Interior Bill={Bill} setBill={setBill} />} />
         <Route path="/People Services/Painting" element={<Painting Bill={Bill} setBill={setBill} />} />
-        <Route path="/People Services/Electronic Appliances Repair" element={<Electronic Bill={Bill} setBill={setBill} />} />
+        <Route path="/People Services/Electronic Appliances Repair" element={<Electronic Bill={Bill} setBill={setBill} total={total} setTotal={setTotal} />} />
         <Route path="/People Services/Home Salon" element={<Homesalon />} />
-        <Route path="/People Services/Home Salon/Male" element={<Male Bill={Bill} setBill={setBill} />} />
-        <Route path="/People Services/Home Salon/Female" element={<Female Bill={Bill} setBill={setBill} />} />
+        <Route path="/People Services/Home Salon/Male" element={<Male Bill={Bill} setBill={setBill} total={total} setTotal={setTotal} />} />
+        <Route path="/People Services/Home Salon/Female" element={<Female Bill={Bill} setBill={setBill} total={total} setTotal={setTotal} />} />
         <Route path="/People Services/Bill" element={<Bill />} />
 
-        <Route path="/People Services/Electronics and Carpenter Service/Carpenter" element={<Carpenter />} />
-        <Route path="/People Services/Electronics and Carpenter Service/Electronic" element={<Electirc />} />
+        <Route path="/People Services/Electronics and Carpenter Service/Carpenter" element={<Carpenter Bill={Bill} setBill={setBill} total={total} setTotal={setTotal} />} />
+        <Route path="/People Services/Electronics and Carpenter Service/Electronic" element={<Electirc Bill={Bill} setBill={setBill} total={total} setTotal={setTotal} />} />
         <Route path="/People Services/Electronics and Carpenter Service" element={<ECselection />} />
 
 
         <Route path="/People Services/Booking/OTP" element={<Otp />} />
         <Route path="/People Services/Booking/Address" element={<Address />} />
-        <Route path="/People Services/Booking/Cart" element={<Cart Bill={Bill} />} />
+        <Route path="/People Services/Booking/Cart" element={<Cart Bill={Bill} total={total} setBill={setBill} setTotal={setTotal} />} />
         <Route path="/People Services/Booking/Book Slot" element={<Slot />} />
-        <Route path="/People Services/Booking/Payment" element={<Payment />} />
+        <Route path="/People Services/Booking/Payment" element={<Payment total={total} />} />
         <Route path="/People Services/Booking/Order Placed" element={<Thank />} />
+        <Route path="/People Services/Booking/Tracking" element={<Track />} />
+
 
       </Routes>
       <Newfooter />

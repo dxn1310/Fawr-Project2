@@ -67,6 +67,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 
@@ -79,40 +81,30 @@
 
 
 .cart-option-left-title {
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
 .cart-option-rate {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .cart-option-rate-people {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #838383;
 }
 
 .cart-option-price {
-    font-size: 1.5rem;
+    font-size: 1.10rem;
     font-weight: 500;
 }
 
-.cart-option-ul {
-    margin-left: 8%;
-    font-size: 1.25rem;
-    font-weight: 500;
-}
 
-.cart-option-li {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.6);
-}
 
 .cart-option-right-price {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: 500;
     /* color: rgba(0, 0, 0, 0.6); */
 }
@@ -125,7 +117,7 @@
 }
 
 .cart-option-btn-text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 

@@ -2,6 +2,11 @@ import React from 'react'
 import "../CareerAdvice1/Careeradvice1.css"
 
 export default function Careeradvice1() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='careeradvice-outer'>
             <div className='careeradvice-inner'>
@@ -16,7 +21,7 @@ export default function Careeradvice1() {
 
                 <div className='careeradvice-subtitle'>Define your goals</div>
                 <div className='careeradvice-content'>Why do you want a part-time job? Do you need an additional source of money or want to gain new skills and experience? Maybe you are a student looking to earn extra money to pay for tuition and other expenses. Or maybe you are a stay-at-home parent who is looking to reenter the workforce but can only commit to working a few hours a week. Once you know your reason, you can narrow down your options.</div>
-                
+
                 <div className='careeradvice-subtitle'>Know what you are looking for</div>
                 <div className='careeradvice-content'>Many industries offer part-time jobs. What type of work would you like to do? Are you seeking time flexibility or a good salary, or proximity to home? Calculate the number of hours you can work, and how much money you expect. When you have a clear idea of what you want, your job search becomes easier.</div>
 
@@ -25,7 +30,7 @@ export default function Careeradvice1() {
 
                 <div className='careeradvice-subtitle'>Research</div>
                 <div className='careeradvice-content'>Use the internet to your advantage and search for part-time job openings on various websites. Check your local area for potential employers that offer part-time work. Check out job postings on different job boards, in newspapers, or at your local library. Ask friends and family if they know of any suitable part-time jobs. They may have heard of something that isn’t advertised anywhere.</div>
-                
+
                 <div className='careeradvice-subtitle'>Check details of the open positions and apply</div>
                 <div className='careeradvice-content'>Once you find a few potential jobs, be sure to read the job descriptions carefully. Read up on the company beforehand so that you know what they do and if their values align with your own. Make sure you have all the necessary qualifications/skills for the job before applying. Many employers will require you to have relevant experience or qualifications. However, there can be certain positions that are meant for job seekers who are freshers (have no prior experience in that field.)</div>
 

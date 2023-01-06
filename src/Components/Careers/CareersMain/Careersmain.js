@@ -18,24 +18,13 @@ import Careersmain_img12 from "./CareersMainImages/Careersmain_img12.png"
 import { NavLink as Link } from 'react-router-dom'
 
 export default function Careersmain() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='careersmain-outer'>
-            {/* <div className='careersmain-top'>
-                <div className='careersmain-top-inner'>
-                    <Stack direction='row' spacing={4} >
-                        <Link to="/Careers Main/Log In">
-                            <Button width="100%" fontSize="70%" borderColor='#2B7FFF' color="#2B7FFF" borderWidth="0.1rem">
-                                Log-In
-                            </Button>
-                        </Link>
-                        <Link to="/Careers Main/Sign Up">
-                            <Button width="100%" fontSize="70%" backgroundColor='#2B7FFF' color="white">
-                                Sign-Up
-                            </Button>
-                        </Link>
-                    </Stack>
-                </div>
-            </div> */}
             <div className='careersmain-inner1'>
                 <Stack direction='row' spacing={4} width="25%" marginTop="30%" marginLeft="10%">
                     <Button width="50%" borderRadius="0.5rem" fontSize="65%" height="fit-content" padding="3%" backgroundColor='#2B7FFF' color="white" borderWidth="0.1rem">
@@ -64,34 +53,6 @@ export default function Careersmain() {
                     Trending
                 </div>
                 <div className='careersmain-grid'>
-                    {/* <Link to="">
-                        <div className='careersmain-grid-element'>
-                            <Stack direction="column" height="100%" width="90%">
-                                <img src={Careersmain_img7} />
-                                <div className='careersmain-inner3-title'>Career Advice</div>
-                                <div className='careersmain-inner3-content'>How to introduce yourself in an interview</div>
-                            </Stack>
-                        </div>
-
-                    </Link>
-                    <Link to="">
-                        <div className='careersmain-grid-element'>
-                            <Stack direction="column"  height="100%" width="90%">
-                                <img className="careersmain-img"src={Careersmain_img8} />
-                                <div className='careersmain-inner3-title'>Career Advice</div>
-                                <div className='careersmain-inner3-content'>5 Jobs after 12th  to start your career</div>
-                            </Stack>
-                        </div>
-                    </Link>
-                    <Link to="">
-                        <div className='careersmain-grid-element'>
-                            <Stack direction="column"  height="100%" width="90%">
-                                <img src={Careersmain_img9} />
-                                <div className='careersmain-inner3-title'>Career Advice</div>
-                                <div className='careersmain-inner3-content'>How to introduce yourself in an interview</div>
-                            </Stack>
-                        </div>
-                    </Link> */}
                     <Link to="/Careers Main/Careers Advice 1">
                         <img src={Careersmain_img10} />
                     </Link>

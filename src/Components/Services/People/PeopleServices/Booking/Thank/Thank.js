@@ -26,6 +26,9 @@ export default function Thank() {
                 <div className='thank-text'>
                     To return to the home page,<Link to="/"><div style={{ color: "#2B7FFF" }}>click here</div></Link>
                 </div>
+                <div className='thank-text'>
+                    To Track Order,<Link to="/People Services/Booking/Tracking"><div style={{ color: "#2B7FFF" }}>click here</div></Link>
+                </div>
             </div>
         </div>
     )

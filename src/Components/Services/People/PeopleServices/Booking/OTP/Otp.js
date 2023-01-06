@@ -1,5 +1,5 @@
 import { Stack } from '@chakra-ui/react'
-import React from 'react'
+import React, { useState } from 'react'
 import "./Otp.css"
 import Otp_img1 from "./OtpImages/Otp_img1.png"
 import Otp_img2 from "./OtpImages/Otp_img2.png"
@@ -28,6 +28,32 @@ export default function Otp() {
         behavior: 'smooth'
     });
 
+    const [phone, setPhone] = useState("");
+
+    const [otp1, setOtp1] = useState("");
+    const [otp2, setOtp2] = useState("");
+    const [otp3, setOtp3] = useState("");
+    const [otp4, setOtp4] = useState("");
+    const [otp5, setOtp5] = useState("");
+
+    const [countryCode, setCountryCode] = useState("+91")
+
+    const handleClick = () => {
+        setOtp1("");
+        setOtp2("");
+        setOtp3("");
+        setOtp4("");
+        setOtp5("");
+        setPhone("");
+
+    }
+
+    // const [otp, setOtp] = useState(otp1 + otp2 + otp3 + otp4 + otp5);
+    var otp = otp1 + otp2 + otp3 + otp4 + otp5;
+    // console.log(phone)
+    console.log(otp)
+
+
     return (
         <div className='otp-outer'>
             <div className='otp-inner'>
@@ -46,10 +72,10 @@ export default function Otp() {
                         <Stack direction="row" spacing={2} width="100%">
                             <Menu width="100%">
                                 <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-                                    +91
+                                    {countryCode}
                                 </MenuButton>
                                 <MenuList>
-                                    <MenuItem>+91 (India)</MenuItem>
+                                    <MenuItem onClick={(e) => setCountryCode("+91")}>+91 (India)</MenuItem>
                                 </MenuList>
                             </Menu>
 
@@ -57,8 +83,8 @@ export default function Otp() {
                                 placeholder='Enter Phone No'
                                 type="number"
                                 backgroundColor="rgba(224, 224, 224, 0.6)"
-                                borderColor="black"
-                                width="80%" />
+                                width="80%"
+                                onChange={(e) => setPhone(e.target.value)} />
                         </Stack>
                         <div style={{ display: "flex", justifyContent: "right", width: "100%" }}>
                             <Button width="30%" backgroundColor="#2B7FFF" color="white" >
@@ -72,36 +98,37 @@ export default function Otp() {
                             <Input focusBorderColor='white'
                                 type="number"
                                 backgroundColor="rgba(224, 224, 224, 0.6)"
-                                borderColor="black"
-                                width="20%" />
+                                width="20%"
+                                maxLength="1"
+                                onChange={(e) => setOtp1(e.target.value)} />
 
                             <Input focusBorderColor='white'
                                 type="number"
                                 backgroundColor="rgba(224, 224, 224, 0.6)"
-                                borderColor="black"
-                                width="20%" />
+                                width="20%"
+                                onChange={(e) => setOtp2(e.target.value)} />
 
                             <Input focusBorderColor='white'
                                 type="number"
                                 backgroundColor="rgba(224, 224, 224, 0.6)"
-                                borderColor="black"
-                                width="20%" />
+                                width="20%"
+                                onChange={(e) => setOtp3(e.target.value)} />
 
                             <Input focusBorderColor='white'
                                 type="number"
                                 backgroundColor="rgba(224, 224, 224, 0.6)"
-                                borderColor="black"
-                                width="20%" />
+                                width="20%"
+                                onChange={(e) => setOtp4(e.target.value)} />
 
                             <Input focusBorderColor='white'
                                 type="number"
                                 backgroundColor="rgba(224, 224, 224, 0.6)"
-                                borderColor="black"
-                                width="20%" />
+                                width="20%"
+                                onChange={(e) => setOtp5(e.target.value)} />
                         </Stack>
                         <Link to="/People Services/Booking/Address">
                             <div style={{ display: "flex", justifyContent: "right", width: "100%" }}>
-                                <Button width="30%" backgroundColor="#2B7FFF" color="white" >
+                                <Button width="30%" backgroundColor="#2B7FFF" color="white" onClick={handleClick}>
                                     <div className='otp-btn-text'>
                                         Verify OTP
                                     </div>

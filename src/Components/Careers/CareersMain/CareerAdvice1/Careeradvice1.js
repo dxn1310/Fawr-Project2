@@ -2,6 +2,11 @@ import React from 'react'
 import "./Careeradvice1.css"
 
 export default function Careeradvice1() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='careeradvice-outer'>
             <div className='careeradvice-inner'>
@@ -26,7 +31,7 @@ export default function Careeradvice1() {
 
                 <div className='careeradvice-subtitle'>3. Begin by greeting the interviewer</div>
                 <div className='careeradvice-content'>Greeting the interviewer(s) is an essential element of the interview process. Always start the self-introduction by greeting the interviewers. It allows them to measure your level of confidence. Remember to smile. After greeting the interviewer appropriately, say your full name. Then give a brief description of your family. While doing so, don’t be nervous and look away while speaking. Always maintain eye contact with the interviewers. </div>
-                
+
                 <div className='careeradvice-subtitle'>4. Include your educational qualifications</div>
                 <div className='careeradvice-content'>Once you’ve given a basic introduction, including your name and family information, tell the interviewers about your educational background. Even though your resume would have it, you should provide details on the courses you undertook and the institutions where you studied. Be honest when discussing your academic achievements. Try to be factual and avoid seeming overconfident. </div>
 

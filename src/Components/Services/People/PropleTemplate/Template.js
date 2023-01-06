@@ -5,38 +5,43 @@ import {
 } from '@chakra-ui/react'
 
 import { NavLink as Link } from 'react-router-dom'
+import { CheckIcon } from '@chakra-ui/icons'
 
-export default function Template({ gridImages, bgimg, options, Bill, setBill }) {
-    window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    });
+export default function Template({ gridImages, bgimg, options, setBill, total, setTotal }) {
 
     const [optionTitle, setOptionTitle] = useState()
     const [optionRate, setOptionRate] = useState()
     const [optionRatePeople, setOptionRatePeople] = useState()
     const [optionPrice, setOptionPrice] = useState()
-    // const [optionTitle, setOptionTitle] = useState()
+
+    const [clicked, setClicked] = useState("0")
+
+    const [location, setLocation] = useState("")
+    console.log(location)
+
     const addedOption =
     {
         title: optionTitle,
         rating: optionRate,
         ratingPeople: optionRatePeople,
         price: optionPrice
-        // rate : 
     }
 
     const handleAddService = (a, b, c, d) => {
-        setOptionTitle(a)
-        setOptionRate(b)
-        setOptionRatePeople(c)
-        setOptionPrice(d)
+        const addedOption =
+        {
+            title: a,
+            rating: b,
+            ratingPeople: c,
+            price: d
+        }
         console.log("Service Added")
-        setBill([...Bill, addedOption])
-        // console.log(t)
+        setBill(oldBill => ([
+            ...oldBill,
+            addedOption
+        ]))
     }
-    console.log(Bill)
+
     return (
         <div className='template-outer'>
             <img className='template-bgimg' src={bgimg} />
@@ -85,8 +90,33 @@ export default function Template({ gridImages, bgimg, options, Bill, setBill }) 
                                                                 boxShadow=" 2px 2px 4px 1px rgba(0, 0, 0, 0.32)"
                                                                 borderRadius="0.5rem"
                                                                 color="#407BFF"
-                                                                onClick={(e) => { handleAddService(opt.contentTitle, opt.contentRating, opt.contentRatingPeople, opt.contentPrice); }}
-                                                            >Add +</Button>
+                                                                onClick={(e) => { handleAddService(opt.contentTitle, opt.contentRating, opt.contentRatingPeople, opt.contentPrice); setTotal(total + parseInt(opt.contentPrice)); setClicked("1") }}
+                                                            >
+                                                                Add +
+                                                            </Button>
+                                                            {/* {
+                                                                clicked === "1" ? <Button borderColor="white"
+                                                                    backgroundColor="white"
+                                                                    boxShadow=" 2px 2px 4px 1px rgba(0, 0, 0, 0.32)"
+                                                                    borderRadius="0.5rem"
+                                                                    color="#407BFF"
+                                                                    onClick={(e) => { handleAddService(opt.contentTitle, opt.contentRating, opt.contentRatingPeople, opt.contentPrice); setClicked("1") }}
+                                                                >
+                                                                </Button> : <Button borderColor="white"
+                                                                    backgroundColor="white"
+                                                                    boxShadow=" 2px 2px 4px 1px rgba(0, 0, 0, 0.32)"
+                                                                    borderRadius="0.5rem"
+                                                                    color="#407BFF"
+                                                                >
+                                                                    <Stack direction="row" display="flex" alignItems="center">
+                                                                        <div className="cart-option-btn-text">
+                                                                            Added
+                                                                        </div>
+                                                                        <CheckIcon />
+                                                                    </Stack>
+
+                                                                </Button>
+                                                            } */}
                                                         </div>
                                                     </div>
                                                 })
@@ -99,25 +129,31 @@ export default function Template({ gridImages, bgimg, options, Bill, setBill }) 
 
                             })
 
-
-                            // <Link to="{option == 'Cleaning & Pest Control' ? " /People Services/Cleaning & Pest Control" : "/"} ></Link>
-
-
                         }
-                        {/* </div> */}
+
                     </div>
                     <div className='template-content-right'>
+
                         <Stack direction="row" spacing={5} width="100%">
                             <Input width="100%"
                                 placeholder='Enter Location'
+                                _hover={{ borderColor: "black" }}
+                                focusBorderColor="#FFFFFF"
+                                _focus={{ borderColor: "black" }}
                                 _placeholder={{ color: "grey", fontSize: "100%", padding: '1%' }}
                                 borderColor="black"
-                                borderWidth="0.1rem" />
+                                borderWidth="0.1rem"
+                                onChange={(e) => setLocation(e.target.value)} />
 
                             <Button color="white"
                                 backgroundColor="#2A7FFF"
                                 width="fit-content"> <Link to="/People Services/Booking/OTP">Apply</Link></Button>
                         </Stack>
+                        <div className='template-viewclass'>
+                            <Link to="/People Services/Booking/Cart">
+                                View Cart >>
+                            </Link>
+                        </div>
                     </div>
                 </div >
             </div >
