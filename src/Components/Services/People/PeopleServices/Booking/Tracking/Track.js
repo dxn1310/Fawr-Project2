@@ -79,13 +79,13 @@ export default function Track() {
             <div className='Track-inner'>
                 <div className='Track-title-outer'>
                     <label className='Track-title'>
-                        Track your application
+                        Track your Order
                     </label>
                 </div>
                 <div className='Track-inputarea'>
                     <Stack spacing={0} direction="row">
-                        <Input onChange={(e) => setApplication(e.target.value)} height="4rem" value={application} border="3px solid black" borderTopRightRadius="0" borderBottomRightRadius="0" fontSize="1.6rem" fontWeight="400" borderRadius="0.6em" placeholder='Enter Application No' />
-                        <Button onClick={handleSearch} height="4rem" border="3px solid black" width="20%" borderTopLeftRadius="0" borderBottomLeftRadius="0" fontSize="1.6rem" fontWeight="400" borderRadius="0.6em" backgroundColor="#F9E164">Search</Button>
+                        <Input onChange={(e) => setApplication(e.target.value)} height="4rem" value={application} border="3px solid black" borderTopRightRadius="0" borderBottomRightRadius="0" fontSize="1.6rem" fontWeight="400" borderRadius="0.6em" placeholder='Enter Order ID' />
+                        <Button onClick={handleSearch} height="4rem" color="white" border="3px solid black" width="20%" borderTopLeftRadius="0" borderBottomLeftRadius="0" fontSize="1.6rem" fontWeight="400" borderRadius="0.6em" backgroundColor="#1DACFD">Search</Button>
                     </Stack>
                 </div>
 
@@ -107,12 +107,12 @@ export default function Track() {
 
                         <div className='Track-circle-text-outer'>
                             <label className='Track-circle-text'>
-                                Address
+                                Order Placed
                             </label>
                         </div>
                     </div>
                     {
-                        appl === "yes" ? <div className='Track-circle-line' style={{ backgroundColor: "rgba(106, 225, 48, 1)" }}></div> : <div className='Track-circle-line'></div>
+                        appl === "yes" ? <div className='Track-circle-line' style={{ backgroundColor: "#1DACFD" }}></div> : <div className='Track-circle-line'></div>
                     }
 
                     <div className='Track-circle-outer'>
@@ -130,13 +130,12 @@ export default function Track() {
 
                         <div className='Track-circle-text-outer'>
                             <label className='Track-circle-text'>
-                                Order
-                                Summary
+                                Payment
                             </label>
                         </div>
                     </div>
                     {
-                        intv === "yes" ? <div className='Track-circle-line' style={{ backgroundColor: "rgba(106, 225, 48, 1)" }}></div> : <div className='Track-circle-line'></div>
+                        intv === "yes" ? <div className='Track-circle-line' style={{ backgroundColor: "#1DACFD" }}></div> : <div className='Track-circle-line'></div>
                     }
 
 
@@ -155,12 +154,12 @@ export default function Track() {
                         }
                         <div className='Track-circle-text-outer'>
                             <label className='Track-circle-text'>
-                                Slot Booking
+                                Service Dispatched
                             </label>
                         </div>
                     </div>
                     {
-                        doc === "yes" ? <div className='Track-circle-line' style={{ backgroundColor: "rgba(106, 225, 48, 1)" }}></div> : <div className='Track-circle-line'></div>
+                        doc === "yes" ? <div className='Track-circle-line' style={{ backgroundColor: "#1DACFD" }}></div> : <div className='Track-circle-line'></div>
                     }
 
 
@@ -179,12 +178,12 @@ export default function Track() {
                         }
                         <div className='Track-circle-text-outer'>
                             <label className='Track-circle-text'>
-                                Payment
+                                In Progress
                             </label>
                         </div>
                     </div>
                     {
-                        offer === "yes" ? <div className='Track-circle-line' style={{ backgroundColor: "rgba(106, 225, 48, 1)" }}></div> : <div className='Track-circle-line'></div>
+                        offer === "yes" ? <div className='Track-circle-line' style={{ backgroundColor: "#1DACFD" }}></div> : <div className='Track-circle-line'></div>
                     }
 
 
@@ -202,7 +201,7 @@ export default function Track() {
                         }
                         <div className='Track-circle-text-outer'>
                             <label className='Track-circle-text'>
-                                Order Placed
+                                Service Completed
                             </label>
                         </div>
                     </div>

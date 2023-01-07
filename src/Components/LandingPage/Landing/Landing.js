@@ -23,6 +23,11 @@ import Corporate from '../../Services/Corporate/Corporate.js';
 import Reachus from '../../Services/ReachUs/Reachus.js';
 import Reach from '../Reach/Reach.js';
 
+import Slide1 from '../Slideshow/Slides/Slide1/Slide1';
+import Slide2 from '../Slideshow/Slides/Slide2/Slide2';
+import Slide3 from '../Slideshow/Slides/Slide3/Slide3';
+import Slide4 from '../Slideshow/Slides/Slide4/Silde4';
+import Slide5 from '../Slideshow/Slides/Slide5/Slide5';
 import { Stack } from '@chakra-ui/react'
 
 import Slideshow from '../Slideshow/Slideshow';
@@ -43,7 +48,7 @@ export default function Landing() {
             <div className='landing-inner'>
                 <Trust />
             </div>
-            {/* <Reach /> */}
+            <Reach />
         </div>
     )
 }

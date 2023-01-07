@@ -41,7 +41,7 @@ export default function Slideshow() {
         infinite: true,
         indicators: true,
         // scale: 0.4,
-        arrows: true
+        arrows: true,
     };
     return (
         <div className="slide-container">

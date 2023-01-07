@@ -4,6 +4,18 @@ import "./Search.css";
 import { Stack, Input, Button, InputGroup } from '@chakra-ui/react'
 import Search_img1 from "./SearchImages/Search_img1.png"
 
+import Homesalon_img from "./SearchImages/Homesalon_img.png"
+import Painting_img from "./SearchImages/Painting_img.png"
+import Interiordesign_img from './SearchImages/Interiordesign_img.png';
+
+import Predictive_img from './SearchImages/Predictive_img.png';
+import Cost_img from './SearchImages/Cost_img.png';
+
+import Real_img from "./SearchImages/Real_img.png"
+import Performance_img from "./SearchImages/Performance_img.png"
+import Maintainence_img from "./SearchImages/Maintainence_img.png"
+import Regular_img from "./SearchImages/Regular_img.png"
+
 import { NavLink as Link } from 'react-router-dom';
 import {
     Menu, Divider,
@@ -16,6 +28,8 @@ import {
     MenuDivider,
 } from '@chakra-ui/react'
 import { ChevronDownIcon } from '@chakra-ui/icons'
+
+import { useMediaQuery } from '@chakra-ui/react'
 
 export default function Search() {
     const services = ["Digital Technology Transformation",
@@ -33,10 +47,10 @@ export default function Search() {
 
     const locations = [
         "Bangalore",
-        "Chennai",
-        "Pune",
-        "New Delhi",
-        "Tirupati"
+        // "Chennai",
+        // "Pune",
+        // "New Delhi",
+        // "Tirupati"
     ]
 
     const availableServices = [
@@ -46,63 +60,91 @@ export default function Search() {
             services: [
                 {
                     name: "People Services",
-                    link: "/People Services/Booking/OTP",
+                    link: "/People Services",
                     types: ["Home Salon", "Painting", "Interior Design"],
+                    typeIcons: [Homesalon_img, Painting_img, Interiordesign_img,]
                 },
 
                 {
 
                     name: "Compliance Services",
-                    link: "/People Services/Booking/OTP",
+                    link: "/Compiances Solution",
                     types: ["Predictive control & risk score", "Cost saving & high quality"],
+                    typeIcons: [Predictive_img, Cost_img,]
                 },
                 {
                     name: "Asset Management",
-                    link: "/People Services/Booking/OTP",
+                    link: "/Asset Management",
                     types: ["Real- Time Incident Tracking", "Peformance Audits", "Maintenace checklist & MIS", "Regular AMC"],
+                    typeIcons: [Real_img, Performance_img, Maintainence_img, Regular_img]
                 },
 
 
             ]
         },
 
-        {
-            location: "Pune",
-            services: [
-                {
-                    name: "Facility Management",
-                    link: "/People Services/Booking/OTP",
-                    types: ["Integrated facility Management"],
-                },
-            ]
-        },
+        // {
+        //     location: "Chennai",
+        //     services: [
+        //         {
+        //             name: "People Services",
+        //             link: "/People Services",
+        //             types: ["Home Salon", "Painting", "Interior Design"],
+        //         },
 
-        {
-            location: "New Delhi",
-            services: [
-                {
-                    name: "Facility Management",
-                    link: "/People Services/Booking/OTP",
-                    types: ["Integrated facility Management"],
-                },
-                {
-                    name: "Non- Technical Service",
-                    link: "/People Services/Booking/OTP",
-                    types: ["Health Care", "Food Service", "Aviation", "Payroll"],
-                },
-            ]
-        },
+        //         // {
 
-        {
-            location: "Tirupati",
-            services: [
-                {
-                    name: "Facility Management",
-                    link: "/People Services/Booking/OTP",
-                    types: ["Integrated facility Management"],
-                },
-            ]
-        }
+        //         //     name: "Compliance Services",
+        //         //     link: "/People Services/Booking/OTP",
+        //         //     types: ["Predictive control & risk score", "Cost saving & high quality"],
+        //         // },
+        //         {
+        //             name: "Asset Management",
+        //             link: "/People Services/Booking/OTP",
+        //             types: ["Real- Time Incident Tracking", "Peformance Audits", "Maintenace checklist & MIS", "Regular AMC"],
+        //         },
+
+
+        //     ]
+        // },
+
+        // {
+        //     location: "Pune",
+        //     services: [
+        //         {
+        //             name: "Facility Management",
+        //             link: "/People Services/Booking/OTP",
+        //             types: ["Integrated facility Management"],
+        //         },
+        //     ]
+        // },
+
+        // {
+        //     location: "New Delhi",
+        //     services: [
+        //         {
+        //             name: "Facility Management",
+        //             link: "/Facility Management",
+        //             types: ["Integrated facility Management"],
+        //         },
+        //         {
+        //             name: "Non - Technical Service",
+        //             link: "/Non - Technical Service",
+        //             types: ["Health Care", "Food Service", "Aviation", "Payroll"],
+        //         },
+        //     ]
+        // },
+
+        // {
+        //     location: "Tirupati",
+        //     services: [
+        //         {
+        //             name: "Digital Technology Transformation",
+        //             link: "/Digital Technology Transformation",
+        //             types: ["Cyber Security", "Artifical Intelligence"],
+        //         },
+        //     ]
+        // }
     ]
 
 
@@ -111,7 +153,7 @@ export default function Search() {
     const [selectedService, setService] = useState(0)
     const [currentServiceTypes, setCurrentServiceTypes] = useState()
 
-
+    const [isLargerThan800] = useMediaQuery('(min-width: 730px)')
     return (
         <div className='search-outer'>
             <img className='search-bgimg' src={Search_img1} />
@@ -121,7 +163,7 @@ export default function Search() {
                         <div className='search-title'>
                             Create a recognition-rich culture with us.
                         </div>
-                        <InputGroup width="60%"
+                        <InputGroup width="50%"
                             boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px;"
                             borderRadius="0.5rem"
                             padding="0.5%"
@@ -129,24 +171,31 @@ export default function Search() {
                             justifyContent="center"
                             alignItems="center"
                             backgroundColor="white"
-                            marginTop="5%">
-                            <Menu>
-                                <MenuButton as={Button} rightIcon={<ChevronDownIcon />} width="20%"
+                            marginTop="2%"
+                        // height="fit-content"
+                        >
+                            <Menu >
+                                <MenuButton as={Button} rightIcon={<ChevronDownIcon />} width="30%"
+                                    display={isLargerThan800 ? "visible" : "none"}
                                     borderRadius="0.5rem"
                                     barderRight="black"
-                                    display="flex"
-                                    justifyContent="center"
+                                    // display="flex"
+                                    justifyContent="space-between"
                                     alignItems="center"
                                     backgroundColor="white"
+                                    height="fit-content"
                                 >
-                                    {locations[selectedLocation]}
+
+                                    <div className='menu-text'>
+                                        {locations[selectedLocation]}
+                                    </div>
                                 </MenuButton>
 
 
                                 <MenuList>
                                     {
                                         locations.map((loc, index) => {
-                                            return <MenuItem onClick={(e) => setSelectedLocation(index)} key={nanoid()}>{loc}</MenuItem>
+                                            return <MenuItem onClick={(e) => setSelectedLocation(index)} key={nanoid()}><div className='menu-text'>{loc}</div></MenuItem>
                                         })
                                     }
                                 </MenuList>
@@ -162,7 +211,7 @@ export default function Search() {
                                         height="fit-content"
                                         width="90%"
                                         // paddingRight="1%"
-                                        _placeholder={{ fontSize: "1rem" }}
+                                        // _placeholder={{ fontSize: "1rem" }}
                                         onChange={(e) => { setServiceInput(e.target.value) }}
                                     />
                                 </div>
@@ -171,6 +220,8 @@ export default function Search() {
                                     backgroundColor="#407BFF"
                                     borderRadius="0.5rem"
                                     color="white"
+                                    height="fit-content"
+                                    marginRight="1%"
                                 >
                                     <div className='search-btn-text'>
                                         Search
@@ -204,6 +255,32 @@ export default function Search() {
                                 </div>
                             </Link>
                         </div>
+
+                        <Menu >
+                            <MenuButton as={Button} rightIcon={<ChevronDownIcon />} width="30%"
+                                display={isLargerThan800 ? "none" : "visible"}
+                                borderRadius="0.5rem"
+                                barderRight="black"
+                                justifyContent="space-between"
+                                alignItems="center"
+                                backgroundColor="white"
+                                height="fit-content"
+                            >
+
+                                <div className='menu-text'>
+                                    {locations[selectedLocation]}
+                                </div>
+                            </MenuButton>
+
+
+                            <MenuList>
+                                {
+                                    locations.map((loc, index) => {
+                                        return <MenuItem onClick={(e) => setSelectedLocation(index)} key={nanoid()}><div className='menu-text'>{loc}</div></MenuItem>
+                                    })
+                                }
+                            </MenuList>
+                        </Menu>
                         {
                             <div className='search-available-outer'>
                                 <div className='search-available-text'>
@@ -221,11 +298,29 @@ export default function Search() {
                                 </div>
 
                                 <div className='search-services-available'>
-                                    <div className='serach-available-services-inner'>
-                                        {
-                                            availableServices[selectedLocation].services[selectedService].types.map(type => <div className="search-service-type">{type}</div>)
-                                        }
-                                    </div>
+                                    <Stack direction="row" spacing={2} width="90%">
+                                        <div className='serach-available-services-inner'>
+                                            {
+                                                availableServices[selectedLocation].services[selectedService].typeIcons.map((icon, index) => <Link to={availableServices[selectedLocation].services[selectedService].link}>
+                                                    <>
+                                                        <img className="search-icon" src={icon} />
+                                                        <div className="search-service-type">
+                                                            {availableServices[selectedLocation].services[selectedService].types[index]}
+                                                        </div>
+                                                    </>
+                                                </Link>)
+                                            }
+                                        </div>
+                                        {/* <div className='serach-available-services-inner'>
+                                            {
+                                                availableServices[selectedLocation].services[selectedService].types.map(type => <Link to={availableServices[selectedLocation].services[selectedService].link}>
+                                                    <div className="search-service-type">
+                                                        {type}
+                                                    </div>
+                                                </Link>)
+                                            }
+                                        </div> */}
+                                    </Stack>
                                 </div>
                             </div>
                         }

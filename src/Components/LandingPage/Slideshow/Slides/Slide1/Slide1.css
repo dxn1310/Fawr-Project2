@@ -29,12 +29,15 @@
     color: white;
     background-color: #407BFF;
     height: fit-content;
+    /* width: 50%; */
     padding: 1%;
+    margin-left: 2%;
     padding-left: 5%;
     padding-right: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .slide-inner {
@@ -44,10 +47,68 @@
 }
 
 .slide1-know-more {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 500;
     color: rgba(43, 127, 255, 1);
     display: flex;
     justify-content: left;
+    margin-left: 2%;
 }
 
+.slide1-dot2 {
+    width: 10%;
+}
+
+@media only screen and (max-width: 2000px) {
+    .slide1-title {
+        font-size: 2.5rem;
+    }
+
+    .slide1-know-more {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .slide1-title {
+        font-size: 2rem;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .slide1-know-more {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .slide1-title {
+        font-size: 1.5rem;
+    }
+
+    .slide1-know-more {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .slide1-title {
+        font-size: 1rem;
+    }
+
+    .slide1-know-more {
+        /* font-size: 0.75rem; */
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slide1-title {
+        font-size: 0.75rem;
+    }
+
+    .slide1-know-more {
+        /* font-size: 0.5rem; */
+        display: none ;
+    }
+}

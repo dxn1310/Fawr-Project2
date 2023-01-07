@@ -6,12 +6,20 @@ import {
     FormErrorMessage,
     FormHelperText,
     Input
-    , Text,
+    , Text, Box,
     Textarea,
     Checkbox,
     Stack, Button, Center
 } from '@chakra-ui/react'
 import Reach_img1 from "./ReachImages/Reach_img3.png"
+
+import {
+    Accordion,
+    AccordionItem,
+    AccordionButton,
+    AccordionPanel,
+    AccordionIcon,
+} from '@chakra-ui/react'
 
 export default function Reach() {
     return (
@@ -79,51 +87,64 @@ export default function Reach() {
                                     />
                                 </FormControl>
 
-                                <div className='reach-checkbox-title'>
-                                    <label>What do you need help with ?</label>
-                                </div>
+                                <Accordion allowToggle>
+                                    <AccordionItem>
+                                        <h2>
+                                            <AccordionButton>
+                                                <Box as="span" flex='1' textAlign='left'>
+                                                    <div className='reach-checkbox-title'>
+                                                        <label>What do you need help with ?</label>
+                                                    </div>
+                                                </Box>
+                                                <AccordionIcon />
+                                            </AccordionButton>
+                                        </h2>
+                                        <AccordionPanel pb={4}>
+                                            <div className='reach-checkbox'>
+                                                <Checkbox width="50%">
+                                                    <Text fontSize="0.8rem" fontWeight="400">Global Technology solution</Text>
+                                                </Checkbox>
+                                                <Checkbox width="50%">
+                                                    <Text fontSize="0.8rem" fontWeight="400">Tax Solution</Text>
+                                                </Checkbox>
+                                            </div>
 
-                                <div className='reach-checkbox'>
-                                    <Checkbox width="50%">
-                                        <Text fontSize="0.8rem" fontWeight="400">Global Technology solution</Text>
-                                    </Checkbox>
-                                    <Checkbox width="50%">
-                                        <Text fontSize="0.8rem" fontWeight="400">Tax Solution</Text>
-                                    </Checkbox>
-                                </div>
+                                            <div className='reach-checkbox'>
+                                                <Checkbox width="50%">
+                                                    <Text fontSize="0.8rem" fontWeight="400">Compliances solution</Text>
+                                                </Checkbox>
+                                                <Checkbox width="50%">
+                                                    <Text fontSize="0.8rem" fontWeight="400">Private security guaranting</Text>
+                                                </Checkbox>
+                                            </div>
+                                            <div className='reach-checkbox'>
+                                                <Checkbox width="50%">
+                                                    <Text fontSize="0.8rem" fontWeight="400">Non technical service</Text>
+                                                </Checkbox>
+                                                <Checkbox width="50%">
+                                                    <Text fontSize="0.8rem" fontWeight="400">Corporate fraud and forensic investigation</Text>
+                                                </Checkbox>
+                                            </div>
+                                            <div className='reach-checkbox'>
+                                                <Checkbox width="50%">
+                                                    <Text fontSize="0.8rem" fontWeight="400">Facility management</Text>
+                                                </Checkbox>
+                                                <Checkbox width="50%">
+                                                    <Text fontSize="0.8rem" fontWeight="400">Background check service</Text>
+                                                </Checkbox>
+                                            </div>
+                                            <div className='reach-checkbox'>
+                                                <Checkbox width="50%">
+                                                    <Text fontSize="0.8rem" fontWeight="400">Asset management</Text>
+                                                </Checkbox>
+                                                <Checkbox width="50%">
+                                                    <Text fontSize="0.8rem" fontWeight="400">Home service</Text>
+                                                </Checkbox>
+                                            </div>
+                                        </AccordionPanel>
+                                    </AccordionItem>
+                                </Accordion>
 
-                                <div className='reach-checkbox'>
-                                    <Checkbox width="50%">
-                                        <Text fontSize="0.8rem" fontWeight="400">Compliances solution</Text>
-                                    </Checkbox>
-                                    <Checkbox width="50%">
-                                        <Text fontSize="0.8rem" fontWeight="400">Private security guaranting</Text>
-                                    </Checkbox>
-                                </div>
-                                <div className='reach-checkbox'>
-                                    <Checkbox width="50%">
-                                        <Text fontSize="0.8rem" fontWeight="400">Non technical service</Text>
-                                    </Checkbox>
-                                    <Checkbox width="50%">
-                                        <Text fontSize="0.8rem" fontWeight="400">Corporate fraud and forensic investigation</Text>
-                                    </Checkbox>
-                                </div>
-                                <div className='reach-checkbox'>
-                                    <Checkbox width="50%">
-                                        <Text fontSize="0.8rem" fontWeight="400">Facility management</Text>
-                                    </Checkbox>
-                                    <Checkbox width="50%">
-                                        <Text fontSize="0.8rem" fontWeight="400">Background check service</Text>
-                                    </Checkbox>
-                                </div>
-                                <div className='reach-checkbox'>
-                                    <Checkbox width="50%">
-                                        <Text fontSize="0.8rem" fontWeight="400">Asset management</Text>
-                                    </Checkbox>
-                                    <Checkbox width="50%">
-                                        <Text fontSize="0.8rem" fontWeight="400">Home service</Text>
-                                    </Checkbox>
-                                </div>
                                 <Center> <Button backgroundColor="#2B7FFF" borderRadius="1rem" color="white" width="50%"
                                     fontSize="2rem" fontWeight="400">Submit</Button></Center>
 

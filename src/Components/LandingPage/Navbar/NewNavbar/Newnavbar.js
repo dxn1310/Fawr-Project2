@@ -167,11 +167,6 @@ export default function Newnavbar() {
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div>
 
-                                                {/* <div style={{ display: "flex", alignItems: "center", width: "70%" }}>
-                                                    <div className='x-drawer-items'>Global(English)</div>
-                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
-                                                </div> */}
-
                                                 <div style={{ width: "100%", height: "0.05rem", backgroundColor: "grey", marginTop: "10%" }} />
 
 

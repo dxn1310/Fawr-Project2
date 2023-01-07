@@ -18,7 +18,7 @@ export default function About() {
                 <div className='about-bottom-outer'>
                     <div className='about-bottom'>
                         <label className='about-bottom-content'>
-                            Fawr provides facilities management, corporate fraud and investigations, tax solutions, competency solutions, private security assurance, and housekeeping services that are essential to the functioning of a vibrant and healthy economy. We have earned the trust of leaders in this business segment both in India and the rest of Asia.<br /><br />
+                            Fawr provides facilities management, corporate fraud and investigations, tax solutions, competency solutions, private security assurance, and housekeeping services that are essential to the functioning of a vibrant and healthy economy. We have earned the trust of leaders in this business segment both in India and the rest of Asia.<br />
 
                             Our goal is not just to meet your goals, but to exceed your expectations. Our focus is on solving the challenges of our customers who value a combination of our expertise, customer service and timely response.
                         </label>
@@ -26,10 +26,11 @@ export default function About() {
                         <Button backgroundColor="#407BFF"
                             borderRadius="0.5rem"
                             color="white"
-                            // padding="1%"
-                            paddingLeft="2%"
-                            paddingRight="2%"
-                            marginTop="1%">
+                            height="fit-content"
+                            padding="1%"
+                            // paddingLeft="2%"
+                            // paddingRight="2%"
+                            >
                             <div className='about-btn-text'>
                                 Read More
                             </div>

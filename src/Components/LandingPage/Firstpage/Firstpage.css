@@ -196,3 +196,12 @@
         font-size: 0.5rem;
     }
 }
+@media only screen and (max-width: 500px) {
+    .firstpage-text {
+        font-size: 0.8rem;
+    }
+
+    .firstpage-btn-text {
+        font-size: 0.1rem;
+    }
+}

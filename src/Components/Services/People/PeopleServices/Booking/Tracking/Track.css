@@ -97,13 +97,14 @@
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background-color: rgba(74, 202, 12, 1);
+    background-color: #1DACFD;
     border-radius: 100%;
 }
 
 .Track-circle-text-outer {
     margin-top: 1rem;
     text-align: center;
+    /* width: 100%; */
 }
 
 .Track-circle-text {
@@ -143,7 +144,7 @@
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background-color: rgba(74, 202, 12, 1);
+    background-color: #1DACFD;
     border-radius: 100%;
 }
 
@@ -167,7 +168,7 @@
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background-color: rgba(217, 217, 217, 1);
+    background-color: #EBEBEB;
     border-radius: 100%;
     border: 0.25rem solid rgba(0, 0, 0, 0.42);
 }

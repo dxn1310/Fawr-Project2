@@ -79,9 +79,14 @@
     justify-content: space-between;
 }
 
-.newfooter-img {
-    /* width: 50%; */
-    /* height: 10%; */
+.newfooter-img1 {
+    width: 15%;
+    height: 8%;
+}
+
+.newfooter-img2 {
+    width: 13%;
+    height: 6%;
 }
 
 @media only screen and (max-width: 4000px) {
@@ -200,20 +205,94 @@
 
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
     .newfooter-fawr-content {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .newfooter-bottom-content {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 
-    .newfooter-solution-items {
-        font-size: 0.75rem;
-    }
 
-    .newfooter-ourservice {
+}
+
+@media only screen and (max-width: 1000px) {
+    .newfooter-fawr-content {
         font-size: 1.5rem;
+    }
+
+    .newfooter-bottom-content {
+        font-size: 0.7rem;
+    }
+
+    .newfooter-bottom {
+        padding-bottom: 2%;
+        margin-top: 3%;
+    }
+
+    .newfooter-bootom-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newfooter-top-right {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+    }
+
+    .newfooter-img1 {
+        width: 25%;
+        height: 18%;
+    }
+    
+    .newfooter-img2 {
+        width: 23%;
+        height: 16%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .newfooter-fawr-content {
+        font-size: 1.25rem;
+    }
+
+    .newfooter-bottom-content {
+        font-size: 0.7rem;
+    }
+
+    .newfooter-bottom {
+        padding-bottom: 2%;
+        margin-top: 3%;
+    }
+    .newfooter-img1 {
+        width: 30%;
+        height: 23%;
+        padding-bottom: 10%;
+    }
+    
+    .newfooter-img2 {
+        width: 28%;
+        height: 21%;
+        padding-bottom: 10%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .newfooter-fawr-content {
+        font-size: 1.25rem;
+        margin-left: 50%;
+    }
+
+    .newfooter-bottom-content {
+        font-size: 0.7rem;
+    }
+
+    .newfooter-bottom {
+        padding-bottom: 2%;
+        margin-top: 3%;
     }
 }

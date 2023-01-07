@@ -75,8 +75,8 @@ export default function Servicestemplate1({ title, img1, img2, img3, img4, under
                 <Stack direction="row" spacing={10} width="70%" display="flex" paddinglef="50%">
                     <img className="servicestemplate-row-img" src={img2} />
                     <Stack direction="column" spacing={5}>
-                        <Text fontSize="80%">Fawr Insurance  Protection</Text>
-                        <Text fontSize="50%">Upto Rs. 8,000 insurance coverwith every service requested. <label className="servicestemplate-text-color1">Learn More</label></Text>
+                        <div className='servicetemplate1-extra-text1'>Fawr Insurance  Protection</div>
+                        <div className='servicetemplate1-extra-text2'>Upto Rs. 8,000 insurance coverwith every service requested. <label className="servicestemplate-text-color1">Learn More</label></div>
                     </Stack>
                 </Stack>
 
@@ -87,8 +87,8 @@ export default function Servicestemplate1({ title, img1, img2, img3, img4, under
                 <Stack direction="row" spacing={10} width="70%" display="flex" paddinglef="50%">
                     <img className="servicestemplate-row-img" src={img3} />
                     <Stack direction="column" spacing={5}>
-                        <Text fontSize="80%">Anti Disclaimer Policy</Text>
-                        <Text fontSize="50%">Fawr treat it’s community equally with respect and without judgement or Bias.</Text>
+                        <div className='servicetemplate1-extra-text1'>Anti Disclaimer Policy</div>
+                        <div className='servicetemplate1-extra-text2'>Fawr treat it’s community equally with respect and without judgement or Bias.</div>
                         <Link to="/People Services/Anti Disclaimer Policy"><Button color="white" backgroundColor="#2B7FFF" width="20%">Know More</Button></Link>
                     </Stack>
                 </Stack>
@@ -100,13 +100,13 @@ export default function Servicestemplate1({ title, img1, img2, img3, img4, under
                 <Stack direction="row" spacing={10} width="70%" display="flex" paddinglef="50%">
                     <img className="servicestemplate-row-img" src={img4} />
                     <Stack direction="column" spacing={5}>
-                        <Text fontSize="80%">Proud partner with Govt. of India.</Text>
-                        <Text fontSize="50%">Find Professional Certified by Govt. of India Under Skill India Mission</Text>
+                        <div className='servicetemplate1-extra-text1'>Proud partner with Govt. of India.</div>
+                        <div className='servicetemplate1-extra-text2'>Find Professional Certified by Govt. of India Under Skill India Mission</div>
                     </Stack>
                 </Stack>
 
             </div>
-            <Reachus />
+            {/* <Reachus /> */}
 
         </div>
     )

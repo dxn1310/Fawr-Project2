@@ -10,7 +10,10 @@ import First_img5 from "./FirstpageImages/First_img5.png"
 import First_img6 from "./FirstpageImages/First_img6.png"
 import First_img7 from "./FirstpageImages/First_img7.png"
 
+import { useMediaQuery } from '@chakra-ui/react'
+
 export default function Firstpage() {
+    const [isLargerThan730] = useMediaQuery('(min-width: 730px)')
     return (
         <div className='firstpage-outer'>
             <img className="y" src={First_img1} />
@@ -24,11 +27,12 @@ export default function Firstpage() {
                             borderRadius="0.5rem" color="white"
                             fontWeight="400"
                             padding="1%"
-                            paddingLeft="2%"
-                            paddingRight="2%"
+                            paddingLeft={isLargerThan730 ? "2%" : "0"}
+                            paddingRight={isLargerThan730 ? "2%" : "0"}
+                            display={isLargerThan730 ? "visible" : "none"}
                             // paddingTop="1%"
-                            // height="fit-content"
-                            // paddingBottom="1%"
+                            height="fit-content"
+                        // paddingBottom="1%"
                         // width="25%">
                         >
                             <div className='firstpage-btn-text'>
