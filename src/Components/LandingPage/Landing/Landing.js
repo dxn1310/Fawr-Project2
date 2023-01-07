@@ -37,7 +37,7 @@ export default function Landing() {
             {/* <Firstpage /> */}
             <Slideshow />
             <div className='landing-inner'>
-                <Search />
+                {/* <Search /> */}
             </div>
             <div className='landing-inner'>
                 <About />
