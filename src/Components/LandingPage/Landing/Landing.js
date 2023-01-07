@@ -48,7 +48,7 @@ export default function Landing() {
             <div className='landing-inner'>
                 <Trust />
             </div>
-            <Reach />
+            {/* <Reach /> */}
         </div>
     )
 }
