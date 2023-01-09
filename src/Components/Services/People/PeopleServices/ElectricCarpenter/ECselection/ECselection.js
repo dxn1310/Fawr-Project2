@@ -13,22 +13,22 @@ export default function ECselection() {
         <div className='ECselection-outer'>
             <div className='ECselection-inner'>
                 <div className='ECselection-content'>
-                    <div>Select Service</div>
+                    <div className='ECselection-content-title'>Select Service</div>
                     <Stack direction="row" spacing={5} marginTop="5%" width="100%" display="flex" justifyContent="center">
-                        <Button width="40%"
-                            fontSize="100%"
+                        <Button width="45%"
+                            height="fit-content"
                             fontWeight="400"
                             color="white"
                             backgroundColor="#2B7FFF"
                             borderRadius="1rem"
-                            padding="4%"><Link to="/People Services/Electronics and Carpenter Service/Electronic">Electronics </Link></Button>
-                        <Button width="40%"
-                            fontSize="100%"
+                            padding="2%"><Link to="/People Services/Electronics and Carpenter Service/Electronic"><div className="ECselection-btn-text">Electronics</div></Link></Button>
+                        <Button width="45%"
+                            height="fit-content"
                             fontWeight="400"
                             color="white"
                             backgroundColor="#2B7FFF"
                             borderRadius="1rem"
-                            padding="4%"><Link to="/People Services/Electronics and Carpenter Service/Carpenter">Carpenter</Link></Button>
+                            padding="2%"><Link to="/People Services/Electronics and Carpenter Service/Carpenter"><div className="ECselection-btn-text">Carpenter</div></Link></Button>
                     </Stack>
                 </div>
 

@@ -3,7 +3,6 @@
 .address-outer {
     width: 100%;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     font-family: 'Poppins';
@@ -12,9 +11,7 @@
 
 .address-inner {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
-    /* align-items: flex-start; */
     width: 80%;
     margin-top: 3%;
 }
@@ -31,6 +28,32 @@
     flex-direction: column;
     align-items: flex-start;
     width: 45%;
-    /* margin-top: 5%; */
 }
 
+
+@media only screen and (max-width: 1200px) {
+
+    .address-inner {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction:column;
+        align-items:center;
+        width: 80%;
+        margin-top: 3%;
+    }
+    
+    .address-inner-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+    }
+    
+    .address-inner-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+    }
+
+}

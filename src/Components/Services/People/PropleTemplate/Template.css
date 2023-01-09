@@ -17,6 +17,10 @@
     margin-bottom: 3%;
 }
 
+.template-grid-imgs {
+    width: 15%;
+}
+
 .template-inner {
     display: flex;
     flex-direction: column;
@@ -72,17 +76,17 @@
 }
 
 .option-title {
-    font-size: 70%;
+    font-size: 1.5rem;
     width: 80%;
 }
 
 .option-rating {
-    font-size: 50%;
+    font-size: 1rem;
     color: rgb(117, 115, 115);
 }
 
 .option-price {
-    font-size: 60%;
+    font-size: 1.25rem;
 }
 
 .option-li {
@@ -95,6 +99,7 @@
 .template-content-left-option-title {
     margin-bottom: 5%;
     margin-top: 5%;
+    font-size: 2rem;
 }
 
 .template-content-left-option {
@@ -120,6 +125,7 @@
     display: flex;
     justify-content: left;
     width: 20%;
+    margin-right: 5%;
 }
 
 .template-viewclass {
@@ -131,4 +137,90 @@
     text-decoration: underline solid #2A7FFF;
     margin-top: 10%;
     height: 100%;
+}
+
+.option-btn-text {
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 1500px) {
+    .template-content-left-option-title {
+        font-size: 1.75rem;
+    }
+
+    .option-title {
+        font-size: 1.25rem;
+    }
+
+    .option-rating {
+        font-size: 0.75rem;
+    }
+
+    .option-price {
+        font-size: 1rem;
+    }
+
+    .option-li {
+        font-size: 0.75rem;
+        ;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .template-content-left-option-title {
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .option-btn-text {
+        font-size: 0.75rem;
+    }
+
+    .option-title {
+        font-size: 1rem;
+    }
+    
+    .option-rating {
+        font-size: 0.75rem;
+    }
+    
+    .option-price {
+        font-size: 1rem;
+    }
+    
+    .option-li {
+        font-size: 0.75rem;;
+    }
+    .option-outer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .template-content-left-option-title {
+        font-size: 0.75rem;
+    }
+
+    .option-title {
+        font-size: 0.75rem;
+    }
+
+    .option-rating {
+        font-size: 0.45rem;
+    }
+
+    .option-price {
+        font-size: 0.5rem;
+    }
+
+    .option-li {
+        font-size: 0.45rem;
+        ;
+    }
+    .option-btn-text {
+        font-size: 0.75rem;
+    }
 }

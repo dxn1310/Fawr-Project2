@@ -66,19 +66,19 @@ export default function Slot() {
         <div className='slot-outer'>
             <Status statusData={statusData} lineData={lineData} />
             <div className='slot-inner'>
-                <div className="slot-title" style={{ fontSize: "2rem", fontWeight: "500", }}>
+                <div className="slot-title" style={{ fontWeight: "500", }}>
                     Select the day of service
                 </div>
                 <div className='slot-grid-day'>
                     {
                         weekInfo.map((week, index) => {
-                            return <Stack direction="column" spacing={3} backgroundColor={daySelected === 0 ? "#E5E5E5" : "#E5E5E5"} width="10%" borderRadius="1rem" padding="1%" onClick={(e) => setDaySelected(1)}>
+                            return <Stack direction="column" spacing={1} backgroundColor={daySelected === 0 ? "#E5E5E5" : "#E5E5E5"} width="10%" borderRadius="1rem" padding="1%" onClick={(e) => setDaySelected(1)}>
                                 <div className="slot-text" style={{
-                                    fontSize: "1.5rem", fontWeight: "500", width: "100%", display: "flex", justifyContent: "center"
+                                    fontWeight: "500", width: "100%", display: "flex", justifyContent: "center"
                                 }}>
                                     {week.day}
                                 </div>
-                                <div className="slot-text" style={{ fontSize: "1.5rem", fontWeight: "500", width: "100%", display: "flex", justifyContent: "center" }}>
+                                <div className="slot-text" style={{ fontWeight: "500", width: "100%", display: "flex", justifyContent: "center" }}>
                                     {week.date}
 
                                 </div>
@@ -86,7 +86,7 @@ export default function Slot() {
                         })
                     }
                 </div>
-                <div className="slot-title" style={{ fontSize: "2rem", fontWeight: "500", marginTop: "5%" }}>
+                <div className="slot-title" style={{ fontWeight: "500", marginTop: "5%" }}>
                     Select start time of the service
                 </div>
                 <div className='slot-grid-time'>
@@ -100,16 +100,22 @@ export default function Slot() {
 
                 </div>
                 <Link to="/People Services/Booking/Payment">
-                    <div className='slot-button' style={{ width: "100%" }}>
-                        <Button width="100%"
+                    <div className='slot-button' style={{ width: "100%", padding: "0%" }}>
+                        {/* <Button width="100%"
                             // padding="2%"
                             backgroundColor=" #2B7FFF"
                             color="white"
-                            fontWeight="400">
-                            <div className='slot-btn-text' style={{ fontSize: "1.25rem" }}>
-                                Proceed to Payment
-                            </div>
-                        </Button>
+                            fontWeight="400"
+                            // height="1.5rem"
+                            // padding="0%"
+                            // paddingLeft="1%"
+                            // paddingRight="2%"
+                            // height=""
+                            > */}
+                        <div className='slot-btn-text' >
+                            Proceed to Payment
+                        </div>
+                        {/* </Button> */}
                     </div>
                 </Link>
             </div >

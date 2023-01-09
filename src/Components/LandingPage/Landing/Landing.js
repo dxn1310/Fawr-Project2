@@ -30,6 +30,8 @@ import Slide4 from '../Slideshow/Slides/Slide4/Silde4';
 import Slide5 from '../Slideshow/Slides/Slide5/Slide5';
 import { Stack } from '@chakra-ui/react'
 
+import ReachNew from '../Reach/Reachnew/ReachNew';
+
 import Slideshow from '../Slideshow/Slideshow';
 export default function Landing() {
     return (
@@ -37,7 +39,7 @@ export default function Landing() {
             {/* <Firstpage /> */}
             <Slideshow />
             <div className='landing-inner'>
-                {/* <Search /> */}
+                <Search />
             </div>
             <div className='landing-inner'>
                 <About />
@@ -48,7 +50,7 @@ export default function Landing() {
             <div className='landing-inner'>
                 <Trust />
             </div>
-            {/* <Reach /> */}
+            <ReachNew />
         </div>
     )
 }

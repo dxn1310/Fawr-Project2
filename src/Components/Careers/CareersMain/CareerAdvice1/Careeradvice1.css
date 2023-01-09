@@ -6,7 +6,7 @@
     align-items: center;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+
     font-weight: 400;
 }
 
@@ -39,6 +39,79 @@
     margin-top: 1%;
     margin-bottom: 1%;
     width: 100%;
+    font-size: 1.5rem;
     display: flex;
     justify-content: left;
+}
+
+@media only screen and (max-width: 1600px) {
+    .careeradvice-title {
+        font-size: 2rem;
+
+    }
+    
+    .careeradvice-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .careeradvice-content {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .careeradvice-title {
+        font-size: 1.5rem;
+
+    }
+    
+    .careeradvice-subtitle {
+        font-size: 1rem;
+    }
+    
+    .careeradvice-content {
+
+        font-size: 0.75rem;
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .careeradvice-title {
+        font-size: 1.25rem;
+
+    }
+    
+    .careeradvice-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .careeradvice-content {
+
+        font-size: 0.5rem;
+
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .careeradvice-title {
+        font-size: 1rem;
+
+    }
+    
+    .careeradvice-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .careeradvice-content {
+
+        font-size: 0.5rem;
+
+    }
+
 }

@@ -15,3 +15,29 @@
 .expert-bgimg {
     width: 100%;
 }
+
+.expert-btn-text {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .expert-btn-text {
+        font-size: 0.75rem;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .expert-btn-text {
+        font-size: 0.5rem;
+    }
+}
+
+
+
+/* @media only screen and (max-width: 400px) {
+    .expert-btn-text {
+        font-size: 0.45rem;
+    }
+} */
+

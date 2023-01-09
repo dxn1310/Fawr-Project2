@@ -69,12 +69,20 @@ export default function Otp() {
                         <div className='otp-title'>
                             Get Phone No
                         </div>
-                        <Stack direction="row" spacing={2} width="100%">
+                        <Stack direction="row" spacing={1} width="100%">
                             <Menu width="100%">
-                                <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+                                <MenuButton as={Button} rightIcon={<ChevronDownIcon />} width="40%">
+                                    <div className="otp-menu-btn-text">
+                                        {countryCode}
+                                    </div>
+                                    {/* <MenuButton as={Button} width="40%">
+                                    <Stack direction="row"spacing={0} display="flex" alignItems="center">
                                     {countryCode}
+                                    <ChevronDownIcon />
+                                    </Stack>
+                                </MenuButton> */}
                                 </MenuButton>
-                                <MenuList>
+                                <MenuList width="100%">
                                     <MenuItem onClick={(e) => setCountryCode("+91")}>+91 (India)</MenuItem>
                                 </MenuList>
                             </Menu>
@@ -82,12 +90,13 @@ export default function Otp() {
                             <Input focusBorderColor='white'
                                 placeholder='Enter Phone No'
                                 type="number"
+                                _placeholder={{ fontSize: "0.8rem" }}
                                 backgroundColor="rgba(224, 224, 224, 0.6)"
-                                width="80%"
+                                width="100%"
                                 onChange={(e) => setPhone(e.target.value)} />
                         </Stack>
                         <div style={{ display: "flex", justifyContent: "right", width: "100%" }}>
-                            <Button width="30%" backgroundColor="#2B7FFF" color="white" >
+                            <Button width="50%" backgroundColor="#2B7FFF" color="white" >
                                 <div className='otp-btn-text'>
                                     Get OTP
                                 </div>
@@ -128,7 +137,7 @@ export default function Otp() {
                         </Stack>
                         <Link to="/People Services/Booking/Address">
                             <div style={{ display: "flex", justifyContent: "right", width: "100%" }}>
-                                <Button width="30%" backgroundColor="#2B7FFF" color="white" onClick={handleClick}>
+                                <Button width="50%" backgroundColor="#2B7FFF" color="white" onClick={handleClick}>
                                     <div className='otp-btn-text'>
                                         Verify OTP
                                     </div>

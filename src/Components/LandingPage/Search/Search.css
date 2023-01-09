@@ -88,10 +88,9 @@
 
 .search-services-available {
     margin-top: 1%;
-    width: 50%;
-    padding: 2%;
-    /* height: 10rem; */
-    border-radius: 1rem;
+    width: 60%;
+    padding: 1%;
+    border-radius: 0.5rem;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -132,10 +131,11 @@
 }
 
 .serach-available-services-inner {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2%;
+    /* display: flex;
+    justify-content: space-between; */
     width: 100%;
     align-items: center;
 }
@@ -147,9 +147,14 @@
 } */
 
 .search-icon {
-    /* width: 50%; */
+    /* width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
+    width: 15%;
+}
+
+.search-icon:hover {
+    transform: scale(1.1);
 }
 
 .search-service-type {
@@ -162,6 +167,7 @@
     text-align: center;
     margin-left: 1%;
     margin-right: 1%;
+    margin-top: 1%;
     /* width: 30%; */
 }
 
@@ -244,6 +250,18 @@
     .search-btn-text {
         font-size: 1.35rem;
     }
+
+    .search-available-text {
+        font-size: 1.25rem;
+    }
+
+    .search-available-service-name {
+        font-size: 1rem;
+    }
+
+    .search-service-type {
+        font-size: 0.7rem;
+    }
 }
 
 @media only screen and (max-width: 1800px) {
@@ -264,6 +282,18 @@
     .search-btn-text {
         font-size: 1.2rem;
     }
+
+    .search-available-text {
+        font-size: 1rem;
+    }
+
+    .search-available-service-name {
+        font-size: 0.75rem;
+    }
+
+    .search-service-type {
+        font-size: 0.6rem;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -274,8 +304,13 @@
     .search-btn-text {
         font-size: 1.1rem;
     }
+
     .menu-text {
         font-size: 0.75rem;
+    }
+
+    .search-option-text {
+        font-size: 0.6rem;
     }
 }
 
@@ -287,6 +322,14 @@
     .search-btn-text {
         font-size: 1rem;
     }
+
+    .search-option-text {
+        font-size: 0.5rem;
+    }
+
+    .search-service-type {
+        font-size: 0.5rem;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -297,8 +340,25 @@
     .search-btn-text {
         font-size: 1rem;
     }
+
     .menu-text {
         font-size: 0.5rem;
+    }
+
+    .search-option-text {
+        font-size: 0.4rem;
+    }
+
+    .search-available-text {
+        font-size: 0.75rem;
+    }
+
+    .search-available-service-name {
+        font-size: 0.5rem;
+    }
+
+    .search-service-type {
+        font-size: 0.4rem;
     }
 }
 
@@ -310,6 +370,10 @@
     .search-btn-text {
         font-size: 0.75rem;
     }
+
+    .menu-text {
+        font-size: 0.4rem;
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -318,16 +382,64 @@
     }
 
     .search-btn-text {
-        font-size: 0.75rem;
+        font-size: 0.5rem;
     }
+
     .menu-text {
         font-size: 0.35rem;
+    }
+
+    .search-option-text {
+        font-size: 0.4rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .search-title {
         font-size: 0.75rem;
+    }
+
+    .search-btn-text {
+        font-size: 0.4rem;
+    }
+
+    .search-option-text {
+        font-size: 0.3rem;
+    }
+
+    .search-available-text {
+        font-size: 0.5rem;
+    }
+
+    .search-available-service-name {
+        font-size: 0.4rem;
+    }
+
+    .menu-text {
+        font-size: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .search-option-text {
+        font-size: 0.25rem;
+    }
+
+    .search-service-type {
+        font-size: 0.3rem;
+    }
+
+    /* .menu-text {
+        font-size: 0.2rem;
+    } */
+}
+
+@media only screen and (max-width: 500px) {
+
+    .search-option-text {
+        /* font-size: 0.25rem; */
+        display: none;
     }
 }
 

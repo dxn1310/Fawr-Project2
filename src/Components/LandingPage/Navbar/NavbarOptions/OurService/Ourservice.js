@@ -6,10 +6,12 @@ import {
 } from '@chakra-ui/react';
 
 import { NavLink as Link } from 'react-router-dom';
+import { useMediaQuery } from '@chakra-ui/react'
 
 export default function Ourservice({ onClose }) {
+    const [isLargerThan750] = useMediaQuery('(min-width: 730px)')
     return (
-        <div className='ourservice-outer'>
+        <div className='ourservice-outer' style={{ padding: isLargerThan750 ? "0%" : "5%" }}>
             <div className="ourservice-title">Our Services</div>
 
             <Stack direction="column" spacing={5}>

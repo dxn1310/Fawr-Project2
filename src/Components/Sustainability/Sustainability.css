@@ -31,10 +31,85 @@
 .sustainability-content {
     margin-top: 4%;
     width: 100%;
+    font-size: 1.45rem;
 }
 
 .sustainability-content-img {
-    display: grid;
+    /* display: grid; */
     width: 100%;
-    grid-template-columns: 40% 60%;
+    /* grid-template-columns: 40% 60%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 3000px) {
+
+
+    .sustainability-content-img {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 40% 55%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .sustainability-title {
+        font-size: 2rem;
+    }
+
+    .sustainability-content {
+        font-size: 1rem;
+    }
+
+    /* .sustainability-content-img {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 40% 50%;
+    } */
+}
+
+@media only screen and (max-width: 1000px) {
+    .sustainability-title {
+        font-size: 1.5rem;
+    }
+
+    .sustainability-content {
+        font-size: 1rem;
+    }
+    @media only screen and (max-width: 1500px) {
+        .sustainability-title {
+            font-size: 2rem;
+        }
+    
+        .sustainability-content {
+            font-size: 1rem;
+        }
+    
+        .sustainability-content-img {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sustainability-grid-text {
+            margin-top: 5%;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .sustainability-title {
+        font-size: 1.25rem;
+    }
+
+    .sustainability-content {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sustainability-title {
+        font-size: 1rem;
+    }
 }

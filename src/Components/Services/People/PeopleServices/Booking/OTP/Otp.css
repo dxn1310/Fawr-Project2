@@ -43,3 +43,40 @@
     font-size: 1rem;
     font-weight: 400;
 }
+
+.otp-menu-btn-text {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1500px) {
+    .otp-title {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .otp-title {
+        font-size: 1rem;
+    }
+
+    .otp-inner {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .otp-menu-btn-text {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .otp-inner-right {
+        width: 100%;
+
+    }
+
+  
+}

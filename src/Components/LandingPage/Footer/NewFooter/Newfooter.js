@@ -57,6 +57,13 @@ export default function Newfooter() {
                         <div className="newfooter-bottom-content">Terms & Conditions</div>
                         <div className="newfooter-bottom-content">Privacy</div>
                         <div className="newfooter-bottom-content">Cookie Policy</div>
+                        {/* <Link to=""><div className="newfooter-bottom-content">Contact us</div></Link>
+                        <Link to="/Sustainability"><div className="newfooter-bottom-content">Sustainability</div></Link>
+                        <Link to=""><div className="newfooter-bottom-content">About Us</div></Link>
+                        <Link to=""><div className="newfooter-bottom-content">Our Service</div></Link>
+                        <Link to="/Terms and Conditions"><div className="newfooter-bottom-content">Terms & Conditions</div></Link>
+                        <Link to=""><div className="newfooter-bottom-content">Privacy</div></Link>
+                        <Link to=""><div className="newfooter-bottom-content">Cookie Policy</div></Link> */}
                     </Stack>
 
                     <Stack direction="row" spacing={5} marginTop={isLargerThan1000 ? "1%" : "4%"} marginRight="2%">

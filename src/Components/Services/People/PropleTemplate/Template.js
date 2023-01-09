@@ -7,6 +7,8 @@ import {
 import { NavLink as Link } from 'react-router-dom'
 import { CheckIcon } from '@chakra-ui/icons'
 
+import { useMediaQuery } from '@chakra-ui/react'
+
 export default function Template({ gridImages, bgimg, options, setBill, total, setTotal }) {
 
     const [optionTitle, setOptionTitle] = useState()
@@ -42,13 +44,14 @@ export default function Template({ gridImages, bgimg, options, setBill, total, s
         ]))
     }
 
+    const [isLargerThan1000] = useMediaQuery('(min-width: 1000px)')
     return (
         <div className='template-outer'>
             <img className='template-bgimg' src={bgimg} />
             <div className='template-inner'>
                 <div className='template-grid-1'>
                     {
-                        gridImages.map(element => <img src={element} />)
+                        gridImages.map(element => <img className="template-grid-imgs" src={element} />)
                     }
                 </div>
                 <div className='template-content'>
@@ -88,11 +91,16 @@ export default function Template({ gridImages, bgimg, options, setBill, total, s
                                                             <Button borderColor="white"
                                                                 backgroundColor="white"
                                                                 boxShadow=" 2px 2px 4px 1px rgba(0, 0, 0, 0.32)"
-                                                                borderRadius="0.5rem"
+                                                                borderRadius={isLargerThan1000 ? "0.5rem" : "0.25rem"}
+                                                                marginTop={isLargerThan1000 ? "0%" : "20%"}
                                                                 color="#407BFF"
+                                                                padding="5%"
+                                                                height="fit-content"
                                                                 onClick={(e) => { handleAddService(opt.contentTitle, opt.contentRating, opt.contentRatingPeople, opt.contentPrice); setTotal(total + parseInt(opt.contentPrice)); setClicked("1") }}
                                                             >
-                                                                Add +
+                                                                <div className='option-btn-text'>
+                                                                    Add +
+                                                                </div>
                                                             </Button>
                                                             {/* {
                                                                 clicked === "1" ? <Button borderColor="white"
@@ -134,24 +142,33 @@ export default function Template({ gridImages, bgimg, options, setBill, total, s
                     </div>
                     <div className='template-content-right'>
 
-                        <Stack direction="row" spacing={5} width="100%">
+                        <Stack direction={isLargerThan1000 ? "row" : "column"} spacing={5} width="100%">
                             <Input width="100%"
+                            height={isLargerThan1000?"":"fit-content"}
                                 placeholder='Enter Location'
+                                _placeholder={{ fontSize: isLargerThan1000 ? "100%" : "0.5rem" }}
                                 _hover={{ borderColor: "black" }}
                                 focusBorderColor="#FFFFFF"
                                 _focus={{ borderColor: "black" }}
-                                _placeholder={{ color: "grey", fontSize: "100%", padding: '1%' }}
+                                // _placeholder={{ color: "grey", fontSize: "100%", padding: '1%' }}
                                 borderColor="black"
                                 borderWidth="0.1rem"
                                 onChange={(e) => setLocation(e.target.value)} />
 
                             <Button color="white"
                                 backgroundColor="#2A7FFF"
-                                width="fit-content"> <Link to="/People Services/Booking/OTP">Apply</Link></Button>
+                                width="fit-content"
+                                fontWeight="400"
+                                
+                                // height="fit-content"
+                                > <Link to="/People Services/Booking/OTP">
+                                    <div className='option-btn-text'>Apply</div></Link></Button>
                         </Stack>
                         <div className='template-viewclass'>
                             <Link to="/People Services/Booking/Cart">
+                                <div className='option-btn-text'>
                                 View Cart >>
+                                </div>
                             </Link>
                         </div>
                     </div>

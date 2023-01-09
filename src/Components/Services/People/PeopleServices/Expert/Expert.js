@@ -9,32 +9,37 @@ import {
     FormHelperText,
 } from '@chakra-ui/react'
 
+import { useMediaQuery } from '@chakra-ui/react'
+
 export default function Expert() {
+    const [isLargerThan1200] = useMediaQuery('(min-width: 1200px)')
+    const [isLargerThan800] = useMediaQuery('(min-width:800px)')
+    const [isLargerThan600] = useMediaQuery('(min-width:600px)')
     return (
         <div className='expert-outer'>
             <img className="expert-bgimg" src={Expert_img2} />
-            <Stack marginTop="5%" marginBottom="5%" padding="2%" display="flex" alignItems="center" borderRadius="1rem" width="50%" height="fit-content" paddingBottom="5%" direction="column" spacing={10} backgroundColor="rgba(64, 123, 255, 0.63)">
-                <FormControl width="80%" marginTop="5%">
-                    <FormLabel color="white" fontSize="80%">Name</FormLabel>
+            <Stack marginTop="5%" marginBottom="5%" padding="0%" display="flex" alignItems="center" borderRadius="0.5rem" width={isLargerThan1200 ? "60%" : "70%"} height="fit-content" paddingBottom="5%" direction="column" spacing={10} backgroundColor="rgba(64, 123, 255, 0.63)">
+                <FormControl width="80%" marginTop="2%">
+                    <FormLabel color="white" fontSize={isLargerThan800?"80%":"40%"}>Name</FormLabel>
                     <Input backgroundColor="white" />
                 </FormControl>
 
-                <Stack direction="row" width="80%" marginTop="5%">
-                    <FormControl width="80%">
-                        <FormLabel color="white" fontSize="80%">Phone</FormLabel>
+                <Stack direction={isLargerThan800 ? "row" : "column"} width="80%" marginTop="2%">
+                    <FormControl width="100%">
+                        <FormLabel color="white" fontSize={isLargerThan800?"80%":"40%"}>Phone</FormLabel>
                         <Input type='number' backgroundColor="white" />
                     </FormControl>
-                    <FormControl width="80%" >
-                        <FormLabel color="white" fontSize="80%">Location</FormLabel>
+                    <FormControl width="100%" >
+                        <FormLabel color="white" fontSize={isLargerThan800?"80%":"40%"}>Location</FormLabel>
                         <Input backgroundColor="white" />
                     </FormControl>
                 </Stack>
-                <FormControl width="80%" marginTop="5%">
-                    <FormLabel color="white" fontSize="80%">What service would you like to provide ?</FormLabel>
+                <FormControl width="80%" marginTop="2%">
+                    <FormLabel color="white" fontSize={isLargerThan800?"80%":"40%"}>What service would you like to provide ?</FormLabel>
                     <Textarea backgroundColor="white" />
                 </FormControl>
 
-                <Button color="white" marginTop="5%" width="40%" backgroundColor="#407BFF" borderRadius="1rem" padding="4%" fontSize="80%" fontWeight="400">Get In Touch</Button>
+                <Button color="white" marginTop="2%" width="30%" backgroundColor="#407BFF" borderRadius="0.5rem" padding={isLargerThan600?"3%":"5%"} fontWeight="400"><div className="expert-btn-text">Get In Touch</div></Button>
             </Stack>
         </div >
     )

@@ -15,6 +15,7 @@ import People_img7 from "./PeopleImages/People_img7.png";
 import People_img8 from "./PeopleImages/People_img8.png";
 import People_img9 from "./PeopleImages/People_img9.png";
 import People_img10 from "./PeopleImages/People_img10.png";
+import Heart_img from "./PeopleImages/Heart_img.png"
 // import People_img6 from "./PeopleImages/People_img6.png";
 
 
@@ -82,7 +83,7 @@ export default function People({ option, setOption }) {
                     content={"We don't want to push our ideas on to customers, we simply want to make what they want."}
                     gridData={gridData}
                     img2={People_img8}
-                    img3={People_img9}
+                    img3={Heart_img}
                     img4={People_img10}
                     option={option}
                     setOption={setOption}

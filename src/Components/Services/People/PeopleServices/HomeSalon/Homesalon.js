@@ -18,22 +18,24 @@ export default function Homesalon() {
         <div className='homesalon-outer'>
             <div className='homesalon-inner'>
                 <div className='homesalon-content'>
-                    <div>Select Gender</div>
+                    <div className='homesalon-content-title'>Select Gender</div>
                     <Stack direction="row" spacing={5} marginTop="5%" width="100%" display="flex" justifyContent="center">
-                        <Button width="40%"
-                            fontSize="100%"
+                        <Button
+                        width="30%"
+                            height="fit-content"
                             fontWeight="400"
                             color="white"
                             backgroundColor="#2B7FFF"
-                            borderRadius="1rem"
-                            padding="4%"><Link to="/People Services/Home Salon/Male">Male</Link></Button>
-                        <Button width="40%"
-                            fontSize="100%"
+                            borderRadius="0.5rem"
+                            padding="2%"><Link to="/People Services/Home Salon/Male"><div className="homesalon-btn-text">Male</div></Link></Button>
+                        <Button
+                        width="30%"
+                            height="fit-content"
                             fontWeight="400"
                             color="white"
                             backgroundColor="#2B7FFF"
-                            borderRadius="1rem"
-                            padding="4%"><Link to="/People Services/Home Salon/Female">Female</Link></Button>
+                            borderRadius="0.5rem"
+                            padding="2%"><Link to="/People Services/Home Salon/Female"><div className="homesalon-btn-text">Female</div></Link></Button>
                     </Stack>
                 </div>
 

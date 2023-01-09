@@ -71,42 +71,48 @@ export default function Servicestemplate1({ title, img1, img2, img3, img4, under
                 </div>
             </div>
             <div className='servicestemplate1-row'>
-
-                <Stack direction="row" spacing={10} width="70%" display="flex" paddinglef="50%">
-                    <img className="servicestemplate-row-img" src={img2} />
-                    <Stack direction="column" spacing={5}>
-                        <div className='servicetemplate1-extra-text1'>Fawr Insurance  Protection</div>
-                        <div className='servicetemplate1-extra-text2'>Upto Rs. 8,000 insurance coverwith every service requested. <label className="servicestemplate-text-color1">Learn More</label></div>
-                    </Stack>
-                </Stack>
-
+                <div style={{ width: "80%", display: "flex", justifyContent: "center" }}>
+                    <div style={{ width: "10%", display: "flex", justifyContent: "right" }}>
+                        <img className="servicestemplate-row-img" src={img2} />
+                    </div>
+                    <div style={{ width: "85%", display: "flex", justifyContent: "left", paddingLeft: "5%" }}>
+                        <Stack direction="column" spacing={5}>
+                            <div className='servicetemplate1-extra-text1'>Fawr Insurance  Protection</div>
+                            <div className='servicetemplate1-extra-text2'>Upto Rs. 8,000 insurance coverwith every service requested. <label className="servicestemplate-text-color1">Learn More</label></div>
+                        </Stack>
+                    </div>
+                </div>
             </div>
 
             <div className='servicestemplate1-row1'>
-
-                <Stack direction="row" spacing={10} width="70%" display="flex" paddinglef="50%">
-                    <img className="servicestemplate-row-img" src={img3} />
-                    <Stack direction="column" spacing={5}>
-                        <div className='servicetemplate1-extra-text1'>Anti Disclaimer Policy</div>
-                        <div className='servicetemplate1-extra-text2'>Fawr treat it’s community equally with respect and without judgement or Bias.</div>
-                        <Link to="/People Services/Anti Disclaimer Policy"><Button color="white" backgroundColor="#2B7FFF" width="20%">Know More</Button></Link>
-                    </Stack>
-                </Stack>
-
+                <div style={{ width: "80%", display: "flex", justifyContent: "center" }}>
+                    <div style={{ width: "10%", display: "flex", justifyContent: "right" }}>
+                        <img className="servicestemplate-row-img" src={img3} />
+                    </div>
+                    <div style={{ width: "85%", display: "flex", justifyContent: "left", paddingLeft: "5%" }}>
+                        <Stack direction="column" spacing={5}>
+                            <div className='servicetemplate1-extra-text1'>Fawr Insurance  Protection</div>
+                            <div className='servicetemplate1-extra-text2'>Upto Rs. 8,000 insurance coverwith every service requested. <label className="servicestemplate-text-color1">Learn More</label></div>
+                        </Stack>
+                    </div>
+                </div>
             </div>
 
             <div className='servicestemplate1-row2'>
-
-                <Stack direction="row" spacing={10} width="70%" display="flex" paddinglef="50%">
-                    <img className="servicestemplate-row-img" src={img4} />
-                    <Stack direction="column" spacing={5}>
-                        <div className='servicetemplate1-extra-text1'>Proud partner with Govt. of India.</div>
-                        <div className='servicetemplate1-extra-text2'>Find Professional Certified by Govt. of India Under Skill India Mission</div>
-                    </Stack>
-                </Stack>
-
+                <div style={{ width: "80%", display: "flex", justifyContent: "center" }}>
+                    <div style={{ width: "12%", display: "flex", justifyContent: "right" }}>
+                        <img className="servicestemplate-row-img" src={img4} />
+                    </div>
+                    <div style={{ width: "85%", display: "flex", justifyContent: "left", paddingLeft: "5%" }}>
+                        <Stack direction="column" spacing={5}>
+                            <div className='servicetemplate1-extra-text1'>Fawr Insurance  Protection</div>
+                            <div className='servicetemplate1-extra-text2'>Upto Rs. 8,000 insurance coverwith every service requested. <label className="servicestemplate-text-color1">Learn More</label></div>
+                        </Stack>
+                    </div>
+                </div>
             </div>
-            {/* <Reachus /> */}
+
+            <Reachus />
 
         </div>
     )

@@ -35,7 +35,7 @@ export default function Cart({ Bill, total, setBill, setTotal }) {
                                 <div className='cart-inner-left-option-inner'>
                                     <div className='cart-option-left'>
 
-                                        <Stack direction="row" spacing={3} display="flex" alignItems="center">
+                                        <Stack direction="row" spacing={1} display="flex" alignItems="center">
                                             <div className='cart-option-left-title'>
                                                 {option.title}
                                             </div>
@@ -70,7 +70,8 @@ export default function Cart({ Bill, total, setBill, setTotal }) {
                                             color="#407BFF"
                                         >
                                             <Stack direction="row" display="flex" alignItems="center">
-                                                <div className="cart-option-btn-text">
+                                                <div className="cart-option-btn-text"
+                                                height="fit-content">
                                                     Added
                                                 </div>
                                                 <CheckIcon />
@@ -100,7 +101,7 @@ export default function Cart({ Bill, total, setBill, setTotal }) {
                 <div className='cart-inner-middle' />
                 <div className='cart-inner-right'>
 
-                    <div className='cart-grid-right-title' style={{ fontSize: "1.5rem", fontWeight: "500" }}>
+                    <div className='cart-grid-right-title' style={{ fontWeight: "500" }}>
                         Payment Summary
                     </div>
                     <div style={{ width: "80%", backgroundColor: "rgba(0, 0, 0, 0.4)", height: "0.05rem", marginTop: "1%", width: "100%" }} />

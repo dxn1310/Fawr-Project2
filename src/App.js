@@ -73,6 +73,13 @@ import Slide5 from './Components/LandingPage/Slideshow/Slides/Slide5/Slide5';
 import Track from './Components/Services/People/PeopleServices/Booking/Tracking/Track';
 import Slide3 from './Components/LandingPage/Slideshow/Slides/Slide3/Slide3';
 
+import Terms from "./Components/Policies/Terms/Terms"
+
+import Navlang from './Components/LandingPage/Navbar/NewNavbar/NavbarLanguages/Navlang';
+import Ourservice from './Components/LandingPage/Navbar/NavbarOptions/OurService/Ourservice';
+
+import ReachNew from './Components/LandingPage/Reach/Reachnew/ReachNew';
+
 function App() {
   // window.scroll({
   //   top: 0,
@@ -98,6 +105,12 @@ function App() {
     ]
   )
 
+
+  // const [langImg, setLangImg] = useState("world")
+  // const [langName, setLangName] = useState("Global")
+  // const [lang, setLang] = useState("English")
+
+
   console.log(Bill)
 
   return (
@@ -106,6 +119,8 @@ function App() {
       <Ourservices /> */}
       {/* <Navbar /> */}
       <Newnavbar />
+      {/* <ReachNew /> */}
+      {/* <Terms /> */}
       {/* <Slide4 /> */}
       {/* <Status /> */}
       {/* <Address /> */}
@@ -162,6 +177,14 @@ function App() {
         <Route path="/People Services/Booking/Payment" element={<Payment total={total} />} />
         <Route path="/People Services/Booking/Order Placed" element={<Thank />} />
         <Route path="/People Services/Booking/Tracking" element={<Track />} />
+
+        <Route path="/Terms and Conditions" element={<Terms />} />
+
+        <Route path="/Languages" element={<Navlang />} />
+        <Route path="/Ourservice" element={<Ourservice />} />
+
+
+
 
 
       </Routes>

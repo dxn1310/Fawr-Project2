@@ -63,3 +63,61 @@
     font-size: 1.5rem;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 1500px) {
+    .status-circle {
+        width: 2rem;
+        height: 2rem;
+
+    }
+
+    .status-circle-inprocess {
+        width: 2rem;
+        height: 2rem;
+    }
+    .status-line {
+        width: 15%;
+
+    }
+    .status-content-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .status-circle {
+        width: 1.25rem;
+        height: 1.25rem;
+
+    }
+
+    .status-circle-inprocess {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    .status-line {
+        width: 15%;
+
+    }
+    .status-content-text {
+        font-size: 0.75rem;
+    }
+
+    .status-content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 5%;
+        padding-top: 1%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .status-content-text {
+        font-size: 0.5rem;
+    }
+
+  
+    
+}

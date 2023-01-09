@@ -18,12 +18,12 @@
 .ECselection-inner {
     padding: 5%;
     height: 50%;
-    width: 50%;
+    width: 60%;
     /* height: 40%; */
     background: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.12);
-    border-radius: 4rem;
+    border-radius: 2rem;
 }
 
 .ECselection-content {
@@ -37,4 +37,44 @@
 
 .ECselection-button {
     width: 100%;
+}
+
+.ECselection-content-title {
+    font-size: 2rem;
+}
+
+.ECselection-btn-text {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1500px) {
+    .ECselection-content-title {
+        font-size: 1.5rem;
+    }
+
+    .ECselection-btn-text {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .ECselection-content-title {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ECselection-content-title {
+        font-size: 1rem;
+    }
+
+    .ECselection-btn-text {
+        font-size: 0.75rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    
+    .ECselection-btn-text {
+        font-size: 0.5rem;
+    }
 }

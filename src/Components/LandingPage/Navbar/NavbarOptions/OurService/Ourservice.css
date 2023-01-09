@@ -39,6 +39,7 @@
     color: red;
     transition: 3ms;
 }
+
 .ourservices-grid-content {
     font-size: 1.25rem;
     font-weight: 500;
@@ -200,5 +201,14 @@
 
     .ourservices-grid-content {
         font-size: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /* .ourservice-title {
+        font-size: 0.45rem;
+    } */
+    .ourservice-grid-title {
+        font-size: 0.35rem;
     }
 }

@@ -38,3 +38,29 @@
     font-weight: 500;
 
 }
+
+@media only screen and (max-width: 1000px) {
+
+    .thank-content-text {
+        font-size: 1rem;
+    }
+
+    .thank-text {
+        font-size: 0.75rem;
+
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .thank-content-text {
+        font-size: 0.75rem;
+    }
+
+    .thank-text {
+        font-size: 0.5rem;
+
+
+    }
+}

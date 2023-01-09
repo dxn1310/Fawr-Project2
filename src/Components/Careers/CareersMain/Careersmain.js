@@ -13,6 +13,8 @@ import Careersmain_img10 from "./CareersMainImages/Careersmain_img10.png"
 import Careersmain_img11 from "./CareersMainImages/Careersmain_img11.png"
 import Careersmain_img12 from "./CareersMainImages/Careersmain_img12.png"
 
+import carTitle from "./CareersMainImages/carTitle.png"
+
 
 
 import { NavLink as Link } from 'react-router-dom'
@@ -28,23 +30,23 @@ export default function Careersmain() {
             <div className='careersmain-inner1'>
                 <Stack direction='row' spacing={4} width="25%" marginTop="30%" marginLeft="10%">
                     <Button width="50%" borderRadius="0.5rem" fontSize="65%" height="fit-content" padding="3%" backgroundColor='#2B7FFF' color="white" borderWidth="0.1rem">
-                        Find Job
+                        <div className='car-btn-text'> Find Job</div>
                     </Button>
                     <Button width="50%" borderRadius="0.5rem" fontSize="65%" height="fit-content" padding="3%" borderColor='rgba(0, 0, 0, 0.65);' color="rgba(0, 0, 0, 0.65);" borderWidth="0.1rem">
-                        I’m Hiring
+                        <div className='car-btn-text'>  I’m Hiring</div>
                     </Button>
                 </Stack>
             </div>
             <div className='careersmain-inner2-outer'>
                 <div className='careersmain-inner2-title'>
-                    <label>Explore top companies <label className='careersmain-top-content'>job opening India</label></label>
-                    <img src={Careersmain_img2} />
+                    {/* <label>Explore top companies <label className='careersmain-top-content'>job opening India</label></label> */}
+                    <img className src={carTitle} />
                 </div>
                 <div className='careersmain-inner2'>
-                    <img src={Careersmain_img3} />
-                    <img src={Careersmain_img4} />
-                    <img src={Careersmain_img5} />
-                    <img src={Careersmain_img6} />
+                    <img className="car-img" src={Careersmain_img3} />
+                    <img className="car-img" src={Careersmain_img4} />
+                    <img className="car-img" src={Careersmain_img5} />
+                    <img className="car-img" src={Careersmain_img6} />
                 </div>
             </div>
 
@@ -54,13 +56,13 @@ export default function Careersmain() {
                 </div>
                 <div className='careersmain-grid'>
                     <Link to="/Careers Main/Careers Advice 1">
-                        <img src={Careersmain_img10} />
+                        <img className="car2-img" src={Careersmain_img10} />
                     </Link>
                     <Link to="/Careers Main/Careers Advice 2">
-                        <img src={Careersmain_img11} />
+                        <img className="car2-img" src={Careersmain_img11} />
                     </Link>
                     <Link to="/Careers Main/Careers Advice 3">
-                        <img src={Careersmain_img12} />
+                        <img className="car2-img" src={Careersmain_img12} />
                     </Link>
                 </div>
             </div>

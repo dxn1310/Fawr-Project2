@@ -30,7 +30,7 @@ export default function Reach() {
                     <div className='reach-box'>
                         <div className='reach-box-content'>
                             <div className='reach-title'>
-                                <label>Let’s Partner up</label>
+                                Let’s Partner up
                             </div>
                             <div>
                                 <label>Let’s level up our brand together</label>
@@ -147,8 +147,6 @@ export default function Reach() {
 
                                 <Center> <Button backgroundColor="#2B7FFF" borderRadius="1rem" color="white" width="50%"
                                     fontSize="2rem" fontWeight="400">Submit</Button></Center>
-
-
                             </Stack>
                         </div>
                     </div>

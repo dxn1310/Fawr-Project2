@@ -144,7 +144,9 @@ export default function Interior() {
                                     width="50%"
                                     fontWeight="400"
                                     marginTop="10%"
-                                    onClick={handleClick}>Book Consultation</Button>
+                                    onClick={handleClick}>
+                                    <div className="interior-btn-text">Book Consultation
+                                    </div></Button>
                             </Link>
                         </Stack>
                     </div>
