@@ -171,7 +171,7 @@ export default function ReachNew() {
                                 </AccordionItem>
                             </Accordion>
 
-                            <Center> <Button backgroundColor="#2B7FFF" borderRadius="1rem" color="white" width="30%" marginTop="5%"
+                            <Center> <Button backgroundColor="#2B7FFF" borderRadius="1rem" color="white" width="40%" marginTop="5%"
                                 fontWeight="400"><div className="y-btn-text">Submit</div></Button></Center>
                         </Stack>
                     </div>

@@ -90,7 +90,7 @@
 }
 
 .reach-checkbox-title {
-font-size: 1rem;
+    font-size: 1rem;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -152,9 +152,10 @@ font-size: 1rem;
         justify-content: center;
 
     }
+
     .reach-checkbox-title {
         font-size: 0.75rem;
-        }
+    }
 }
 
 
@@ -175,12 +176,43 @@ font-size: 1rem;
         font-weight: 500;
         color: rgb(174, 174, 174);
     }
+
     .y-inner-right-content {
-        width: 40%;
+        width: 60%;
+    }
+
+    .reach-checkbox-title {
+        font-size: 0.75rem;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .y-inner-right-content-title {
+        font-size: 0.75rem;
+        font-weight: 500;
+    }
+
+    .y-inner-right-content-text {
+        font-size: 0.5rem;
+        font-weight: 400;
+    }
+
+    .y-inner-left-text {
+        width: 70%;
+        font-size: 0.5rem;
+        font-weight: 500;
+        color: rgb(174, 174, 174);
+    }
+
+    .y-inner-right-content {
+        width: 80%;
+        padding: 2%;
     }
 
     .reach-checkbox-title {
         font-size: 0.5rem;
-        }
+    }
+
     
 }

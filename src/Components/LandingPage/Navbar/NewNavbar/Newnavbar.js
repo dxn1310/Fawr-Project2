@@ -115,7 +115,7 @@ export default function Newnavbar() {
                                     <DrawerOverlay />
                                     <DrawerContent>
                                         <DrawerCloseButton focusBorderColor="white" _hover={{ backgroundColor: "white" }} size={5} padding="5%" />
-                                        <DrawerHeader marginTop="10%" display="flex" justifyContent="left"><div className="x-drawer-title">AGAMEMNON</div></DrawerHeader>
+                                        <DrawerHeader marginTop="10%" display="flex" justifyContent="left"><Link to="/"><div className="x-drawer-title">AGAMEMNON</div></Link></DrawerHeader>
                                         <DrawerBody>
                                             <Stack direction="column" spacing={5} display="flex" width="100%" justifyContent="center" paddingLeft="5%" onClick={onClose}>
                                                 <Link to=""><div style={{ display: "flex", alignItems: "center", width: "70%" }}>
