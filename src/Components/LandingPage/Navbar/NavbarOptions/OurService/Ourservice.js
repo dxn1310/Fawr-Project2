@@ -10,8 +10,14 @@ import { useMediaQuery } from '@chakra-ui/react'
 
 export default function Ourservice({ onClose }) {
     const [isLargerThan750] = useMediaQuery('(min-width: 730px)')
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
-        <div className='ourservice-outer' style={{ padding: isLargerThan750 ? "0%" : "5%" }}>
+        <div className='ourservice-outer' style={{ padding: isLargerThan750 ? "2%" : "5%" }}>
             <div className="ourservice-title">Our Services</div>
 
             <Stack direction="column" spacing={5}>

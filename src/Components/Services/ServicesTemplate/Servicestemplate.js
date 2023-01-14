@@ -63,7 +63,7 @@ export default function Servicestemplate(props) {
                     </div>
                 </div>
             </div>
-            <Reachus />
+            {/* <Reachus /> */}
 
         </div>
     )

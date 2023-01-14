@@ -11,7 +11,7 @@ import { BsInstagram } from 'react-icons/bs';
 import Googleplay from "./NewfooterImages/Googleplay.png"
 import Applestore from "./NewfooterImages/Applestore.png"
 
-import { Navlink as Link } from 'react-router-dom'
+import { NavLink as Link } from 'react-router-dom'
 
 import { useMediaQuery } from '@chakra-ui/react'
 
@@ -23,14 +23,14 @@ export default function Newfooter() {
         <div className='newfooter-outer'>
             <div className='newfooter-top'>
                 <div className='newfooter-top-left'>
-                    <div className='newfooter-fawr-content'>AGAMEMNON</div>
+                    <Link to="/"><div className='newfooter-fawr-content'>AGAMEMNON</div></Link>
                 </div>
                 <div className='newfooter-top-right'>
 
                     <Stack direction="row" display="flex" alignItems="center" justifyContent="right" marginTop={isLargerThan1000 ? "5%" : "0%"} position="relative" top="50%">
                         {/* <Link to="">
                             <div> */}
-                        <img className="newfooter-img1" src={Googleplay} style={{  cursor: "pointer" }} />
+                        <img className="newfooter-img1" src={Googleplay} style={{ cursor: "pointer" }} />
                         {/* </div>
                         </Link>
                         <Link to="">
@@ -50,12 +50,12 @@ export default function Newfooter() {
                 <div style={{ width: "100%", height: "0.1rem", backgroundColor: "white" }} />
                 <div className='newfooter-bootom-inner'>
                     <Stack direction={isLargerThan1000 ? "row" : "column"} spacing={isLargerThan1000 ? "10" : "2"} marginTop={isLargerThan1000 ? "1%" : "4%"} marginLeft="2%">
-                        <div className="newfooter-bottom-content">Contact us</div>
-                        <div className="newfooter-bottom-content">Sustainability</div>
+                        <Link to="/Contact"><div className="newfooter-bottom-content">Contact us</div></Link>
+                        <Link to="/Sustainability"><div className="newfooter-bottom-content">Sustainability</div></Link>
                         <div className="newfooter-bottom-content">About Us</div>
-                        <div className="newfooter-bottom-content">Our Service</div>
-                        <div className="newfooter-bottom-content">Terms & Conditions</div>
-                        <div className="newfooter-bottom-content">Privacy</div>
+                        <Link to="/Ourservice"><div className="newfooter-bottom-content">Solutions</div></Link>
+                        <Link to="/Terms and Conditions"><div className="newfooter-bottom-content">Terms & Conditions</div></Link>
+                        <Link to="/Privacy"><div className="newfooter-bottom-content">Privacy</div></Link>
                         <div className="newfooter-bottom-content">Cookie Policy</div>
                         {/* <Link to=""><div className="newfooter-bottom-content">Contact us</div></Link>
                         <Link to="/Sustainability"><div className="newfooter-bottom-content">Sustainability</div></Link>
@@ -67,7 +67,7 @@ export default function Newfooter() {
                     </Stack>
 
                     <Stack direction="row" spacing={5} marginTop={isLargerThan1000 ? "1%" : "4%"} marginRight="2%">
-                        <GrLinkedinOption cursor="pointer" iconSize="20%"/>
+                        <GrLinkedinOption cursor="pointer" iconSize="20%" />
                         <BsTwitter cursor="pointer" />
                         <RiFacebookFill cursor="pointer" />
                         <BsInstagram cursor="pointer" />

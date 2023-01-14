@@ -12,10 +12,18 @@ import {
     Box, Stack
 } from '@chakra-ui/react'
 
+import { useMediaQuery } from '@chakra-ui/react'
+
 export default function Terms() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+    const [isLargerThan1000] = useMediaQuery('(min-width: 1000px)')
     return (
         <div className='terms-outer'>
-            <img className="terms-bgimg" src={Terms_img2} />
+            <img className="terms-bgimg" src={Terms_img1} />
             <div className='terms-inner'>
                 <div className='terms-content-1'>
                     PLEASE CAREFULLY READ THESE TERMS AND CONDITIONS. YOU ACKNOWLEDGE AND AGREE THAT YOU HAVE READ, UNDERSTAND, AND AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS WITHOUT LIMITATION OR QUALIFICATION BY ACCESSING, BROWSING, REVIEWING, AND/OR USING THE SITE. YOU ALSO AGREE THAT YOU SHALL COMPLY WITH ALL APPLICABLE LAWS, RULES, AND REGULATIONS. DO NOT USE THE SITE IF YOU DO NOT AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS.
@@ -25,15 +33,15 @@ export default function Terms() {
                     The terms and conditions of any other proprietary notices and copyright information that may be present on the Site must be complied with. The information on the website might include typographical or technical mistakes. Parts of these Terms and Conditions may be revised, amended, modified, or deleted at any time without prior notice from Agamemnon, who has the exclusive right to make such decisions. You are always obligated to read the most recent edition of these Terms and Conditions. Any changes to these Terms and Conditions that are made will be considered accepted by you if you continue to use the Site.
                 </div>
                 {/* <div> */}
-                <Stack direction="column" spacing={10} marginTop="2%" width="70%" >
+                <Stack direction="column" spacing={10} marginTop="2%" width={isLargerThan1000 ? "70%" : "80%"} >
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem" >
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"   _hover={{ color: "#BC312E" }}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         Accessing & using the site; Restrictions on Use
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>
@@ -51,11 +59,11 @@ export default function Terms() {
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem">
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"  _hover={{color:"#BC312E"}}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         Hyperlinking
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>
@@ -70,11 +78,11 @@ export default function Terms() {
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem">
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"  _hover={{color:"#BC312E"}}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         Copyright & use of site content
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>
@@ -89,11 +97,11 @@ export default function Terms() {
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem">
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"  _hover={{color:"#BC312E"}}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         Trademarks
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>
@@ -109,11 +117,11 @@ export default function Terms() {
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem">
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"  _hover={{color:"#BC312E"}}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         User postings
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>
@@ -129,11 +137,11 @@ export default function Terms() {
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem">
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"  _hover={{color:"#BC312E"}}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         No services, endorsement or personal consultation
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>
@@ -149,11 +157,11 @@ export default function Terms() {
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem">
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"  _hover={{color:"#BC312E"}}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         Disclaimer of warranties
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>
@@ -169,11 +177,11 @@ export default function Terms() {
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem">
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"  _hover={{color:"#BC312E"}}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         Limitation of liabilities
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>
@@ -191,11 +199,11 @@ export default function Terms() {
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem">
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"  _hover={{color:"#BC312E"}}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         Indemnification
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>
@@ -211,11 +219,11 @@ export default function Terms() {
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem">
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"  _hover={{color:"#BC312E"}}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         Enforcement of terms & conditions
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>
@@ -231,11 +239,11 @@ export default function Terms() {
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem">
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"  _hover={{color:"#BC312E"}}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         Infringement notices & takedown
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>
@@ -266,11 +274,11 @@ export default function Terms() {
                     <Accordion borderRadius="0.5rem" allowMultiple>
                         <AccordionItem borderRadius="0.5rem">
                             <h2>
-                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%"  _hover={{color:"#BC312E"}}>
+                                <AccordionButton width="100%" backgroundColor="#E0E0E0" borderRadius="0.5rem" borderBottomRadius="0%" _hover={{ color: "#BC312E" }}>
                                     <Box as="span" flex='1' textAlign='left' fontWeight="500" padding="1%">
                                         Entire agreement
                                     </Box>
-                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white"  _hover={{backgroundColor:"#BC312E"}}
+                                    <AccordionIcon backgroundColor="#FF928E" borderRadius="100%" color="white" _hover={{ backgroundColor: "#BC312E" }}
                                     />
                                 </AccordionButton>
                             </h2>

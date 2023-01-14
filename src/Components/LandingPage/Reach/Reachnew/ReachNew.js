@@ -27,6 +27,11 @@ import { useMediaQuery } from '@chakra-ui/react'
 export default function ReachNew() {
     const [isLargerThan750] = useMediaQuery('(min-width: 750px)')
 
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='y-outer'>
             <div className='y-title'>
@@ -42,14 +47,14 @@ export default function ReachNew() {
                     <div className='y-inner-right-content'>
                         <div className="y-inner-right-content-title">Let’s Partner up</div>
                         <div className="y-inner-right-content-text">Let’s level up our brand together</div>
-                        <Stack direction="column" width="100%" marginTop="5%" height="100%" paddingBottom="5%">
+                        <Stack direction="column" width="100%" marginTop="5%" height="100%" paddingBottom="5%" spacing={8}>
                             <Stack direction={isLargerThan750 ? "row" : "column"}>
                                 <FormControl>
-                                    <FormLabel fontSize={isLargerThan750 ? "0.7rem" : "0.5rem"} fontWeight="400">First Name</FormLabel>
+                                    {/* <FormLabel fontSize={isLargerThan750 ? "0.7rem" : "0.5rem"} fontWeight="400">First Name</FormLabel> */}
                                     <Input placeholder='First Name'
-                                        _placeholder={{ color: 'black', paddingLeft: "2%", fontSize: isLargerThan750 ? "1rem" : "0.45rem" }}
+                                        _placeholder={{ color: 'black', paddingLeft: "2%", fontSize: isLargerThan750 ? "0.8rem" : "0.6rem" }}
                                         width="100%"
-                                        height="fit-content"
+                                        // height="fit-content"
                                         padding={isLargerThan750 ? "2%" : "0%"}
                                         backgroundColor="#F5F5F5"
                                         focusBorderColor="#FFFFFF"
@@ -60,14 +65,14 @@ export default function ReachNew() {
 
                                 </FormControl>
                                 <FormControl >
-                                    <FormLabel fontSize={isLargerThan750 ? "0.7rem" : "0.5rem"} fontWeight="400">Last Name</FormLabel>
+                                    {/* <FormLabel fontSize={isLargerThan750 ? "0.7rem" : "0.5rem"} fontWeight="400">Last Name</FormLabel> */}
                                     <Input placeholder="Last Name"
-                                        _placeholder={{ color: 'black', paddingLeft: "2%", fontSize: isLargerThan750 ? "1rem" : "0.45rem" }}
+                                        _placeholder={{ color: 'black', paddingLeft: "2%", fontSize: isLargerThan750 ? "0.8rem" : "0.6rem" }}
                                         width="100%"
                                         backgroundColor="#F5F5F5"
                                         focusBorderColor="#FFFFFF"
                                         focusBorderBottomColor="#000000"
-                                        _hover={{ borderColor: "none" }} height="fit-content"
+                                        _hover={{ borderColor: "none" }}
                                         padding={isLargerThan750 ? "0%" : "0%"}
                                     />
 
@@ -75,40 +80,40 @@ export default function ReachNew() {
                             </Stack>
                             <Stack direction={isLargerThan750 ? "row" : "column"}>
                                 <FormControl>
-                                    <FormLabel fontSize={isLargerThan750 ? "0.7rem" : "0.5rem"} fontWeight="400">Email</FormLabel>
+                                    {/* <FormLabel fontSize={isLargerThan750 ? "0.7rem" : "0.5rem"} fontWeight="400">Email</FormLabel> */}
                                     <Input placeholder="example@gmail.com" type='email'
-                                        _placeholder={{ color: 'black', paddingLeft: "2%", fontSize: isLargerThan750 ? "1rem" : "0.45rem" }}
+                                        _placeholder={{ color: 'black', paddingLeft: "2%", fontSize: isLargerThan750 ? "0.8rem" : "0.6rem" }}
                                         width="100%"
                                         backgroundColor="#F5F5F5"
                                         focusBorderColor="#FFFFFF"
                                         focusBorderBottomColor="#000000"
-                                        _hover={{ borderColor: "none" }} height="fit-content"
+                                        _hover={{ borderColor: "none" }}
                                         padding={isLargerThan750 ? "0%" : "0%"} />
 
                                 </FormControl>
                                 <FormControl>
-                                    <FormLabel fontSize={isLargerThan750 ? "0.7rem" : "0.5rem"} fontWeight="400">Phone  Number</FormLabel>
+                                    {/* <FormLabel fontSize={isLargerThan750 ? "0.7rem" : "0.5rem"} fontWeight="400">Phone  Number</FormLabel> */}
                                     <Input placeholder="Phone Number" type='number'
-                                        _placeholder={{ color: 'black', paddingLeft: "2%", fontSize: isLargerThan750 ? "1rem" : "0.45rem" }}
+                                        _placeholder={{ color: 'black', paddingLeft: "2%", fontSize: isLargerThan750 ? "0.8rem" : "0.6rem" }}
                                         width="100%"
                                         backgroundColor="#F5F5F5"
                                         focusBorderColor="#FFFFFF"
                                         focusBorderBottomColor="#000000"
-                                        _hover={{ borderColor: "none" }} height="fit-content"
+                                        _hover={{ borderColor: "none" }}
                                         padding={isLargerThan750 ? "0%" : "0%"} />
 
                                 </FormControl>
                             </Stack>
                             <FormControl marginTop="7%" marginLeft="1%" >
-                                <FormLabel fontSize={isLargerThan750 ? "0.7rem" : "0.5rem"} fontWeight="400">How can we help ?</FormLabel>
+                                {/* <FormLabel fontSize={isLargerThan750 ? "0.7rem" : "0.5rem"} fontWeight="400">How can we help ?</FormLabel> */}
                                 <Textarea
                                     placeholder="Tell us a little about your project...."
-                                    _placeholder={{ color: 'black', paddingLeft: "2%", fontSize: isLargerThan750 ? "1rem" : "0.45rem" }}
+                                    _placeholder={{ color: 'black', paddingLeft: "2%", fontSize: isLargerThan750 ? "0.8rem" : "0.6rem" }}
                                     width="100%"
                                     backgroundColor="#F5F5F5"
                                     focusBorderColor="#FFFFFF"
                                     focusBorderBottomColor="#000000"
-                                    _hover={{ borderColor: "none" }} height="fit-content"
+                                    _hover={{ borderColor: "none" }}
                                     padding={isLargerThan750 ? "0%" : "0%"}
                                 />
                             </FormControl>
@@ -116,7 +121,7 @@ export default function ReachNew() {
                             <Accordion allowToggle >
                                 <AccordionItem borderColor="white">
                                     <h2>
-                                        <AccordionButton marginTop="5%" borderColor="black" borderWidth="0.1rem" borderRadius="0.5rem">
+                                        <AccordionButton marginTop="0%" borderColor="black" borderWidth="0.1rem" borderRadius="0.5rem">
                                             <Box as="span" flex='1' textAlign='left'>
                                                 <div className='reach-checkbox-title'>
                                                     <label>What do you need help with ?</label>
@@ -130,39 +135,39 @@ export default function ReachNew() {
                                             <Checkbox width="50%">
                                                 <Text fontSize="0.8rem" fontWeight="400">Global Technology solution</Text>
                                             </Checkbox>
-                                            <Checkbox width="50%">
+                                            {/* <Checkbox width="50%">
                                                 <Text fontSize="0.8rem" fontWeight="400">Tax Solution</Text>
+                                            </Checkbox> */}
+                                            <Checkbox width="50%">
+                                                <Text fontSize="0.8rem" fontWeight="400">Compliances solution</Text>
                                             </Checkbox>
                                         </div>
 
                                         <div className='reach-checkbox'>
                                             <Checkbox width="50%">
-                                                <Text fontSize="0.8rem" fontWeight="400">Compliances solution</Text>
-                                            </Checkbox>
-                                            <Checkbox width="50%">
                                                 <Text fontSize="0.8rem" fontWeight="400">Private security guaranting</Text>
                                             </Checkbox>
-                                        </div>
-                                        <div className='reach-checkbox'>
                                             <Checkbox width="50%">
                                                 <Text fontSize="0.8rem" fontWeight="400">Non technical service</Text>
                                             </Checkbox>
+                                        </div>
+                                        <div className='reach-checkbox'>
                                             <Checkbox width="50%">
                                                 <Text fontSize="0.8rem" fontWeight="400">Corporate fraud and forensic investigation</Text>
                                             </Checkbox>
-                                        </div>
-                                        <div className='reach-checkbox'>
                                             <Checkbox width="50%">
                                                 <Text fontSize="0.8rem" fontWeight="400">Facility management</Text>
                                             </Checkbox>
-                                            <Checkbox width="50%">
-                                                <Text fontSize="0.8rem" fontWeight="400">Background check service</Text>
-                                            </Checkbox>
                                         </div>
                                         <div className='reach-checkbox'>
                                             <Checkbox width="50%">
+                                                <Text fontSize="0.8rem" fontWeight="400">Background check service</Text>
+                                            </Checkbox>
+                                            <Checkbox width="50%">
                                                 <Text fontSize="0.8rem" fontWeight="400">Asset management</Text>
                                             </Checkbox>
+                                        </div>
+                                        <div className='reach-checkbox'>
                                             <Checkbox width="50%">
                                                 <Text fontSize="0.8rem" fontWeight="400">Home service</Text>
                                             </Checkbox>

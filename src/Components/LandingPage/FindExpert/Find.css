@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.find-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 5%;
+}
+
+.find-top-content {
+    color: rgba(43, 127, 255, 1);
+    font-size: 10rem;
+    font-weight: 500;
+}
+
+.find-img-arrow {
+    width: 10%;
+}
+
+.find-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 10rem;
+    font-weight: 500;
+}
+
+.find-bottom {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.find-bottom-left {
+    width: 45%;
+    margin-top: 1%;
+}
+
+.find-bottom-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.find-right-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: grey;
+}
+
+.find-circle-outer {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.find-circle {
+    background-color: rgb(36, 36, 255);
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.find-grid {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.find-grid-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.find-grid-title {
+    font-size: 1.5rem;
+    font-size: 600;
+    color: rgb(0, 0, 0);
+}
+
+.find-grid-text {
+    font-size: 1.25rem;
+    font-size: 400;
+    color: grey;
+    /* margin-top: 1%; */
+}
+
+@media only screen and (max-width: 4000px) {
+    .find-top {
+        font-size: 6rem;
+    }
+
+    .find-top-content {
+        font-size: 6rem;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 3500px) {
+
+    .find-top {
+        font-size: 5rem;
+    }
+
+    .find-top-content {
+        font-size: 5rem;
+
+    }
+
+    .find-img-arrow {
+        width: 6%;
+    }
+}
+
+@media only screen and (max-width: 3200px) {
+
+    .find-top {
+        font-size: 4.75rem;
+    }
+
+    .find-top-content {
+        font-size: 4.75rem;
+
+    }
+}
+
+@media only screen and (max-width: 3000px) {
+    .find-top {
+        font-size: 4.5rem;
+    }
+
+    .find-top-content {
+        font-size: 4.5rem;
+
+    }
+}
+
+@media only screen and (max-width: 2700px) {
+    .find-top {
+        font-size: 4rem;
+    }
+
+    .find-top-content {
+        font-size: 4rem;
+
+    }
+}
+
+/* @media only screen and (max-width: 2400px) {
+    .find-top {
+        font-size: 8rem;
+    }
+
+    .find-top-content {
+        font-size: 8rem;
+
+    }
+} */
+
+
+@media only screen and (max-width: 2200px) {
+
+    .find-top {
+        font-size: 3rem;
+    }
+
+    .find-top-content {
+        font-size: 3rem;
+
+    }
+}
+
+@media only screen and (max-width: 2000px) {
+    .find-top {
+        font-size: 3rem;
+    }
+
+    .find-top-content {
+        font-size: 3rem;
+
+    }
+}
+
+/* 
+@media only screen and (max-width: 1900px) {
+   .find-grid-title {
+    font-size: 1.25rem;
+   }
+} */
+
+@media only screen and (max-width: 1800px) {
+    .find-top {
+        font-size: 3rem;
+    }
+
+    .find-top-content {
+        font-size: 3rem;
+
+    }
+}
+
+@media only screen and (max-width: 1601px) {
+    .find-top {
+        font-size: 3rem;
+    }
+
+    .find-top-content {
+        font-size: 3rem;
+
+    }
+
+    /* .find-grid-title {
+        font-size: 1rem;
+       } */
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .find-right-text {
+        font-size: 1.25rem;
+    }
+
+    .find-grid-title {
+        font-size: 1.25rem;
+    }
+
+    .find-grid-text {
+        font-size: 1rem;
+    }
+
+    .find-circle {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .find-top {
+        font-size: 2rem;
+    }
+
+    .find-top-content {
+        font-size: 2rem;
+
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .find-top {
+        font-size: 1.75rem;
+    }
+
+    .find-top-content {
+        font-size: 1.75rem;
+
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .find-top {
+        font-size: 1.75rem;
+    }
+
+    .find-top-content {
+        font-size: 1.75rem;
+
+    }
+
+    .find-right-text {
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+
+    .find-grid-title {
+        font-size: 1rem;
+    }
+
+    .find-grid-text {
+        font-size: 0.8rem;
+    }
+
+    .find-circle {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .find-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .find-bottom-left {
+        width: 80%;
+        margin-top: 1%;
+    }
+
+    .find-bottom-right {
+        width: 80%;
+        margin-top: 1%;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .find-top {
+        font-size: 1.25rem;
+    }
+
+    .find-top-content {
+        font-size: 1.25rem;
+
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .find-top {
+        font-size: 1rem;
+    }
+
+    .find-top-content {
+        font-size: 1rem;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .find-right-text {
+        font-size: 0.8rem;
+        margin-top: 5%;
+    }
+
+    .find-grid-title {
+        font-size: 0.8rem;
+    }
+
+    .find-grid-text {
+        font-size: 0.7rem;
+    }
+
+    .find-circle {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}

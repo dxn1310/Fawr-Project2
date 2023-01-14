@@ -31,9 +31,19 @@ import Slide5 from '../Slideshow/Slides/Slide5/Slide5';
 import { Stack } from '@chakra-ui/react'
 
 import ReachNew from '../Reach/Reachnew/ReachNew';
+import Grow from '../Grow/Grow';
+
+import Find from '../FindExpert/Find';
 
 import Slideshow from '../Slideshow/Slideshow';
+import Browse from '../Browse/Browse';
+import Multiplatform from '../Multiplatform/Multiplatform';
 export default function Landing() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='landing-outer'>
             {/* <Firstpage /> */}
@@ -45,12 +55,21 @@ export default function Landing() {
                 <About />
             </div>
             <div className='landing-inner'>
-                <Leading />
+                <Multiplatform />
+            </div>
+            <div className='landing-inner'>
+                {/* <Leading /> */}
+                <Browse />
+            </div>
+            <div className='landing-inner'>
+                {/* <Leading /> */}
+                <Find />
             </div>
             <div className='landing-inner'>
                 <Trust />
             </div>
-            <ReachNew />
+            <Grow />
+            {/* <ReachNew /> */}
         </div>
     )
 }

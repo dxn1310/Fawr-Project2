@@ -31,3 +31,27 @@
     margin-top: 2%;
     color: #7E7E7E;
 }
+
+@media only screen and (max-width: 1500px) {
+    .terms-content-1 {
+        font-size: 1rem;
+    }
+    
+    .terms-content-2 {
+        font-size: 0.75rem;
+        margin-top: 2%;
+        color: #7E7E7E;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .terms-content-1 {
+        font-size: 0.8rem;
+    }
+    
+    .terms-content-2 {
+        font-size: 0.65rem;
+        margin-top: 2%;
+        color: #7E7E7E;
+    }
+}

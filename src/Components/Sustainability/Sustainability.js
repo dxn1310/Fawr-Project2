@@ -4,6 +4,11 @@ import Sustainability_img1 from "./SustainabilityImages/Sustainability_img1.png"
 import Sustainability_img2 from "./SustainabilityImages/Sustainability_img2.png"
 
 export default function Sustainability() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
     return (
         <div className='sustainability-outer'>
             <img className="sustainability-bgimg" src={Sustainability_img1} />

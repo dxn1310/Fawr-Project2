@@ -67,7 +67,11 @@ export default function Newnavbar() {
                             <Stack direction="row" spacing={3}>
                                 <Link to="/People Services/Work As Expert"><div style={{ cursor: "pointer" }}>Register As Professional</div></Link>
                                 <div style={{ width: "0.1rem", backgroundColor: "white" }} />
-                                <div style={{ cursor: "pointer" }}>Contact</div>
+                                <div style={{ cursor: "pointer" }}>
+                                    <Link to="/Careers Main/Log In">
+                                        <div className='x-inner-bottom-content-right-text'>Log In</div>
+                                    </Link>
+                                </div>
                             </Stack>
                         </div>
                         <div>
@@ -115,7 +119,7 @@ export default function Newnavbar() {
                                     <DrawerOverlay />
                                     <DrawerContent>
                                         <DrawerCloseButton focusBorderColor="white" _hover={{ backgroundColor: "white" }} size={5} padding="5%" />
-                                        <DrawerHeader marginTop="10%" display="flex" justifyContent="left"><Link to="/"><div className="x-drawer-title">AGAMEMNON</div></Link></DrawerHeader>
+                                        <DrawerHeader marginTop="10%" display="flex" justifyContent="left"><Link to="/"><div className="x-drawer-title" onClick={onClose}>AGAMEMNON</div></Link></DrawerHeader>
                                         <DrawerBody>
                                             <Stack direction="column" spacing={5} display="flex" width="100%" justifyContent="center" paddingLeft="5%" onClick={onClose}>
                                                 <Link to=""><div style={{ display: "flex", alignItems: "center", width: "70%" }}>
@@ -156,12 +160,17 @@ export default function Newnavbar() {
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
 
-                                                <Link to="">  <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
-                                                    <div className='x-drawer-items'>Policies</div>
+                                                <Link to="/Terms and Conditions">   <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                    <div className='x-drawer-items'>Terms</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
 
-                                                <Link to=""> <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                <Link to="/Privacy">  <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                    <div className='x-drawer-items'>Privacy Policy</div>
+                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
+                                                </div></Link>
+
+                                                <Link to="/Contact"> <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>Contact</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
@@ -192,7 +201,7 @@ export default function Newnavbar() {
                         </div>
                         <div className="x-inner-bottom-content-right">
 
-                            <Popover style={{ width: "100%" }} focusBorderColor="black" trigger="hover" placement='bottom-start'>
+                            <Popover style={{ width: "100%" }} focusBorderColor="black" trigger="hover" placement='bottom'>
                                 <PopoverTrigger>
                                     <Stack direction="row" display="flex" alignItems="center">
                                         <div className='x-inner-bottom-content-right-text'>Industries</div>
@@ -202,13 +211,12 @@ export default function Newnavbar() {
                                 <PopoverContent style={{ padding: "3%" }} focusBorderColor="black">
                                     <PopoverArrow />
                                     <PopoverCloseButton _hover={{ backgroundColor: "transparent" }} paddingTop="2%" paddingRight="4%" />
-                                    <Link to="/People Services/Home Salon"><div className='x-inner-bottom-menu-text'>Home Salon</div></Link>
+                                    {/* <Link to="/People Services/Home Salon"><div className='x-inner-bottom-menu-text'>Home Salon</div></Link>
                                     <Link to="/People Services/Interior Designing"><div className='x-inner-bottom-menu-text'>Interior Designing</div></Link>
                                     <Link to="/People Services/Electronic Appliances Repair"> <div className='x-inner-bottom-menu-text'>Electronic appliance Repair</div></Link>
                                     <Link to="/People Services/Cleaning & Pest Control"> <div className='x-inner-bottom-menu-text'>Cleaning & Pest Control</div></Link>
                                     <Link to="/People Services/Painting"> <div className='x-inner-bottom-menu-text'>Painting</div></Link>
-                                    <Link to="/People Services/Electronics and Carpenter Service">  <div className='x-inner-bottom-menu-text'>Electronics & Carpenter Service</div></Link>
-
+                                    <Link to="/People Services/Electronics and Carpenter Service">  <div className='x-inner-bottom-menu-text'>Electronics & Carpenter Service</div></Link> */}
                                 </PopoverContent>
                             </Popover>
 
@@ -258,16 +266,16 @@ export default function Newnavbar() {
 
 
 
-                            <Link to="Sustainability">
+                            {/* <Link to="Sustainability">
                                 <div className='x-inner-bottom-content-right-text'>Sustainability</div>
-                            </Link>
+                            </Link> */}
 
                             <Link to="/Careers Main">
                                 <div className='x-inner-bottom-content-right-text'>Careers</div>
                             </Link>
 
                             <Link to="/Careers Main/Log In">
-                                <div className='x-inner-bottom-content-right-text'>Log In</div>
+                                <div className='x-inner-bottom-content-right-text'>Cost Guide</div>
                             </Link>
 
                         </div>

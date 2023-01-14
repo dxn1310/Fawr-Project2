@@ -74,11 +74,16 @@ import Track from './Components/Services/People/PeopleServices/Booking/Tracking/
 import Slide3 from './Components/LandingPage/Slideshow/Slides/Slide3/Slide3';
 
 import Terms from "./Components/Policies/Terms/Terms"
+import Privacy from "./Components/Policies/Privacy/Privacy"
 
 import Navlang from './Components/LandingPage/Navbar/NewNavbar/NavbarLanguages/Navlang';
 import Ourservice from './Components/LandingPage/Navbar/NavbarOptions/OurService/Ourservice';
 
 import ReachNew from './Components/LandingPage/Reach/Reachnew/ReachNew';
+
+import Contact from './Components/Contact/Contact';
+
+import Office from "./Components/Contact/Office/Office"
 
 function App() {
   // window.scroll({
@@ -179,9 +184,18 @@ function App() {
         <Route path="/People Services/Booking/Tracking" element={<Track />} />
 
         <Route path="/Terms and Conditions" element={<Terms />} />
+        <Route path="/Privacy" element={<Privacy />} />
 
         <Route path="/Languages" element={<Navlang />} />
         <Route path="/Ourservice" element={<Ourservice />} />
+
+        <Route path="/Reach Us" element={<ReachNew />} />
+
+        <Route path="/Contact" element={<Contact />} />
+
+        <Route path="/Our Offices" element={<Office />} />
+
+        
 
 
 
