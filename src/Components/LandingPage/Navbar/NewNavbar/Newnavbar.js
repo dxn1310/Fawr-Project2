@@ -140,6 +140,10 @@ export default function Newnavbar() {
                                                     <div className='x-drawer-items'>Careers</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
+                                                <Link to="/Cost Guide"> <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                    <div className='x-drawer-items'>Service Guide</div>
+                                                    <AiFillCaretRight style={{ marginLeft: "20%" }} />
+                                                </div></Link>
                                             </Stack>
 
                                             <div style={{ width: "100%", height: "0.05rem", backgroundColor: "grey", marginTop: "10%" }} />
