@@ -99,7 +99,7 @@ export default function Background() {
     ]
 
     return (
-        <div>
+        <div style={{ marginBottom: "15rem" }}>
             <Servicestemplate underlinedTitle={"Background Check Service"}
                 // title={"Transformation"}
                 img1={Background_img1}

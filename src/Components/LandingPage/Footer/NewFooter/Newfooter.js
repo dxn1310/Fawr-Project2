@@ -56,7 +56,7 @@ export default function Newfooter() {
                         <Link to="/Ourservice"><div className="newfooter-bottom-content">Solutions</div></Link>
                         <Link to="/Terms and Conditions"><div className="newfooter-bottom-content">Terms & Conditions</div></Link>
                         <Link to="/Privacy"><div className="newfooter-bottom-content">Privacy</div></Link>
-                        <div className="newfooter-bottom-content">Cookie Policy</div>
+                        <Link to="/Cookie Policy"><div className="newfooter-bottom-content">Cookie Policy</div></Link>
                         {/* <Link to=""><div className="newfooter-bottom-content">Contact us</div></Link>
                         <Link to="/Sustainability"><div className="newfooter-bottom-content">Sustainability</div></Link>
                         <Link to=""><div className="newfooter-bottom-content">About Us</div></Link>

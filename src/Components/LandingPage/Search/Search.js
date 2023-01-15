@@ -1,31 +1,8 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid'
 import "./Search.css";
-import { Stack, Input, Button, InputGroup } from '@chakra-ui/react'
+import { Stack, Input, Button, InputGroup, Center } from '@chakra-ui/react'
 import Search_img1 from "./SearchImages/Search_img1.png"
-
-import Homesalon_img from "./SearchImages/Homesalon_img.png"
-import Painting_img from "./SearchImages/Painting_img.png"
-import Interiordesign_img from './SearchImages/Interiordesign_img.png';
-
-import Predictive_img from './SearchImages/Predictive_img.png';
-import Cost_img from './SearchImages/Cost_img.png';
-
-import Real_img from "./SearchImages/Real_img.png"
-import Performance_img from "./SearchImages/Performance_img.png"
-import Maintainence_img from "./SearchImages/Maintainence_img.png"
-import Regular_img from "./SearchImages/Regular_img.png"
-
-import Integrated_img from "./SearchImages/Integrated_img.png"
-
-import Health_img from "./SearchImages/Health_img.png"
-import Food_img from "./SearchImages/Food_img.png"
-import Aviation_img from "./SearchImages/Aviation_img.png"
-import Payrol_img from "./SearchImages/Payrol_img.png"
-
-import Cyber_img from "./SearchImages/Cyber_img.png"
-import Ai_img from "./SearchImages/Ai_img.png"
-
 
 import { NavLink as Link } from 'react-router-dom';
 import {
@@ -36,18 +13,34 @@ import {
     MenuItemOption,
     MenuGroup,
     MenuOptionGroup,
-    MenuDivider,
+    MenuDivider, useDisclosure
 } from '@chakra-ui/react'
-import { ChevronDownIcon } from '@chakra-ui/icons'
+import { ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons'
 
 import { useMediaQuery } from '@chakra-ui/react'
+
+
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+} from '@chakra-ui/react'
+
+
+import { HiLocationMarker } from 'react-icons/hi';
+
+
+
 
 export default function Search() {
     const services = ["Digital Technology Transformation",
         "Compliances Solution",
         "Asset Management",
         "Corporate Fraud & Forensic Investigation",
-        "Tax Solution",
         "Facility Management",
         "People Services",
         "Anti- Counterfeiting Solution",
@@ -68,99 +61,31 @@ export default function Search() {
 
         {
             location: "Bangalore",
-            services: [
-                {
-                    name: "People Services",
-                    link: "/People Services",
-                    types: ["Home Salon", "Painting", "Interior Design"],
-                    typeIcons: [Homesalon_img, Painting_img, Interiordesign_img,]
-                },
-
-                {
-
-                    name: "Compliance Services",
-                    link: "/Compiances Solution",
-                    types: ["Predictive control & risk score", "Cost saving & high quality"],
-                    typeIcons: [Predictive_img, Cost_img,]
-                },
-                {
-                    name: "Asset Management",
-                    link: "/Asset Management",
-                    types: ["Real- Time Incident Tracking", "Peformance Audits", "Maintenace checklist & MIS", "Regular AMC"],
-                    typeIcons: [Real_img, Performance_img, Maintainence_img, Regular_img]
-                },
-
-
-            ]
+            services: ["People Services", "Compliance Services", "Asset Management"],
+            link: ["/People Services", "/Compiances Solution", "/Asset Management"]
         },
-
         {
             location: "Chennai",
-            services: [
-                {
-                    name: "People Services",
-                    link: "/People Services",
-                    types: ["Home Salon", "Painting", "Interior Design"],
-                    typeIcons: [Homesalon_img, Painting_img, Interiordesign_img,]
-                },
-
-                // {
-                //     name: "Compliance Services",
-                //     link: "/People Services/Booking/OTP",
-                //     types: ["Predictive control & risk score", "Cost saving & high quality"],
-                //     typeIcons: [Predictive_img, Cost_img,]
-                // },
-                {
-                    name: "Asset Management",
-                    link: "/People Services/Booking/OTP",
-                    types: ["Real- Time Incident Tracking", "Peformance Audits", "Maintenace checklist & MIS", "Regular AMC"],
-                    typeIcons: [Real_img, Performance_img, Maintainence_img, Regular_img]
-                },
-
-
-            ]
+            services: ["People Services", "Asset Management"],
+            link: ["/People Services", "/Asset Management"]
         },
 
         {
             location: "Pune",
-            services: [
-                {
-                    name: "Facility Management",
-                    link: "/People Services/Booking/OTP",
-                    types: ["Integrated facility Management"],
-                    typeIcons: [Integrated_img]
-                },
-            ]
+            services: ["Facility Management"],
+            link: ["/Facility Management"]
         },
 
         {
             location: "New Delhi",
-            services: [
-                {
-                    name: "Facility Management",
-                    link: "/Facility Management",
-                    types: ["Integrated facility Management"],
-                    typeIcons: [Integrated_img]
-                },
-                {
-                    name: "Non - Technical Service",
-                    link: "/Non - Technical Service",
-                    types: ["Health Care", "Food Service", "Aviation", "Payroll"],
-                    typeIcons: [Health_img, Food_img, Aviation_img, Payrol_img]
-                },
-            ]
+            services: ["Facility Management", "Non - Technical Service"],
+            link: ["/Facility Management", "/Non - Technical Service"]
         },
 
         {
             location: "Tirupati",
-            services: [
-                {
-                    name: "Digital Technology Transformation",
-                    link: "/Digital Technology Transformation",
-                    types: ["Cyber Security", "Artifical Intelligence"],
-                    typeIcons: [Cyber_img, Ai_img,]
-                },
-            ]
+            services: ["Digital Technology Transformation",],
+            link: ["/Digital Technology Transformation"]
         }
     ]
 
@@ -170,7 +95,29 @@ export default function Search() {
     const [selectedService, setService] = useState(0)
     const [currentServiceTypes, setCurrentServiceTypes] = useState()
 
+
+
+    const [searchedValue, setSearchedValue] = useState(0)
+
+    const [selectedServiceLink, setSelectedServiceLink] = useState()
+
+    const handleSearch = () => {
+        for (const item in availableServices[selectedLocation].services) {
+            if (availableServices[selectedLocation].services[item] === serviceInput) {
+                setSearchedValue(1)
+                setSelectedServiceLink(availableServices[selectedLocation].link[item])
+                break;
+            }
+            else {
+                setSearchedValue(2)
+            }
+        }
+    }
+
+    const { isOpen, onOpen, onClose } = useDisclosure()
     const [isLargerThan800] = useMediaQuery('(min-width: 730px)')
+    const [isLargerThan600] = useMediaQuery('(min-width: 600px)')
+
     return (
         <div className='search-outer'>
             <img className='search-bgimg' src={Search_img1} />
@@ -178,7 +125,7 @@ export default function Search() {
                 <div className='search-inner'>
                     <div className='search-inner-content'>
                         <div className='search-title'>
-                            Create a recognition-rich culture with us.
+                            Professional Service , On Demand
                         </div>
                         <InputGroup
                             width={isLargerThan800 ? "60%" : "50%"}
@@ -213,7 +160,28 @@ export default function Search() {
                                 </MenuButton>
 
 
-                                <MenuList>
+                                <MenuList width="fit-content">
+                                    <MenuItem onClick={onOpen}><div className='menu-text'>Search Location</div></MenuItem>
+                                    <Modal isOpen={isOpen} onClose={onClose}>
+                                        <ModalOverlay />
+                                        <ModalContent>
+                                            <ModalHeader>Select Location</ModalHeader>
+                                            <ModalCloseButton />
+                                            <ModalBody width="100%" display="flex" flexDirection={isLargerThan600 ? "row" : "column"} justifyContent="center" paddingBottom="5%">
+
+                                                <Button onClick={onClose} variant='ghost' rightIcon={<HiLocationMarker />}
+                                                    _hover={{ backgroundColor: "none" }}>
+                                                    Current Location
+                                                </Button>
+                                                <Button variant='ghost' rightIcon={<ChevronRightIcon />} color="purple.500" onClick={onClose}
+                                                    _hover={{ backgroundColor: "none" }}>
+                                                    Get Using GPS
+                                                </Button>
+
+                                            </ModalBody>
+
+                                        </ModalContent>
+                                    </Modal>
                                     {
                                         locations.map((loc, index) => {
                                             return <MenuItem onClick={(e) => setSelectedLocation(index)} key={nanoid()}><div className='menu-text'>{loc}</div></MenuItem>
@@ -221,7 +189,6 @@ export default function Search() {
                                     }
                                 </MenuList>
                             </Menu>
-                            {/* <div style={{ width: "2rem", height: "100%", backgroundColor: "black" }}>rgr</div> */}
                             <Divider orientation='vertical' />
                             <div className='search-box'>
                                 <div style={{ width: "90%" }}>
@@ -230,10 +197,9 @@ export default function Search() {
                                         placeholder='Find services...'
                                         focusBorderColor="white"
                                         height="1rem"
-
+                                        value={serviceInput}
                                         width="90%"
-                                        // paddingRight="1%"
-                                        _placeholder={{ fontSize: isLargerThan800 ? "0.8rem" : "0.5rem" }}
+                                        _placeholder={{ fontSize: isLargerThan800 ? "1rem" : "0.3rem" }}
                                         onChange={(e) => { setServiceInput(e.target.value) }}
                                     />
                                 </div>
@@ -245,7 +211,8 @@ export default function Search() {
                                     height="fit-content"
                                     marginRight="1%"
                                     padding="1%"
-                                // width="fit-content"
+                                    onClick={handleSearch}
+                                // width="fit-content" 
                                 >
                                     <div className='search-btn-text'>
                                         Search
@@ -254,30 +221,43 @@ export default function Search() {
                             </div>
                         </InputGroup>
 
+
                         <div className='search-options'>
-                            <Link to="">
-                                <div className='search-option-text'>
-                                    People Services
-                                </div>
-                            </Link>
+                            {
+                                searchedValue === 0 ? <>
+                                    <Link to="">
+                                        <div className='search-option-text' onClick={(e) => setServiceInput("People Services")}>
+                                            People Services
+                                        </div>
+                                    </Link>
 
-                            <Link to="">
-                                <div className='search-option-text'>
-                                    Compliances Solution
-                                </div>
-                            </Link>
+                                    <Link to="">
+                                        <div className='search-option-text' onClick={(e) => setServiceInput("Compliances Solution")}>
+                                            Compliances Solution
+                                        </div>
+                                    </Link>
 
-                            <Link to="">
-                                <div className='search-option-text'>
-                                    Facility Management
-                                </div>
-                            </Link>
+                                    <Link to="">
+                                        <div className='search-option-text' onClick={(e) => setServiceInput("Facility Management")}>
+                                            Facility Management
+                                        </div>
+                                    </Link>
 
-                            <Link to="">
-                                <div className='search-option-text'>
-                                    Digital Technology Transformation
+                                    <Link to="">
+                                        <div className='search-option-text' onClick={(e) => setServiceInput("Digital Technology Transformation")}>
+                                            Digital Technology Transformation
+                                        </div>
+                                    </Link>
+                                </> : searchedValue === 1 ? <Link to={selectedServiceLink}>
+                                    <div className='search-option-text'>
+                                        {serviceInput}
+                                    </div>
+                                </Link> : <div className='search-option-text' style={{ cursor: "pointer" }} onClick={(e) => setSearchedValue(0)}>
+                                    This Service is not in the searched Locations
                                 </div>
-                            </Link>
+
+                            }
+
                         </div>
 
 
@@ -300,7 +280,28 @@ export default function Search() {
                             </MenuButton>
 
 
-                            <MenuList>
+                            <MenuList width="fit-content">
+                                <MenuItem onClick={onOpen}><div className='menu-text'>Search Location</div></MenuItem>
+                                <Modal isOpen={isOpen} onClose={onClose}>
+                                    <ModalOverlay />
+                                    <ModalContent>
+                                        <ModalHeader>Select Location</ModalHeader>
+                                        <ModalCloseButton />
+                                        <ModalBody width="100%" display="flex" justifyContent="center" paddingBottom="5%">
+
+                                            <Button onClick={onClose} variant='ghost' rightIcon={<HiLocationMarker />}
+                                                _hover={{ backgroundColor: "none" }}>
+                                                Current Location
+                                            </Button>
+                                            <Button variant='ghost' rightIcon={<ChevronRightIcon />} color="purple.500" onClick={onClose}
+                                                _hover={{ backgroundColor: "none" }}>
+                                                Get Using GPS
+                                            </Button>
+
+                                        </ModalBody>
+
+                                    </ModalContent>
+                                </Modal>
                                 {
                                     locations.map((loc, index) => {
                                         return <MenuItem onClick={(e) => setSelectedLocation(index)} key={nanoid()}><div className='menu-text'>{loc}</div></MenuItem>
@@ -308,40 +309,7 @@ export default function Search() {
                                 }
                             </MenuList>
                         </Menu>
-                        {
-                            <div className='search-available-outer'>
-                                <div className='search-available-text'>
-                                    Available Services in {locations[selectedLocation]} :
-                                </div>
-                                <div className='search-available-inner'>
-                                    {
-                                        availableServices[selectedLocation].services
-                                            .map((service, index) => (
-                                                <div className='search-available-service-name' onClick={(e) => setService(index)}>
-                                                    {service.name}
-                                                </div>
-                                            ))
-                                    }
-                                </div>
 
-                                <div className='search-services-available'>
-                                    <Stack direction="row" spacing={2} width="90%">
-                                        <div className='serach-available-services-inner'>
-                                            {
-                                                availableServices[selectedLocation].services[selectedService].typeIcons.map((icon, index) => <Link to={availableServices[selectedLocation].services[selectedService].link}>
-                                                    <>
-                                                        <div style={{ display: "flex", justifyContent: "center" }}><img className="search-icon" src={icon} /></div>
-                                                        <div className="search-service-type">
-                                                            {availableServices[selectedLocation].services[selectedService].types[index]}
-                                                        </div>
-                                                    </>
-                                                </Link>)
-                                            }
-                                        </div>
-                                    </Stack>
-                                </div>
-                            </div>
-                        }
                     </div>
                 </div>
             </div >
@@ -351,14 +319,3 @@ export default function Search() {
 }
 
 
-{/* <div className='search-options'>
-    {
-        availableServices[selectedLocation].services
-            .map((service, index) => (
-                <div className='search-option-text' onClick={(e) => setService(index)}>
-                    {service.name}
-                </div>
-            ))
-
-    }
-</div> */}

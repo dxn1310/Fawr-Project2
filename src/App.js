@@ -84,6 +84,8 @@ import ReachNew from './Components/LandingPage/Reach/Reachnew/ReachNew';
 import Contact from './Components/Contact/Contact';
 
 import Office from "./Components/Contact/Office/Office"
+import Cost from './Components/LandingPage/Costguide/Cost';
+import Cookie from './Components/Policies/Cookie/Cookie';
 
 function App() {
   // window.scroll({
@@ -195,12 +197,11 @@ function App() {
 
         <Route path="/Our Offices" element={<Office />} />
 
-        
+        <Route path="/Cost Guide" element={<Cost/>} />
 
+        <Route path="/Cookie Policy" element={<Cookie/>} />
 
-
-
-
+      
       </Routes>
       <Newfooter />
       {/* <Footer /> */}

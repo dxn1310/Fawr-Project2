@@ -1,0 +1,54 @@
+.cost-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20%;
+    height: 100%;
+}
+
+.cost-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(45, 45, 45);
+    padding-bottom: 0%;
+    margin-top: 5%;
+}
+
+.cost-text {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: rgb(140, 144, 147);
+}
+
+@media only screen and (max-width: 1300px) {
+    .cost-title {
+        font-size: 2rem;
+    }
+
+    .cost-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .cost-title {
+        font-size: 1.5rem;
+    }
+
+    .cost-text {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .cost-title {
+        font-size: 1rem;
+    }
+
+    .cost-text {
+        font-size: 0.5rem;
+    }
+}

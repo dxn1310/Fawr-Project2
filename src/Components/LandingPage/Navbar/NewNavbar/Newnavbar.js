@@ -274,8 +274,8 @@ export default function Newnavbar() {
                                 <div className='x-inner-bottom-content-right-text'>Careers</div>
                             </Link>
 
-                            <Link to="/Careers Main/Log In">
-                                <div className='x-inner-bottom-content-right-text'>Cost Guide</div>
+                            <Link to="/Cost Guide">
+                                <div className='x-inner-bottom-content-right-text'>Service Guide</div>
                             </Link>
 
                         </div>
