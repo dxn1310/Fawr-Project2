@@ -2,6 +2,7 @@ import React from 'react'
 import "./Terms.css"
 import Terms_img1 from "../PoliciesImages/Terms_img1.png"
 import Terms_img2 from "../PoliciesImages/Terms_img2.png"
+import Terms_img3 from "../PoliciesImages/Terms_img3.png"
 
 import {
     Accordion,
@@ -23,7 +24,7 @@ export default function Terms() {
     const [isLargerThan1000] = useMediaQuery('(min-width: 1000px)')
     return (
         <div className='terms-outer'>
-            <img className="terms-bgimg" src={Terms_img1} />
+            <img className="terms-bgimg" src={Terms_img3} />
             <div className='terms-inner'>
                 <div className='terms-content-1'>
                     PLEASE CAREFULLY READ THESE TERMS AND CONDITIONS. YOU ACKNOWLEDGE AND AGREE THAT YOU HAVE READ, UNDERSTAND, AND AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS WITHOUT LIMITATION OR QUALIFICATION BY ACCESSING, BROWSING, REVIEWING, AND/OR USING THE SITE. YOU ALSO AGREE THAT YOU SHALL COMPLY WITH ALL APPLICABLE LAWS, RULES, AND REGULATIONS. DO NOT USE THE SITE IF YOU DO NOT AGREE TO BE BOUND BY THESE TERMS AND CONDITIONS.

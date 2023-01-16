@@ -1,5 +1,7 @@
 import React from 'react'
 import Contact_img1 from "./ContactImages/Contact_img1.png"
+import Contact_img2 from "./ContactImages/Contact_img2.png"
+
 import "./Contact.css"
 import { NavLink as Link } from 'react-router-dom'
 
@@ -20,15 +22,15 @@ export default function Contact() {
     });
     return (
         <div className='contact-outer'>
-            <div className='contact-bgimg-outer' >
-                <img src={Contact_img1} className="contact-bgimg" />
+            <div className='contact-bgimg-outer' style={{ width: "100%" }} >
+                <img src={Contact_img2} className="contact-bgimg" style={{ width: "100%" }} />
             </div>
             <div className='contact-inner'>
                 <div className='contact-inner-text'>
                     Looking for a neighbourhood office? We have 63 in total. Would you like to work here? View examples of careers at BDM or keep up with us on social media. Do you want to collaborate with us? Discover our consulting offerings and domain knowledge. Need another thing? To contact us in additional ways, see the list below.
                 </div>
                 <div className='contact-grid'>
-                    
+
                     <div className='contact-grid-element'>
                         <div className='contact-grid-element-inner'>
                             <div className='contatct-grid-title'>

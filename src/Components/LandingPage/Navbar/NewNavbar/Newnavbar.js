@@ -122,25 +122,25 @@ export default function Newnavbar() {
                                         <DrawerHeader marginTop="10%" display="flex" justifyContent="left"><Link to="/"><div className="x-drawer-title" onClick={onClose}>AGAMEMNON</div></Link></DrawerHeader>
                                         <DrawerBody>
                                             <Stack direction="column" spacing={5} display="flex" width="100%" justifyContent="center" paddingLeft="5%" onClick={onClose}>
-                                                <Link to=""><div style={{ display: "flex", alignItems: "center", width: "70%" }}>
+                                                <Link to=""><div style={{ display: "flex", alignItems: "center", width: "95%", justifyContent: "space-between" }}>
                                                     <div className='x-drawer-items'>Industries</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div>
                                                 </Link>
-                                                <Link to="/Ourservice">  <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                <Link to="/Ourservice">  <div style={{ display: "flex", alignItems: "center", width: "95%", justifyContent: "space-between" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>Solutions</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
 
-                                                <Link to=""> <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                <Link to=""> <div style={{ display: "flex", alignItems: "center", width: "95%", justifyContent: "space-between" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>Our Services</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
-                                                <Link to="/Careers Main"> <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                <Link to="/Careers Main"> <div style={{ display: "flex", alignItems: "center", width: "95%", justifyContent: "space-between" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>Careers</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
-                                                <Link to="/Cost Guide"> <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                <Link to="/Cost Guide"> <div style={{ display: "flex", alignItems: "center", width: "95%", justifyContent: "space-between" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>Service Guide</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
@@ -149,38 +149,38 @@ export default function Newnavbar() {
                                             <div style={{ width: "100%", height: "0.05rem", backgroundColor: "grey", marginTop: "10%" }} />
 
                                             <Stack direction="column" spacing={5} display="flex" width="100%" justifyContent="center" paddingLeft="5%" marginTop="5%">
-                                                <Link to=""> <div style={{ display: "flex", alignItems: "center", width: "70%", justifyContent: "space-between" }} onClick={onClose}>
+                                                <Link to=""> <div style={{ display: "flex", alignItems: "center", width: "95%", justifyContent: "space-between" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>Where to find us</div>
                                                     <AiFillCaretRight />
                                                 </div></Link>
 
-                                                <Link to="">  <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                <Link to="">  <div style={{ display: "flex", alignItems: "center", width: "95%", justifyContent: "space-between" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>Partners</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
 
-                                                <Link to="">   <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                <Link to="">   <div style={{ display: "flex", alignItems: "center", width: "95%", justifyContent: "space-between" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>Offers</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
 
-                                                <Link to="/Terms and Conditions">   <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                <Link to="/Terms and Conditions">   <div style={{ display: "flex", alignItems: "center", width: "95%", justifyContent: "space-between" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>Terms</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
 
-                                                <Link to="/Privacy">  <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                <Link to="/Privacy">  <div style={{ display: "flex", alignItems: "center", width: "95%", justifyContent: "space-between" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>Privacy Policy</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
 
-                                                <Link to="/Contact"> <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                <Link to="/Contact"> <div style={{ display: "flex", alignItems: "center", width: "95%", justifyContent: "space-between" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>Contact</div>
                                                     <AiFillCaretRight style={{ marginLeft: "20%" }} />
                                                 </div></Link>
 
                                                 <div style={{ width: "100%", height: "0.05rem", backgroundColor: "grey", marginTop: "10%" }} />
-                                                {/* <Link to="/Languages"> <div style={{ display: "flex", alignItems: "center", width: "70%" }} onClick={onClose}>
+                                                {/* <Link to="/Languages"> <div style={{ display: "flex", alignItems: "center", width: "95%" ,justifyContent:"space-between" }} onClick={onClose}>
                                                     <div className='x-drawer-items'>
                                                         <Stack direction="row" spacing={1} display="flex" alignItems="center" justifyContent="right" padding="2%" cursor="pointer">
                                                             {langImg === "world" ? <TfiWorld size={22} /> : <img src={langImg} />}

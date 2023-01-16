@@ -1,6 +1,8 @@
 import React from 'react'
 import "../Terms/Terms.css"
 import Privacy_img1 from "../PoliciesImages/Privacy_img1.png"
+import Privacy_img2 from "../PoliciesImages/Privacy_img2.png"
+import Privacy_img3 from "../PoliciesImages/Privacy_img3.png"
 import Terms_img2 from "../PoliciesImages/Terms_img2.png"
 
 import {
@@ -23,7 +25,7 @@ export default function Terms() {
     const [isLargerThan1000] = useMediaQuery('(min-width: 1000px)')
     return (
         <div className='terms-outer'>
-            <img className="terms-bgimg" src={Privacy_img1} />
+            <img className="terms-bgimg" src={Privacy_img3} />
             <div className='terms-inner'>
                 <div className='terms-content-1'>
                     This Privacy Policy is applicable to the website(s) and mobile applications (collectively, the "Sites") offered by Agamemnon and/or other Agamemnon group companies ("Agamemnon," "we," or "us"). Agamemnon serves as the data controller for the personal information you share with Agamemnon under this Policy.

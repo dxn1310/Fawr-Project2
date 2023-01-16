@@ -1,18 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Login.css"
 import { Button, ButtonGroup, Stack, Divider, Text, Center, Input } from '@chakra-ui/react'
 import { NavLink as Link } from 'react-router-dom'
-// import login_img3 from "./loginImages/login_img3.png"
-// import login_img4 from "./loginImages/login_img4.png"
-// import login_img5 from "./loginImages/login_img5.png"
 
-export default function login() {
+
+export default function Login() {
     return (
         <div className='login-outer'>
             <div className='login-box'>
                 <Stack height="100%" direction="column" width="100%" >
                     <Center>
-                        <Text marginTop="5%" fontSize="100%" fontWweight="500" color="#2B7FFF">Fill the details below</Text>
+                        <Text marginTop="5%" fontWeight="500" color="#2B7FFF"><div className="login-title">Fill the details below</div></Text>
                     </Center>
                     <Center>
                         <Stack direction="column" height="100%" width="70%" marginTop="10%" spacing={3}>
@@ -31,11 +29,20 @@ export default function login() {
                             <Button backgroundColor="#2B7FFF"
                                 color="white"
                                 fontWeight="400"
-                                fontSize="60%">Log-In</Button>
+                               >Log-In</Button>
+
+
+
+                            {/* <div style={{ width: "100%" }}> */}
                             <Button backgroundColor="Black"
                                 color="white"
                                 fontWeight="400"
-                                fontSize="60%">Administrative log-in</Button>
+                                ><Link to="/Careers Main/Log In/Admin Log In">Administrative log-in</Link></Button>
+                            {/* </div> */}
+
+
+
+
                         </Stack>
                     </Center>
                     <Center>
@@ -83,9 +90,9 @@ export default function login() {
 
                     <Center>
                         <Stack direction="row" marginTop="5%">
-                            <Text fontSize="50%" fontWeight="500">Don’t have an account ? </Text>
+                            <Text fontWeight="500"><div className="login-text">Don’t have an account ?</div> </Text>
                             <Link to="/Careers Main/Sign Up">
-                                <Text fontSize="50%" fontWeight="500" color="#2B7FFF">Sign Up</Text>
+                                <Text fontWeight="500" color="#2B7FFF"><div className="login-text">Sign Up</div></Text>
                             </Link>
                         </Stack>
                     </Center>
